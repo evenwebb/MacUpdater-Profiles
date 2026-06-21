@@ -1,0 +1,41 @@
+{
+  "name": "Orca Slicer",
+  "slug": "orca-slicer",
+  "bundle_id": "com.orcaslicer.OrcaSlicer",
+  "category": "utilities",
+  "license": "free",
+  "description": "Open-source 3D printer slicer (fork of Bambu Studio)",
+  "website": "https://orcaslicer.com",
+  "platform": "macOS",
+  "architecture": "universal",
+  "min_os": "10.15",
+  "auto_updates": false,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/OrcaSlicer/OrcaSlicer/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name",
+      "strip_prefix": "V"
+    },
+    "headers": {},
+    "rate_limit": "60/hr"
+  },
+  "download": {
+    "method": "construct_url",
+    "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/latest/download/OrcaSlicer_Mac_universal_{TAG}.dmg",
+    "file_type": "dmg",
+    "headers": {}
+  },
+  "changelog": {
+    "method": "github_releases",
+    "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "notes": "Open source (AGPL), fork of Bambu Studio. Universal DMG for both Intel and Apple Silicon. No Sparkle — uses GitHub Releases. Also has cloud API at api.orcaslicer.com (requires auth).",
+  "last_updated": "2026-06-21"
+}

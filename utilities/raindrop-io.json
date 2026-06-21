@@ -1,0 +1,42 @@
+{
+  "name": "Raindrop.io",
+  "slug": "raindrop-io",
+  "bundle_id": "io.raindrop.macapp",
+  "category": "utilities",
+  "license": "free",
+  "description": "Bookmark manager and web clipper — organize bookmarks with tags and collections",
+  "website": "https://raindrop.io",
+  "platform": "macOS",
+  "architecture": "separate",
+  "min_os": "12.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/raindropio/desktop/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name",
+      "strip_prefix": "v"
+    },
+    "headers": {},
+    "rate_limit": "60/hr"
+  },
+  "download": {
+    "method": "construct_url",
+    "url": "https://github.com/raindropio/desktop/releases/latest/download/Raindrop-darwin-{ARCH}.dmg",
+    "file_type": "dmg",
+    "headers": {},
+    "note": "{ARCH} is x64 or arm64"
+  },
+  "changelog": {
+    "method": "github_releases",
+    "url": "https://github.com/raindropio/desktop/releases"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "notes": "Electron app using electron-updater with GitHub provider. Also has a latest-mac.yml manifest. Separate x64 and arm64 DMG downloads.",
+  "last_updated": "2026-06-21"
+}

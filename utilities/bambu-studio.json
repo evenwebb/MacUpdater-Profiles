@@ -1,0 +1,42 @@
+{
+  "name": "Bambu Studio",
+  "slug": "bambu-studio",
+  "bundle_id": "com.bambulab.bambu-studio",
+  "category": "utilities",
+  "license": "free",
+  "description": "3D printer slicer for Bambu Lab printers (open source fork of PrusaSlicer)",
+  "website": "https://bambulab.com",
+  "platform": "macOS",
+  "architecture": "x86_64",
+  "min_os": "10.15",
+  "auto_updates": false,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/bambulab/BambuStudio/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name",
+      "strip_prefix": "v"
+    },
+    "headers": {},
+    "rate_limit": "60/hr"
+  },
+  "download": {
+    "method": "construct_url",
+    "url": "https://github.com/bambulab/BambuStudio/releases/latest/download/Bambu_Studio_mac-{TAG}.dmg",
+    "file_type": "dmg",
+    "headers": {},
+    "note": "Runs under Rosetta 2 on Apple Silicon (no native arm64 build yet)"
+  },
+  "changelog": {
+    "method": "github_releases",
+    "url": "https://github.com/bambulab/BambuStudio/releases"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "notes": "Open source (AGPL). No Sparkle — uses GitHub Releases. Version check may also use Bambu Lab internal API for non-release builds. x86_64 only (Rosetta 2 on Apple Silicon).",
+  "last_updated": "2026-06-21"
+}

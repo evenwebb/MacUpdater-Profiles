@@ -1,0 +1,40 @@
+{
+  "name": "LM Studio",
+  "slug": "lm-studio",
+  "bundle_id": "com.elementlabs.lmstudio",
+  "category": "ai-tools",
+  "license": "free",
+  "description": "Desktop app for running local LLMs on Mac",
+  "website": "https://lmstudio.ai",
+  "platform": "macOS",
+  "architecture": "separate",
+  "min_os": "10.15",
+  "auto_updates": false,
+  "skip": false,
+  "version_check": {
+    "method": "scrape_html",
+    "url": "https://lmstudio.ai/download",
+    "extraction": {
+      "type": "regex",
+      "pattern": "LM Studio (\\d+\\.\\d+\\.\\d+)"
+    },
+    "headers": {}
+  },
+  "download": {
+    "method": "construct_url",
+    "url": "https://installers.lmstudio.ai/darwin/{ARCH}/latest",
+    "file_type": "dmg",
+    "headers": {},
+    "note": "Architecture-aware redirect to versioned DMG. {ARCH} = arm64 or x64."
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://lmstudio.ai/changelog"
+  },
+  "release_date": {
+    "method": "http_last_modified",
+    "url": "download redirect"
+  },
+  "notes": "Electron app, closed source. Update check API endpoint not publicly documented. Download redirect gives latest version DMG.",
+  "last_updated": "2026-06-21"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "GitHub Desktop",
+  "slug": "github-desktop",
+  "bundle_id": "com.github.GitHubClient",
+  "category": "developer-tools",
+  "license": "free",
+  "description": "GitHub's official desktop client for Git version control",
+  "website": "https://desktop.github.com",
+  "platform": "macOS",
+  "architecture": "separate",
+  "min_os": "10.15",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/desktop/desktop/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name",
+      "strip_prefix": "release-"
+    },
+    "headers": {},
+    "rate_limit": "60/hr"
+  },
+  "download": {
+    "method": "construct_url",
+    "url": "https://central.github.com/api/deployments/desktop/desktop/latest?version={VERSION}&env=production",
+    "file_type": "zip",
+    "headers": {},
+    "note": "Separate x64 and arm64 ZIP downloads. Version tag format: release-X.Y.Z"
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://desktop.github.com/release-notes/"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "notes": "Electron app using Squirrel.Mac autoUpdater. Open source (MIT). Download is a ZIP containing the .app bundle.",
+  "last_updated": "2026-06-21"
+}

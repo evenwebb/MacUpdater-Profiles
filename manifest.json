@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated": "2026-06-21T22:06:24Z",
-  "total_profiles": 171,
+  "updated": "2026-06-21T22:26:52Z",
+  "total_profiles": 177,
   "apps": {
     "1password": {
       "name": "1Password",
@@ -129,6 +129,14 @@
       "category": "specialized",
       "license": "free",
       "path": "specialized/balenaetcher.json",
+      "skip": false
+    },
+    "bambu-studio": {
+      "name": "Bambu Studio",
+      "bundle_id": "com.bambulab.bambu-studio",
+      "category": "utilities",
+      "license": "free",
+      "path": "utilities/bambu-studio.json",
       "skip": false
     },
     "bartender": {
@@ -467,6 +475,14 @@
       "path": "developer-tools/github-copilot-xcode.json",
       "skip": false
     },
+    "github-desktop": {
+      "name": "GitHub Desktop",
+      "bundle_id": "com.github.GitHubClient",
+      "category": "developer-tools",
+      "license": "free",
+      "path": "developer-tools/github-desktop.json",
+      "skip": false
+    },
     "google-chrome": {
       "name": "Google Chrome",
       "bundle_id": "com.google.Chrome",
@@ -633,6 +649,14 @@
       "category": "specialized",
       "license": "free",
       "path": "specialized/linear.json",
+      "skip": false
+    },
+    "lm-studio": {
+      "name": "LM Studio",
+      "bundle_id": "com.elementlabs.lmstudio",
+      "category": "ai-tools",
+      "license": "free",
+      "path": "ai-tools/lm-studio.json",
       "skip": false
     },
     "logic-pro": {
@@ -843,6 +867,14 @@
       "path": "browsers/opera.json",
       "skip": false
     },
+    "orca-slicer": {
+      "name": "Orca Slicer",
+      "bundle_id": "com.orcaslicer.OrcaSlicer",
+      "category": "utilities",
+      "license": "free",
+      "path": "utilities/orca-slicer.json",
+      "skip": false
+    },
     "parallels-desktop": {
       "name": "Parallels Desktop",
       "bundle_id": "com.parallels.Parallels",
@@ -961,6 +993,14 @@
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/postman.json",
+      "skip": false
+    },
+    "raindrop-io": {
+      "name": "Raindrop.io",
+      "bundle_id": "io.raindrop.macapp",
+      "category": "utilities",
+      "license": "free",
+      "path": "utilities/raindrop-io.json",
       "skip": false
     },
     "raspberry-pi-imager": {
@@ -1105,6 +1145,14 @@
       "category": "email",
       "license": "paid",
       "path": "email/spark-mail.json",
+      "skip": false
+    },
+    "speedtest": {
+      "name": "Speedtest by Ookla",
+      "bundle_id": "com.ookla.speedtest-macos",
+      "category": "utilities",
+      "license": "free",
+      "path": "utilities/speedtest.json",
       "skip": false
     },
     "spotify": {
