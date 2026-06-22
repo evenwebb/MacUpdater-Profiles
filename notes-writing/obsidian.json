@@ -5,7 +5,7 @@
   "website": "https://obsidian.md",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "macOS 12",
+  "min_os": "macOS 12.0",
   "auto_updates": true,
   "version_check": {
     "method": "github_api",
@@ -36,5 +36,8 @@
   "category": "notes-writing",
   "license": "free",
   "skip": false,
-  "bundle_id": "md.obsidian"
+  "bundle_id": "md.obsidian",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/obsidian.png"
+  }
 }

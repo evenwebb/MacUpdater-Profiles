@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": 2,
-  "updated": "2026-06-22T16:57:47Z",
+  "updated": "2026-06-22T17:38:49Z",
   "total_profiles": 302,
   "apps": {
     "1password": {
@@ -16,9 +16,11 @@
     },
     "a-better-finder-attributes-7": {
       "name": "A Better Finder Attributes 7",
-      "bundle_id": "net.publicspace.ABFA7",
+      "bundle_id": "net.publicspace.abfa7",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/a-better-finder-attributes-7.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/a-better-finder-attributes-7.json",
@@ -26,9 +28,11 @@
     },
     "a-better-finder-rename-11": {
       "name": "A Better Finder Rename 11",
-      "bundle_id": "net.publicspace.ABFR11",
+      "bundle_id": "net.publicspace.abfr11",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/a-better-finder-rename-11.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/a-better-finder-rename-11.json",
@@ -38,7 +42,9 @@
       "name": "Acorn",
       "bundle_id": "com.flyingmeat.Acorn8",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/acorn.png"
+      },
       "category": "design",
       "license": "paid",
       "path": "design/acorn.json",
@@ -234,7 +240,9 @@
       "name": "Audio Hijack",
       "bundle_id": "com.rogueamoeba.audiohijack",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/audio-hijack.png"
+      },
       "category": "media",
       "license": "paid",
       "path": "media/audio-hijack.json",
@@ -456,7 +464,9 @@
       "name": "Caprine",
       "bundle_id": "com.sindresorhus.caprine",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/caprine.png"
+      },
       "category": "messaging",
       "license": "free",
       "path": "messaging/caprine.json",
@@ -642,7 +652,9 @@
       "name": "Dash",
       "bundle_id": "com.kapeli.dashdoc",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/dash.png"
+      },
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/dash.json",
@@ -660,9 +672,11 @@
     },
     "dbeaver": {
       "name": "DBeaver",
-      "bundle_id": "org.jkiss.dbeaver",
+      "bundle_id": "org.jkiss.dbeaver.core.product",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/dbeaver.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/dbeaver.json",
@@ -720,7 +734,7 @@
     },
     "dolphin-anty": {
       "name": "Dolphin Anty",
-      "bundle_id": "com.dolphin-anty.browser",
+      "bundle_id": "com.ru.dolphin.anty",
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "specialized",
@@ -814,7 +828,9 @@
       "name": "Epic Games Launcher",
       "bundle_id": "com.epicgames.EpicGamesLauncher",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/epic-games-launcher.png"
+      },
       "category": "gaming",
       "license": "free",
       "path": "gaming/epic-games-launcher.json",
@@ -824,7 +840,9 @@
       "name": "Evernote",
       "bundle_id": "com.evernote.Evernote",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/evernote.png"
+      },
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/evernote.json",
@@ -894,7 +912,9 @@
       "name": "Figma",
       "bundle_id": "com.figma.Desktop",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/figma.png"
+      },
       "category": "design",
       "license": "free",
       "path": "design/figma.json",
@@ -982,9 +1002,11 @@
     },
     "github-copilot-xcode": {
       "name": "GitHub Copilot for Xcode",
-      "bundle_id": "com.github.copilot.xcode",
+      "bundle_id": "com.github.CopilotForXcode",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/github-copilot-xcode.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/github-copilot-xcode.json",
@@ -1064,7 +1086,9 @@
       "name": "GrandPerspective",
       "bundle_id": "net.sourceforge.grandperspectiv",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/grandperspective.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/grandperspective.json",
@@ -1074,7 +1098,9 @@
       "name": "Hammerspoon",
       "bundle_id": "org.hammerspoon.Hammerspoon",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/hammerspoon.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/hammerspoon.json",
@@ -1114,7 +1140,9 @@
       "name": "Hidden Bar",
       "bundle_id": "com.dwarvesv.minimalbar",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/hidden-bar.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/hidden-bar.json",
@@ -1154,7 +1182,9 @@
       "name": "Ice",
       "bundle_id": "com.jordanbaird.Ice",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/ice-menu-bar.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/ice-menu-bar.json",
@@ -1224,7 +1254,9 @@
       "name": "iStat Menus",
       "bundle_id": "com.bjango.istatmenus",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/istat-menus.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/istat-menus.json",
@@ -1246,7 +1278,9 @@
       "name": "Itsycal",
       "bundle_id": "com.mowglii.ItsycalApp",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/itsycal.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/itsycal.json",
@@ -1274,9 +1308,11 @@
     },
     "kaleidoscope": {
       "name": "Kaleidoscope",
-      "bundle_id": "com.blackpixel.kaleidoscope",
+      "bundle_id": "app.kaleidoscope.v4",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/kaleidoscope.png"
+      },
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/kaleidoscope.json",
@@ -1306,7 +1342,9 @@
       "name": "KeepingYouAwake",
       "bundle_id": "info.marcel-dierkes.KeepingYouAwake",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/keepingyouawake.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/keepingyouawake.json",
@@ -1348,7 +1386,9 @@
       "name": "Kindle for Mac",
       "bundle_id": "com.amazon.Kindle",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/kindle-for-mac.png"
+      },
       "category": "office",
       "license": "free",
       "path": "office/kindle-for-mac.json",
@@ -1416,9 +1456,11 @@
     },
     "latest": {
       "name": "Latest",
-      "bundle_id": "codes.rambo.Latest",
+      "bundle_id": "com.max-langer.Latest",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/latest.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/latest.json",
@@ -1458,7 +1500,9 @@
       "name": "LinearMouse",
       "bundle_id": "com.lujjjh.LinearMouse",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/linearmouse.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/linearmouse.json",
@@ -1506,9 +1550,11 @@
     },
     "logitech-options-plus": {
       "name": "Logitech Options+",
-      "bundle_id": "com.logitech.optionsplus",
+      "bundle_id": "com.logi.optionsplus.installer",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/logitech-options-plus.png"
+      },
       "category": "specialized",
       "license": "free",
       "path": "specialized/logitech-options-plus.json",
@@ -1516,9 +1562,11 @@
     },
     "logseq": {
       "name": "Logseq",
-      "bundle_id": "com.logseq.logseq",
+      "bundle_id": "com.electron.logseq",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/logseq.png"
+      },
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/logseq.json",
@@ -1536,9 +1584,11 @@
     },
     "losslesscut": {
       "name": "LosslessCut",
-      "bundle_id": "no.mifi.losslesscut",
+      "bundle_id": "no.mifi.losslesscut-mac",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/losslesscut.png"
+      },
       "category": "media",
       "license": "free",
       "path": "media/losslesscut.json",
@@ -1558,7 +1608,9 @@
       "name": "Mac Mouse Fix",
       "bundle_id": "com.nuebling.mac-mouse-fix",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/mac-mouse-fix.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/mac-mouse-fix.json",
@@ -1566,9 +1618,11 @@
     },
     "maccy": {
       "name": "Maccy",
-      "bundle_id": "com.sindresorhus.MenuBarCalendar",
+      "bundle_id": "org.p0deje.Maccy",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/maccy.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/maccy.json",
@@ -1596,9 +1650,11 @@
     },
     "macs-fan-control": {
       "name": "Macs Fan Control",
-      "bundle_id": "com.crystalidea.MacsFanControl",
+      "bundle_id": "com.crystalidea.macsfancontrol",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/macs-fan-control.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/macs-fan-control.json",
@@ -1658,7 +1714,9 @@
       "name": "MarkText",
       "bundle_id": "com.github.marktext.marktext",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/marktext.png"
+      },
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/marktext.json",
@@ -1668,7 +1726,9 @@
       "name": "MeetingBar",
       "bundle_id": "leits.MeetingBar",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/meetingbar.png"
+      },
       "category": "office",
       "license": "free",
       "path": "office/meetingbar.json",
@@ -1736,9 +1796,11 @@
     },
     "monitorcontrol": {
       "name": "MonitorControl",
-      "bundle_id": "me.guillaumeb.MonitorControl",
+      "bundle_id": "app.monitorcontrol.MonitorControl",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/monitorcontrol.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/monitorcontrol.json",
@@ -1758,7 +1820,9 @@
       "name": "Moom",
       "bundle_id": "com.manytricks.Moom",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/moom.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/moom.json",
@@ -1800,7 +1864,9 @@
       "name": "Neovide",
       "bundle_id": "com.neovide.neovide",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/neovide.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/neovide.json",
@@ -1810,7 +1876,9 @@
       "name": "NetNewsWire",
       "bundle_id": "com.ranchero.NetNewsWire-Evergreen",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/netnewswire.png"
+      },
       "category": "rss-reading",
       "license": "free",
       "path": "rss-reading/netnewswire.json",
@@ -1850,7 +1918,9 @@
       "name": "Nova",
       "bundle_id": "com.panic.Nova",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/nova.png"
+      },
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/nova.json",
@@ -1872,7 +1942,9 @@
       "name": "Obsidian",
       "bundle_id": "md.obsidian",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/obsidian.png"
+      },
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/obsidian.json",
@@ -1900,9 +1972,11 @@
     },
     "onlyswitch": {
       "name": "OnlySwitch",
-      "bundle_id": "com.jacklandrin.OnlySwitch",
+      "bundle_id": "jacklandrin.OnlySwitch",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/onlyswitch.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/onlyswitch.json",
@@ -2022,7 +2096,9 @@
       "name": "PearCleaner",
       "bundle_id": "com.alienator88.Pearcleaner",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/pearcleaner.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/pearcleaner.json",
@@ -2050,9 +2126,11 @@
     },
     "photobulk": {
       "name": "PhotoBulk",
-      "bundle_id": "com.eltima.PhotoBulk",
+      "bundle_id": "com.eltima.photobulk",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/photobulk.png"
+      },
       "category": "design",
       "license": "paid",
       "path": "design/photobulk.json",
@@ -2122,7 +2200,9 @@
       "name": "Postico",
       "bundle_id": "at.eggerapps.Postico",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/postico.png"
+      },
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/postico.json",
@@ -2132,7 +2212,9 @@
       "name": "Postman",
       "bundle_id": "com.postmanlabs.mac",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/postman.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/postman.json",
@@ -2192,9 +2274,11 @@
     },
     "raspberry-pi-imager": {
       "name": "Raspberry Pi Imager",
-      "bundle_id": "org.raspberrypi.ImagerV2",
+      "bundle_id": "com.raspberrypi.rpi-imager",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/raspberry-pi-imager.png"
+      },
       "category": "specialized",
       "license": "free",
       "path": "specialized/raspberry-pi-imager.json",
@@ -2296,7 +2380,9 @@
       "name": "Scrivener",
       "bundle_id": "com.literatureandlatte.scrivener3",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/scrivener.png"
+      },
       "category": "notes-writing",
       "license": "paid",
       "path": "notes-writing/scrivener.json",
@@ -2306,7 +2392,9 @@
       "name": "Scroll Reverser",
       "bundle_id": "com.pilotmoon.scroll-reverser",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/scroll-reverser.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/scroll-reverser.json",
@@ -2394,9 +2482,11 @@
     },
     "sip": {
       "name": "Sip",
-      "bundle_id": "com.sipapp.Sip",
+      "bundle_id": "io.sipapp.Sip-paddle",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/sip.png"
+      },
       "category": "design",
       "license": "paid",
       "path": "design/sip.json",
@@ -2486,7 +2576,9 @@
       "name": "Spotify",
       "bundle_id": "com.spotify.client",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/spotify.png"
+      },
       "category": "media",
       "license": "free",
       "path": "media/spotify.json",
@@ -2620,7 +2712,9 @@
       "name": "Telegram",
       "bundle_id": "ru.keepcoder.Telegram",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/telegram.png"
+      },
       "category": "messaging",
       "license": "free",
       "path": "messaging/telegram.json",
@@ -2660,7 +2754,9 @@
       "name": "The Unarchiver",
       "bundle_id": "com.macpaw.site.theunarchiver",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/the-unarchiver.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/the-unarchiver.json",
@@ -2670,7 +2766,9 @@
       "name": "Things",
       "bundle_id": "com.culturedcode.ThingsMac",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/things.png"
+      },
       "category": "notes-writing",
       "license": "paid",
       "path": "notes-writing/things.json",
@@ -2730,7 +2828,9 @@
       "name": "Tower",
       "bundle_id": "com.fournova.Tower3",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/tower.png"
+      },
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/tower.json",
@@ -2800,7 +2900,9 @@
       "name": "UninstallPKG",
       "bundle_id": "com.corecode.UninstallPKG",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/uninstallpkg.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/uninstallpkg.json",
@@ -2870,7 +2972,9 @@
       "name": "Visual Studio Code",
       "bundle_id": "com.microsoft.VSCode",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/vscode.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/vscode.json",
@@ -2910,7 +3014,9 @@
       "name": "WezTerm",
       "bundle_id": "com.github.wez.wezterm",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/wezterm.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/wezterm.json",
@@ -2968,9 +3074,11 @@
     },
     "xcodes": {
       "name": "Xcodes",
-      "bundle_id": "com.robotsandpencils.XcodesApp",
+      "bundle_id": "com.xcodesorg.xcodesapp",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/xcodes.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/xcodes.json",

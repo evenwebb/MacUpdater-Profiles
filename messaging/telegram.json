@@ -5,7 +5,7 @@
   "website": "https://telegram.org",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "macOS 11",
+  "min_os": "macOS 10.13",
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
@@ -36,5 +36,8 @@
   "category": "messaging",
   "license": "free",
   "skip": false,
-  "bundle_id": "ru.keepcoder.Telegram"
+  "bundle_id": "ru.keepcoder.Telegram",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/telegram.png"
+  }
 }

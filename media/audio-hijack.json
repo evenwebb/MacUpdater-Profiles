@@ -8,7 +8,7 @@
   "bundle_id": "com.rogueamoeba.audiohijack",
   "category": "media",
   "license": "paid",
-  "min_os": "macOS 14.4",
+  "min_os": "macOS 14.4.0",
   "auto_updates": true,
   "skip": false,
   "version_check": {
@@ -28,5 +28,8 @@
     "method": "web_scrape",
     "url": "https://rogueamoeba.com/audiohijack/releasenotes"
   },
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-06-22",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/audio-hijack.png"
+  }
 }

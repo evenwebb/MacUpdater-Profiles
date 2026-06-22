@@ -28,5 +28,8 @@
     "method": "web_scrape",
     "url": "https://nova.app/releases"
   },
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-06-22",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/nova.png"
+  }
 }

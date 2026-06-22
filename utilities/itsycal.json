@@ -5,7 +5,7 @@
   "website": "https://www.mowglii.com/itsycal",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "11",
+  "min_os": "macOS 11.0",
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
@@ -39,5 +39,8 @@
   "category": "utilities",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.mowglii.ItsycalApp"
+  "bundle_id": "com.mowglii.ItsycalApp",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/itsycal.png"
+  }
 }

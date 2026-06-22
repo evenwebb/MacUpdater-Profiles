@@ -5,7 +5,7 @@
   "website": "https://github.com/dwarvesf/hidden",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "macOS 11.0",
+  "min_os": "macOS 10.13",
   "auto_updates": false,
   "version_check": {
     "method": "github_api",
@@ -38,5 +38,8 @@
   "category": "utilities",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.dwarvesv.minimalbar"
+  "bundle_id": "com.dwarvesv.minimalbar",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/hidden-bar.png"
+  }
 }

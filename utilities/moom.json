@@ -5,7 +5,7 @@
   "website": "https://manytricks.com/moom/",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "macOS 11.0",
+  "min_os": "macOS 10.13",
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
@@ -39,5 +39,8 @@
   "category": "utilities",
   "license": "paid",
   "skip": false,
-  "bundle_id": "com.manytricks.Moom"
+  "bundle_id": "com.manytricks.Moom",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/moom.png"
+  }
 }

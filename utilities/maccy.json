@@ -5,7 +5,7 @@
   "website": "https://maccy.app",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "14",
+  "min_os": "macOS 14.0",
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
@@ -37,5 +37,8 @@
   "category": "utilities",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.sindresorhus.MenuBarCalendar"
+  "bundle_id": "org.p0deje.Maccy",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/maccy.png"
+  }
 }

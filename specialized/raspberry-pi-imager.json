@@ -41,5 +41,8 @@
   "category": "specialized",
   "license": "free",
   "skip": false,
-  "bundle_id": "org.raspberrypi.ImagerV2"
+  "bundle_id": "com.raspberrypi.rpi-imager",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/raspberry-pi-imager.png"
+  }
 }

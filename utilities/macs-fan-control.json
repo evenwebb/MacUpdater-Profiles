@@ -40,5 +40,8 @@
   "category": "utilities",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.crystalidea.MacsFanControl"
+  "bundle_id": "com.crystalidea.macsfancontrol",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/macs-fan-control.png"
+  }
 }

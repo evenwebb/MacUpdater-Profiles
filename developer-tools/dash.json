@@ -5,7 +5,7 @@
   "website": "https://kapeli.com/dash",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "11",
+  "min_os": "macOS 10.13.9",
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
@@ -36,5 +36,8 @@
   "category": "developer-tools",
   "license": "paid",
   "skip": false,
-  "bundle_id": "com.kapeli.dashdoc"
+  "bundle_id": "com.kapeli.dashdoc",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/dash.png"
+  }
 }

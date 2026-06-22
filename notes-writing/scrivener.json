@@ -36,5 +36,8 @@
   "category": "notes-writing",
   "license": "paid",
   "skip": false,
-  "bundle_id": "com.literatureandlatte.scrivener3"
+  "bundle_id": "com.literatureandlatte.scrivener3",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/scrivener.png"
+  }
 }

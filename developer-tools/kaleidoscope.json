@@ -5,7 +5,7 @@
   "website": "https://kaleidoscope.app",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "13",
+  "min_os": "macOS 13.5",
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
@@ -36,5 +36,8 @@
   "category": "developer-tools",
   "license": "paid",
   "skip": false,
-  "bundle_id": "com.blackpixel.kaleidoscope"
+  "bundle_id": "app.kaleidoscope.v4",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/kaleidoscope.png"
+  }
 }

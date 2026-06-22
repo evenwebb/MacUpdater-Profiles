@@ -5,7 +5,7 @@
   "website": "https://netnewswire.com",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "15",
+  "min_os": "macOS 15.0",
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
@@ -39,5 +39,8 @@
   "category": "rss-reading",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.ranchero.NetNewsWire-Evergreen"
+  "bundle_id": "com.ranchero.NetNewsWire-Evergreen",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/netnewswire.png"
+  }
 }

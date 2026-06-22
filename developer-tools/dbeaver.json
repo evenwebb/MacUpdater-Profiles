@@ -39,5 +39,8 @@
   "category": "developer-tools",
   "license": "free",
   "skip": false,
-  "bundle_id": "org.jkiss.dbeaver"
+  "bundle_id": "org.jkiss.dbeaver.core.product",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/dbeaver.png"
+  }
 }

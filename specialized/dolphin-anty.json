@@ -5,7 +5,7 @@
   "website": "https://dolphin-anty.com",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "10.14",
+  "min_os": "macOS 11.0",
   "auto_updates": true,
   "version_check": {
     "method": "yaml_api",
@@ -44,5 +44,5 @@
   "category": "specialized",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.dolphin-anty.browser"
+  "bundle_id": "com.ru.dolphin.anty"
 }

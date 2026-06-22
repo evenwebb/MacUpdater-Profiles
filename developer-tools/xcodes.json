@@ -5,10 +5,10 @@
   "website": "https://github.com/XcodesOrg/XcodesApp",
   "platform": "macOS",
   "architecture": "universal",
-  "bundle_id": "com.robotsandpencils.XcodesApp",
+  "bundle_id": "com.xcodesorg.xcodesapp",
   "category": "developer-tools",
   "license": "free",
-  "min_os": "macOS 13.0",
+  "min_os": "macOS 14.6",
   "auto_updates": true,
   "skip": false,
   "version_check": {
@@ -32,5 +32,8 @@
     "method": "github_api",
     "field": "published_at"
   },
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-06-22",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/xcodes.png"
+  }
 }

@@ -37,5 +37,8 @@
   "category": "specialized",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.logitech.optionsplus"
+  "bundle_id": "com.logi.optionsplus.installer",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/logitech-options-plus.png"
+  }
 }

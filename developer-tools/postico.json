@@ -38,5 +38,8 @@
   "category": "developer-tools",
   "license": "paid",
   "skip": false,
-  "bundle_id": "at.eggerapps.Postico"
+  "bundle_id": "at.eggerapps.Postico",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/postico.png"
+  }
 }

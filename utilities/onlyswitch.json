@@ -5,10 +5,10 @@
   "website": "https://github.com/jacklandrin/OnlySwitch",
   "platform": "macOS",
   "architecture": "universal",
-  "bundle_id": "com.jacklandrin.OnlySwitch",
+  "bundle_id": "jacklandrin.OnlySwitch",
   "category": "utilities",
   "license": "free",
-  "min_os": "macOS 12.0",
+  "min_os": "macOS 14.0",
   "auto_updates": true,
   "skip": false,
   "version_check": {
@@ -32,5 +32,8 @@
     "method": "github_api",
     "field": "published_at"
   },
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-06-22",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/onlyswitch.png"
+  }
 }

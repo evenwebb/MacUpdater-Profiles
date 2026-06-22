@@ -5,7 +5,7 @@
   "website": "https://www.epicgames.com",
   "platform": "macOS",
   "architecture": "x86_64",
-  "min_os": "13",
+  "min_os": "macOS 13.00",
   "auto_updates": true,
   "version_check": {
     "method": "redirect_trace",
@@ -35,5 +35,8 @@
   "category": "gaming",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.epicgames.EpicGamesLauncher"
+  "bundle_id": "com.epicgames.EpicGamesLauncher",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/epic-games-launcher.png"
+  }
 }

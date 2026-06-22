@@ -5,7 +5,7 @@
   "website": "https://culturedcode.com/things",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "macOS 12",
+  "min_os": "macOS 10.15.0",
   "auto_updates": true,
   "version_check": {
     "method": "itunes_api",
@@ -36,5 +36,8 @@
   "category": "notes-writing",
   "license": "paid",
   "skip": false,
-  "bundle_id": "com.culturedcode.ThingsMac"
+  "bundle_id": "com.culturedcode.ThingsMac",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/things.png"
+  }
 }

@@ -38,5 +38,8 @@
   "category": "utilities",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.macpaw.site.theunarchiver"
+  "bundle_id": "com.macpaw.site.theunarchiver",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/the-unarchiver.png"
+  }
 }

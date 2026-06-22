@@ -5,7 +5,7 @@
   "website": "https://sipapp.io",
   "platform": "macOS",
   "architecture": "separate",
-  "min_os": "13.0",
+  "min_os": "macOS 14.0",
   "auto_updates": true,
   "version_check": {
     "protocol": "sparkle",
@@ -38,5 +38,8 @@
   "license": "paid",
   "skip": false,
   "file_type": "dmg",
-  "bundle_id": "com.sipapp.Sip"
+  "bundle_id": "io.sipapp.Sip-paddle",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/sip.png"
+  }
 }
