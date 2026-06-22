@@ -39,5 +39,8 @@
   "category": "utilities",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.knollsoft.Rectangle"
+  "bundle_id": "com.knollsoft.Rectangle",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/rectangle.png"
+  }
 }

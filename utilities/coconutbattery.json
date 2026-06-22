@@ -30,5 +30,8 @@
     "field": null
   },
   "notes": "Sparkle-based updates. Filter out beta versions from appcast. Latest download URL uses 'coconutBattery_4_latest.zip'.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-21",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/coconutbattery.png"
+  }
 }

@@ -38,5 +38,8 @@
   "category": "specialized",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.balena.etcher"
+  "bundle_id": "com.balena.etcher",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/balenaetcher.png"
+  }
 }

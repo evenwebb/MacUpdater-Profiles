@@ -36,5 +36,8 @@
   "category": "media",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.obsproject.obs-studio"
+  "bundle_id": "com.obsproject.obs-studio",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/obs-studio.png"
+  }
 }

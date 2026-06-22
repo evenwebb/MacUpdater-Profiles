@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": 2,
-  "updated": "2026-06-22T16:40:12Z",
+  "updated": "2026-06-22T16:55:20Z",
   "total_profiles": 302,
   "apps": {
     "1password": {
@@ -108,7 +108,9 @@
       "name": "Alacritty",
       "bundle_id": "org.alacritty",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/alacritty.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/alacritty.json",
@@ -208,7 +210,9 @@
       "name": "Arc",
       "bundle_id": "company.thebrowser.Browser",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/arc.png"
+      },
       "category": "browsers",
       "license": "free",
       "path": "browsers/arc.json",
@@ -258,7 +262,9 @@
       "name": "BalenaEtcher",
       "bundle_id": "com.balena.etcher",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/balenaetcher.png"
+      },
       "category": "specialized",
       "license": "free",
       "path": "specialized/balenaetcher.json",
@@ -538,7 +544,9 @@
       "name": "coconutBattery",
       "bundle_id": "com.coconut-flavour.coconutBattery-Menu",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/coconutbattery.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/coconutbattery.json",
@@ -1218,7 +1226,9 @@
       "name": "iTerm2",
       "bundle_id": "com.googlecode.iterm2",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/iterm2.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/iterm2.json",
@@ -1298,7 +1308,9 @@
       "name": "Keka",
       "bundle_id": "com.aone.keka",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/keka.png"
+      },
       "category": "design",
       "license": "free",
       "path": "design/keka.json",
@@ -1748,7 +1760,9 @@
       "name": "Mos",
       "bundle_id": "com.caldis.Mos",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/mos.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/mos.json",
@@ -1838,7 +1852,9 @@
       "name": "OBS Studio",
       "bundle_id": "com.obsproject.obs-studio",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/obs-studio.png"
+      },
       "category": "media",
       "license": "free",
       "path": "media/obs-studio.json",
@@ -2200,7 +2216,9 @@
       "name": "Rectangle",
       "bundle_id": "com.knollsoft.Rectangle",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/rectangle.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/rectangle.json",
@@ -2490,7 +2508,9 @@
       "name": "Stats",
       "bundle_id": "eu.exelban.Stats",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/stats.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/stats.json",
@@ -2500,7 +2520,9 @@
       "name": "Steam",
       "bundle_id": "com.valvesoftware.steam",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/steam.png"
+      },
       "category": "gaming",
       "license": "free",
       "path": "gaming/steam.json",

@@ -37,5 +37,8 @@
   "category": "browsers",
   "license": "free",
   "skip": false,
-  "bundle_id": "company.thebrowser.Browser"
+  "bundle_id": "company.thebrowser.Browser",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/arc.png"
+  }
 }
