@@ -25,6 +25,16 @@
       "items": { "type": "string" },
       "description": "Additional bundle IDs for related apps (Safari extensions, Setapp variants, renamed apps)"
     },
+    "icons": {
+      "type": "object",
+      "description": "Typed icon sources in priority order",
+      "properties": {
+        "app_store_id": { "type": "string", "description": "Apple App Store numeric ID for 512px artwork API" },
+        "direct_url": { "type": "string", "description": "Static icon URL (CDN, raw GitHub, etc.)" },
+        "github_repo": { "type": "string", "description": "GitHub owner/repo for repo avatar fallback" },
+        "website": { "type": "string", "description": "App homepage domain for favicon derivation" }
+      }
+    },
     "category": {
       "type": "string",
       "enum": [

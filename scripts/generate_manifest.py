@@ -30,6 +30,7 @@ def main():
                 "name": data.get("name", slug),
                 "bundle_id": data.get("bundle_id"),
                 "alternate_bundle_ids": data.get("alternate_bundle_ids", []),
+                "icons": data.get("icons", {}),
                 "category": d.name,
                 "license": data.get("license", "free"),
                 "path": str(f.relative_to(REPO)),
