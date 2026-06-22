@@ -8,15 +8,16 @@
   "bundle_id": "net.sourceforge.grandperspectiv",
   "category": "utilities",
   "license": "free",
-  "min_os": "macOS 10.13",
+  "min_os": "macOS 11.0",
   "auto_updates": false,
   "skip": false,
   "version_check": {
     "method": "sourceforge_json",
-    "url": "https://sourceforge.net/projects/grandperspectiv/best_release.json",
+    "url": "https://sourceforge.net/projects/grandperspectiv/rss?path=/grandperspective",
     "extraction": {
       "type": "json_path",
-      "path": "release.filename"
+      "path": "release.filename",
+      "pattern": "url=.*?/GrandPerspective[._-]v?(\\d+(?:\\.\\d+)+)\\.dmg"
     }
   },
   "download": {

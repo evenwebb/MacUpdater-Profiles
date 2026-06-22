@@ -1,40 +1,32 @@
 {
   "name": "Transmit",
   "slug": "transmit",
-  "description": "FTP client",
+  "description": "The gold standard of macOS file transfer apps \u2014 FTP, SFTP, WebDAV, and cloud storage all in one",
   "website": "https://panic.com/transmit",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "13.0",
-  "auto_updates": true,
-  "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://download.panic.com/transmit/Transmit%205.xml",
-    "extraction": {
-      "type": "sparkle_version",
-      "pattern": null
-    },
-    "headers": {}
-  },
-  "download": {
-    "method": "fixed_url",
-    "file_type": "zip",
-    "headers": {},
-    "url": "https://download.panic.com/transmit/Transmit-5-Latest.zip"
-  },
-  "changelog": {
-    "method": "fixed_url",
-    "url": "https://help.panic.com/releasenotes/transmit5"
-  },
-  "release_date": {
-    "method": "pubDate",
-    "field": "pubDate"
-  },
-  "notes": "Sparkle appcast likely at https://download.panic.com/transmit/Transmit%205.xml. CDN (CloudFront-backed) may have anti-bot protection. Paid ($45). PubDate in appcast.",
-  "last_updated": "2026-06-21",
-  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "bundle_id": "com.panic.Transmit5",
   "category": "developer-tools",
   "license": "paid",
+  "min_os": "macOS 13.0",
+  "auto_updates": true,
   "skip": false,
-  "bundle_id": "com.panic.Transmit"
+  "version_check": {
+    "method": "sparkle_appcast",
+    "url": "https://www.panic.com/updates/update.php?appName=Transmit%205&appVersion=5",
+    "extraction": {
+      "type": "xpath",
+      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://download.panic.com/transmit/Transmit-5-Latest.zip",
+    "file_type": "zip"
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://panic.com/transmit/releasenotes"
+  },
+  "last_updated": "2026-06-22"
 }

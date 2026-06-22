@@ -10,23 +10,19 @@
   "license": "free",
   "min_os": "macOS 10.12",
   "auto_updates": false,
-  "skip": false,
+  "skip": true,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://www.mediaatelier.com/CheatSheet",
-    "extraction": {
-      "type": "regex",
-      "pattern": "CheatSheet\\s+(\\d+\\.\\d+(?:\\.\\d+)?)"
-    }
+    "method": "none"
   },
   "download": {
     "method": "direct_url",
-    "url": "https://www.mediaatelier.com/CheatSheet",
+    "url": "",
     "file_type": "dmg"
   },
   "changelog": {
     "method": "web_scrape",
     "url": "https://www.mediaatelier.com/CheatSheet"
   },
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-06-22",
+  "notes": "DISCONTINUED \u2014 App abandoned by developer (mediaatelier.com redirects to GrandTotal). Homebrew cask deprecated 2024-11. Last version: 1.6.4. Use an alternative like KeyCue or the built-in macOS CheatSheet."
 }

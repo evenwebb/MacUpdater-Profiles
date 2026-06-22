@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": 2,
-  "updated": "2026-06-22T10:32:40Z",
+  "updated": "2026-06-22T10:34:52Z",
   "total_profiles": 270,
   "apps": {
     "1password": {
@@ -354,7 +354,7 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/cheatsheet.json",
-      "skip": false
+      "skip": true
     },
     "chromium": {
       "name": "Chromium",
@@ -1598,7 +1598,7 @@
     },
     "screenflow": {
       "name": "ScreenFlow",
-      "bundle_id": "net.telestream.screenflow",
+      "bundle_id": "net.telestream.screenflow10",
       "category": "media",
       "license": "paid",
       "path": "media/screenflow.json",
@@ -1950,7 +1950,7 @@
     },
     "transmit": {
       "name": "Transmit",
-      "bundle_id": "com.panic.Transmit",
+      "bundle_id": "com.panic.Transmit5",
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/transmit.json",

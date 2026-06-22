@@ -5,7 +5,7 @@
   "website": "https://www.telestream.net/screenflow",
   "platform": "macOS",
   "architecture": "universal",
-  "bundle_id": "net.telestream.screenflow",
+  "bundle_id": "net.telestream.screenflow10",
   "category": "media",
   "license": "paid",
   "min_os": "macOS 11.0",
@@ -13,7 +13,7 @@
   "skip": false,
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "http://www.telestream.net/updates/screenflow/appcast.xml",
+    "url": "https://www.telestream.net/updater/screenflow/appcast.xml",
     "extraction": {
       "type": "xpath",
       "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']"

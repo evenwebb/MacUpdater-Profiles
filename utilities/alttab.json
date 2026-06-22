@@ -8,15 +8,16 @@
   "bundle_id": "com.lwouis.alt-tab-macos",
   "category": "utilities",
   "license": "free",
-  "min_os": "macOS 10.15",
+  "min_os": "macOS 10.13",
   "auto_updates": true,
   "skip": false,
   "version_check": {
-    "method": "github_api",
-    "url": "https://api.github.com/repos/lwouis/alt-tab-macos/releases/latest",
+    "method": "sparkle_appcast",
+    "url": "https://alt-tab.app/appcast.xml",
     "extraction": {
-      "type": "json_path",
-      "path": "tag_name"
+      "type": "xpath",
+      "path": "tag_name",
+      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']"
     }
   },
   "download": {
