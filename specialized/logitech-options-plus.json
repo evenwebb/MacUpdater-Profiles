@@ -32,9 +32,10 @@
     "field": "lastModified (ISO 8601, e.g., 2026-06-09T15:44:02Z)"
   },
   "notes": "No public Sparkle (internal only, 403-blocked). appId incremented per macOS version (optionsplus3\u21925). Requires sudo to install. Unversioned download URL is canonical; versioned URLs return 404 for current versions.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.logitech.optionsplus"
 }

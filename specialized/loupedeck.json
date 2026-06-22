@@ -35,9 +35,10 @@
     "note": "Last-Modified header on downloads page is best proxy \u2014 no explicit dates on page"
   },
   "notes": "Acquired by Logitech in 2023. End-of-sales announced, but software still available. Hosted on HubSpot (support.loupedeck.com). Clean HTML, no Cloudflare. Two version formats: display (6.3.0) and full build (6.3.0.340). Supports CT, Live, Live S, Loupedeck+, Razer Stream Controller.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.loupedeck.Loupedeck"
 }

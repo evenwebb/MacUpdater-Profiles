@@ -34,9 +34,10 @@
     "field": "releaseDate in latest-mac.yml"
   },
   "notes": "Electron-builder auto-update YAML. ZIP variant also available. The YAML is publicly accessible with no auth required.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.canva.CanvaDesktop"
 }

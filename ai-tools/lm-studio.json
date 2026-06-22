@@ -1,7 +1,7 @@
 {
   "name": "LM Studio",
   "slug": "lm-studio",
-  "bundle_id": "com.elementlabs.lmstudio",
+  "bundle_id": "ai.elementlabs.lmstudio",
   "category": "ai-tools",
   "license": "free",
   "description": "Desktop app for running local LLMs on Mac",
@@ -12,13 +12,13 @@
   "auto_updates": false,
   "skip": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://lmstudio.ai/download",
+    "method": "json_api",
+    "url": "https://lmstudio.ai/api/releases/latest",
     "extraction": {
-      "type": "regex",
-      "pattern": "LM Studio (\\d+\\.\\d+\\.\\d+)"
+      "type": "json_path",
+      "path": "version"
     },
-    "headers": {}
+    "note": "LM Studio download page scraping no longer reliable. If JSON API unavailable, fall back to https://api.github.com/repos/lmstudio-ai/lmstudio/releases/latest"
   },
   "download": {
     "method": "construct_url",
@@ -35,6 +35,6 @@
     "method": "http_last_modified",
     "url": "download redirect"
   },
-  "notes": "Electron app, closed source. Update check API endpoint not publicly documented. Download redirect gives latest version DMG.",
+  "notes": "bundle_id changed from com.elementlabs.lmstudio to ai.elementlabs.lmstudio. Version check changed from HTML scrape to JSON API.",
   "last_updated": "2026-06-21"
 }

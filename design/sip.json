@@ -32,10 +32,11 @@
     "format": "ISO 8601"
   },
   "notes": "DigitalOcean Spaces (Frankfurt). Legacy v2/v3 at same path. Inline release notes in CDATA.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "paid",
   "skip": false,
-  "file_type": "dmg"
+  "file_type": "dmg",
+  "bundle_id": "com.sipapp.Sip"
 }

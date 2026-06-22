@@ -33,9 +33,10 @@
     "field": "published_at"
   },
   "notes": "Open source (Apache-2.0). Separate architecture builds (arm64 and x64) \u2014 no universal build. GitHub releases API for version, download, and changelog. Changelog from GitHub release body. Default download is arm64 DMG.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.balena.etcher"
 }

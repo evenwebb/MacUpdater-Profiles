@@ -41,9 +41,10 @@
     "note": "Each version entry includes release date"
   },
   "notes": "Public Sparkle feed available. Product page also displays version prominently. Free app from CoreCode (same developer as MacUpdater). 'Technical support no longer available.' Last release: November 2024 (infrequent updates). Homebrew cask available.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.corecode.UninstallPKG"
 }

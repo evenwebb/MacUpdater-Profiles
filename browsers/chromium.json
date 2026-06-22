@@ -1,7 +1,7 @@
 {
   "name": "Chromium",
   "slug": "chromium",
-  "bundle_id": null,
+  "bundle_id": "org.chromium.Chromium",
   "category": "browsers",
   "license": "free",
   "description": "Chromium is the open-source browser project that forms the basis for Google Chrome and many other browsers.",
@@ -30,5 +30,5 @@
     "field": null
   },
   "notes": "Snapshot builds from Chromium build server. No built-in auto-updater; version check uses redirect following to determine latest build.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-22"
 }

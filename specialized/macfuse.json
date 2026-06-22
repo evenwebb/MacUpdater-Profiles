@@ -35,9 +35,10 @@
     "field": "published_at (ISO 8601)"
   },
   "notes": "Old Sparkle appcast at osxfuse.github.io/appcast.xml is dead (302 to homepage). GitHub Releases API is the canonical source. Name history: OSXFUSE \u2192 FUSE for macOS \u2192 macFUSE. Old repo osxfuse/osxfuse redirects to macfuse/macfuse. Checksum file: macfuse-{VERSION}.sha256.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.google.macfuse"
 }

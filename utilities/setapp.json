@@ -35,9 +35,10 @@
     "field": "pubDate in appcast <item>"
   },
   "notes": "Uses Sparkle via devmate.com CDN. Build number and numeric ID both change per release. The latest-download redirect is: https://go.setapp.com/download/client. Homebrew cask available. DevMate CDN is publicly accessible (S3).",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.setapp.DesktopClient"
 }

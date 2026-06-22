@@ -31,9 +31,10 @@
     "field": ".pub_date in Sparkle 2 JSON response"
   },
   "notes": "Uses Sparkle 2 (JSON-based appcast format, not XML). Update API returns JSON with .version, .url, .pub_date fields. Formerly known as 'Windsurf Editor' by Codeium. Also available on Windows and Linux.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.codeium.windsurf"
 }

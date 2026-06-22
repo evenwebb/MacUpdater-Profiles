@@ -39,9 +39,10 @@
     "note": "Native Mac app frozen since March 2023. Catalyst version via App Store API releaseDate."
   },
   "notes": "No Sparkle. No public version API. Native Mac app (v1.40) appears frozen since Mar 2023. Amazon shifted to Catalyst Mac App Store version (v7.61, ID 302584613). Two distinct apps: native (com.amazon.Kindle) and Catalyst (com.amazon.Lassen). Must use browser User-Agent to avoid 503 from Amazon.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "office",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.amazon.Kindle"
 }

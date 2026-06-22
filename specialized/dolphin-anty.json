@@ -39,9 +39,10 @@
     "field": "releaseDate in YAML"
   },
   "notes": "Version uses date-based scheme YYYY.DDD.BUILD. Website is WordPress+Cloudflare but CDN mirrors have CORS headers and work programmatically. Mirror host resolved at page-load by racing GET requests; mirror3.com usually fastest.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.dolphin-anty.browser"
 }

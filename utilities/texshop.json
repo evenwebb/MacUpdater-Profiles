@@ -1,7 +1,7 @@
 {
   "name": "TeXShop",
   "slug": "texshop",
-  "bundle_id": null,
+  "bundle_id": "com.kapeli.TeXShop",
   "category": "utilities",
   "license": "free",
   "description": "TeXShop is a free TeX previewer and editor for macOS, providing a native Mac interface for writing LaTeX documents with integrated PDF preview.",
@@ -30,5 +30,5 @@
     "field": null
   },
   "notes": "Hosted on university pages. No auto-updater. Version and download URL must be scraped. Requires MacTeX or similar TeX distribution. Download may be dmg or zip.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-22"
 }

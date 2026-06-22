@@ -33,9 +33,10 @@
     "field": "currentVersionReleaseDate"
   },
   "notes": "Mac App Store exclusive (id1289583905). No direct download or Sparkle feed available. Acquired by Apple (announced November 2024), so no longer sold but existing users continue to receive updates. Version data only retrievable via iTunes Search API. Paid app (one-time purchase).",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.pixelmator.PixelmatorPro"
 }

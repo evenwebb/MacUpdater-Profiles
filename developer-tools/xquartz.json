@@ -41,9 +41,10 @@
     "fallback": "published_at from GitHub API"
   },
   "notes": "Sparkle-based with EdDSA signatures. RC feed includes both betas and stable \u2014 filter by title. sparkle:version uses encoded numbering (e.g., 2.8.57 for 2.8.5). Universal binary (Intel + ARM64). Was .dmg for 2.8.2 and earlier, now .pkg.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "org.macosforge.xquartz.X11"
 }

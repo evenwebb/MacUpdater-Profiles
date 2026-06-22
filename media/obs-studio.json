@@ -31,9 +31,10 @@
     "field": "published_at"
   },
   "notes": "Open source (GPLv2). Native Apple Silicon support since v28.0. Uses GitHub Releases for distribution. Has a built-in updater (Sparkle-based in older versions, may have migrated). Also available on Windows and Linux. GitHub Releases page includes detailed release notes. Assets for macOS include both .dmg and sometimes .pkg installers.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "media",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.obsproject.obs-studio"
 }

@@ -31,9 +31,10 @@
     "field": "published_at"
   },
   "notes": "Sparkle 2. Appcast embedded in app (likely raw GitHub Releases URL). Open source (MIT). Also available via Homebrew.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.sequel-ace.Sequel-Ace"
 }

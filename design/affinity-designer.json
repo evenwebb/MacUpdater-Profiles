@@ -34,9 +34,10 @@
     "field": "pubDate"
   },
   "notes": "Paid app (one-time purchase). Same Serif/Affinity V2 product line as Photo and Publisher. All three share the same appcast URL pattern on s3.amazonaws.com. Mac App Store version uses /mac/mas/<product>/ path. Also available on Mac App Store.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.seriflabs.affinitydesigner"
 }

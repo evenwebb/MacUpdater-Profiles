@@ -31,9 +31,10 @@
     "note": "Captured alongside version: 'X.Y released DATE'"
   },
   "notes": "SEPARATE VERSIONS PER macOS RELEASE. TinkerTool 11 for macOS 26 Tahoe, v10 for Ventura/Sonoma/Sequoia, v8 for Big Sur/Monterey, v7 for Mojave/Catalina. No version 9 exists. Download requires CSRF anti-leeching sequence. No Sparkle, no API. File always named TinkerTool.dmg.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.bresink.system.tinkertool"
 }

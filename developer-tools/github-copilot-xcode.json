@@ -31,9 +31,10 @@
     "field": "published_at"
   },
   "notes": "Open source project hosted on GitHub. Uses GitHub Releases API for version tracking, download, and changelog. Not a standalone app \u2014 requires Xcode. No auto-update mechanism (manual download and install). Universal binary (Apple Silicon and Intel).",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.github.copilot.xcode"
 }

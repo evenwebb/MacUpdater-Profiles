@@ -1,7 +1,7 @@
 {
   "name": "Wine",
   "slug": "wine",
-  "bundle_id": null,
+  "bundle_id": "org.winehq.Wine",
   "category": "utilities",
   "license": "free",
   "description": "Wine (Wine Is Not an Emulator) is a compatibility layer capable of running Windows applications on macOS and Linux by translating Windows API calls into POSIX calls.",
@@ -30,5 +30,5 @@
     "field": null
   },
   "notes": "Distributed as PKG installer. No auto-updater. Version must be scraped from winehq.org homepage. Third-party builds like WineBottler or CrossOver may be preferred on macOS.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-22"
 }

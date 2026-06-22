@@ -34,9 +34,10 @@
     "field": "pubDate"
   },
   "notes": "Paid app (one-time purchase with free trial). Direct download from flyingmeat.com. Uses standard Sparkle appcast for version checking and updates. Download URL is static (Acorn.zip) and always serves the latest version. Also available on Mac App Store.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.flyingmeat.Acorn8"
 }

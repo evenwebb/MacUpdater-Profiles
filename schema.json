@@ -20,6 +20,11 @@
     "bundle_id": {
       "type": "string"
     },
+    "alternate_bundle_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Additional bundle IDs for related apps (Safari extensions, Setapp variants, renamed apps)"
+    },
     "category": {
       "type": "string",
       "enum": [

@@ -36,9 +36,10 @@
     "field": "published_at in GitHub release JSON"
   },
   "notes": "Also available via brew install --cask raspberry-pi-imager. GitHub API is the most reliable source (no auth needed, 60 req/hr unauthenticated, 5000 with token). Use conditional requests (ETag/If-None-Match) to avoid consuming rate limit.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "org.raspberrypi.ImagerV2"
 }

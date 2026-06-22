@@ -40,6 +40,7 @@
   "category": "media",
   "license": "free",
   "skip": false,
-  "last_updated": "2026-06-21",
-  "slug": "xld"
+  "last_updated": "2026-06-22",
+  "slug": "xld",
+  "bundle_id": "org.tmkk.XLD"
 }

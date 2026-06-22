@@ -30,10 +30,11 @@
     "field": "results[0].currentVersionReleaseDate"
   },
   "notes": "Mac App Store only (id 1225570693). No direct download available. app_store_only: true. Subscription-based.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "notes-writing",
   "license": "paid",
   "skip": false,
-  "file_type": "app"
+  "file_type": "app",
+  "bundle_id": "com.soulmen.ulysses-pad"
 }

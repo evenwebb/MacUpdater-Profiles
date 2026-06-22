@@ -55,6 +55,7 @@
   "category": "design",
   "license": "paid",
   "skip": false,
-  "last_updated": "2026-06-21",
-  "slug": "photobulk"
+  "last_updated": "2026-06-22",
+  "slug": "photobulk",
+  "bundle_id": "com.eltima.PhotoBulk"
 }

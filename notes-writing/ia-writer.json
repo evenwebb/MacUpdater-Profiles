@@ -31,9 +31,10 @@
     "field": "pubDate in Sparkle XML, or iTunes API results[0].currentVersionReleaseDate"
   },
   "notes": "Available on Mac App Store (id 775737590) and as direct download. Direct download uses Sparkle (SUFeedURL in Info.plist). Appcast URL contains major version number. Paid-once pricing model.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "notes-writing",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.informationarchitects.iaWriter"
 }

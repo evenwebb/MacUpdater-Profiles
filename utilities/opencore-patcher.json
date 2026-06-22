@@ -1,7 +1,7 @@
 {
   "name": "OpenCore Legacy Patcher",
   "slug": "opencore-legacy-patcher",
-  "bundle_id": null,
+  "bundle_id": "com.dortania.opencore-legacy-patcher",
   "category": "utilities",
   "license": "free",
   "description": "OpenCore Legacy Patcher is a tool that allows you to run newer versions of macOS on officially unsupported Mac hardware by patching system files and drivers.",

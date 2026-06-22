@@ -32,9 +32,10 @@
     "field": "Scrape blog post date from https://arc.net/blog or use HTTP Last-Modified of download URL"
   },
   "notes": "Developed by The Browser Company. Sparkle appcast URL is behind authentication/Cloudflare protection and not publicly accessible. Version and release date must be inferred from download metadata or blog scraping. Arc also has a Windows version (not covered by this profile).",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "browsers",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "company.thebrowser.Browser"
 }

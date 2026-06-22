@@ -33,9 +33,10 @@
     "field": "results[0].currentVersionReleaseDate in iTunes API JSON"
   },
   "notes": "Separate from Grammarly Desktop which has a direct-download DMG. This is the Safari extension version, distributed exclusively through the Mac App Store. iTunes Lookup API is free and requires no auth.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "email",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.grammarly.safari"
 }

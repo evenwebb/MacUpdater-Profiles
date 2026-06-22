@@ -33,9 +33,10 @@
     "field": "pubDate in appcast <item>"
   },
   "notes": "Distinct from Grammarly for Safari (Mac App Store exclusive). Uses phased rollouts (phasedRolloutInterval=25200 seconds = 7 hours). Feed typically contains 2 items. Use first item's enclosure URL.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "notes-writing",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.grammarly.DesktopEditor"
 }

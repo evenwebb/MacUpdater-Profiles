@@ -38,5 +38,6 @@
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.controld.utility"
 }

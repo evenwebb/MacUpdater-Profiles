@@ -31,10 +31,11 @@
     "field": "%cI"
   },
   "notes": "NOT a Sparkle/binary update mechanism. Git-based self-update. Version = git commit SHA. Auto-updates every 300 seconds (5 min). Profile is metadata about the package manager itself. Update via 'git ls-remote https://github.com/Homebrew/brew.git refs/heads/master' for version, 'git log -1 --format=%cI' for date.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",
   "license": "free",
   "skip": false,
-  "file_type": "n/a"
+  "file_type": "n/a",
+  "bundle_id": "sh.brew.homebrew"
 }

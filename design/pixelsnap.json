@@ -31,10 +31,11 @@
     "format": "RFC 2822"
   },
   "notes": "CloudFront from S3. Domain changed from getpixelsnap.com to pixelsnap.com. Old v1 appcast redirects to broken URL.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "paid",
   "skip": false,
-  "file_type": "dmg"
+  "file_type": "dmg",
+  "bundle_id": "com.getpixelsnap.PixelSnap2"
 }

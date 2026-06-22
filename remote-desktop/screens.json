@@ -40,6 +40,7 @@
   "category": "remote-desktop",
   "license": "free",
   "skip": false,
-  "last_updated": "2026-06-21",
-  "slug": "screens"
+  "last_updated": "2026-06-22",
+  "slug": "screens",
+  "bundle_id": "com.edovia.screens.mac"
 }

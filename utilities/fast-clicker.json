@@ -36,9 +36,10 @@
     "note": "Last-Modified header on ZIP is the only date signal. As of 2026-06: Sat, 07 Sep 2024 09:29:51 GMT \u2014 hasn't been updated in years."
   },
   "notes": "Extremely basic distribution. No Sparkle, no API, no versioned URLs, no Mac App Store. Hosted on Amazon S3 via CloudFront. The only way to detect version is download+extract Info.plist. To avoid downloading every check, compare Last-Modified or Content-Length headers first.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.fastclicker.app"
 }

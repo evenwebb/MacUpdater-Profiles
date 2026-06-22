@@ -33,9 +33,10 @@
     "field": "published_at"
   },
   "notes": "Open source (MPL-2.0). Universal build available. Separate AMD64 and ARM64 builds also available. GitHub releases API for version, download, and changelog. Changelog from GitHub release body. macOS 11 or later.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "cloud-backup",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.github.syncthing.macosx"
 }

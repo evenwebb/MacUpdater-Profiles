@@ -34,9 +34,10 @@
     "field": "pubDate"
   },
   "notes": "Paid app (one-time purchase). Serif uses V2 product line; V1 feeds may differ. The appcast URL pattern is /mac/retail/<product>/appcast.xml on s3.amazonaws.com. Mac App Store version uses /mac/mas/<product>/appcast.xml. Also available on Mac App Store.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.seriflabs.affinityphoto"
 }

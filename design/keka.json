@@ -33,9 +33,10 @@
     "field": "published_at"
   },
   "notes": "Open source (GPLv3). Also available on Mac App Store (paid, id470158793) to support development; direct download is free. Released via GitHub Releases with predictable download URL pattern. No built-in auto-update mechanism in the free version.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.aone.keka"
 }

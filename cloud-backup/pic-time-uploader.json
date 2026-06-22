@@ -35,9 +35,10 @@
     "note": "Use Last-Modified header on CDN PKG as proxy for release date"
   },
   "notes": "Auth-gated \u2014 the uploader is only accessible to logged-in Pic-Time users. The download page is behind the account dashboard. No Homebrew cask. No known Sparkle appcast or version endpoint. CDN directory listing is disabled. Version tracking requires downloading the PKG or monitoring modification time/checksum.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "cloud-backup",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.pic-time.uploader"
 }

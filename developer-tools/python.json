@@ -1,7 +1,7 @@
 {
   "name": "Python",
   "slug": "python",
-  "bundle_id": null,
+  "bundle_id": "org.python.python",
   "category": "developer-tools",
   "license": "free",
   "description": "Python is a high-level, general-purpose programming language. The macOS installer provides the official Python distribution from python.org.",
@@ -30,5 +30,5 @@
     "field": null
   },
   "notes": "Not an .app \u2014 system PKG installer. Installs to /Library/Frameworks/Python.framework. No built-in auto-updater.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-22"
 }

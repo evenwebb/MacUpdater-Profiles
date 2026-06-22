@@ -28,10 +28,11 @@
     "method": null
   },
   "notes": "Intel only (requires Rosetta 2 on Apple Silicon). Custom Blizzard Agent with SQLite DBs. Self-updating. No public version API exists. Download URL always returns latest installer.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "gaming",
   "license": "free",
   "skip": false,
-  "file_type": "dmg"
+  "file_type": "dmg",
+  "bundle_id": "com.blizzard.Battle.net"
 }

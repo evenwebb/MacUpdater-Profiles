@@ -34,9 +34,10 @@
     "field": "pubDate"
   },
   "notes": "Paid app (one-time purchase with free trial). By Noodlesoft (Paul Kim). Uses legacy Sparkle 1 with obfuscated download URLs in the appcast. The enclosure URL in the appcast may contain placeholder tokens that need to be resolved \u2014 scraping the appcast at check time is the only reliable way to get the download URL. Also available on Mac App Store.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.noodlesoft.Hazel"
 }

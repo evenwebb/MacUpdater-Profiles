@@ -36,9 +36,10 @@
     "field": "published_at in GitHub release JSON"
   },
   "notes": "Tag naming changed over time: was 'mac/X.Y.Z/build', now 'release/X.Y.Z/build'. Version format uses composite: major_version,build_number. Also available on Mac App Store (lookup with iTunes API). GitHub API rate limits: 60 req/hr unauthenticated, 5000 with token. Use conditional requests (ETag/If-None-Match) to avoid consuming rate limit.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "other",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "io.home-assistant.desktop"
 }

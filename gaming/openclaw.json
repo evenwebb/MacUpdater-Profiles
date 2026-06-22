@@ -34,9 +34,10 @@
     "field": "published_at in GitHub release JSON"
   },
   "notes": "NO macOS binary exists in releases. Latest release (v0.3) has Windows .zip only. Previous release (v0.0) had .deb/.rpm for Linux + Windows .zip. README lists macOS as supported but provides no build instructions. No Homebrew formula. Must build from source with SDL2 deps.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "gaming",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.openclaw.OpenClaw"
 }

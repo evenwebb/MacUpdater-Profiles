@@ -31,9 +31,10 @@
     "method": null
   },
   "notes": "No version API (no Sparkle, no JSON, no XML). Must scrape download page for version string. Download URL always redirects to latest CCC 7. Paid software with upgrade pricing. Changelog is blog-based.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "cloud-backup",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.bombich.ccc"
 }

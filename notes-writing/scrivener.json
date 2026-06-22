@@ -31,9 +31,10 @@
     "field": "pubDate"
   },
   "notes": "Sparkle appcast hosted on S3. S3 returns 403 without a referrer header \u2014 must set Referer header on requests. Also available on Mac App Store.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "notes-writing",
   "license": "paid",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.literatureandlatte.scrivener3"
 }

@@ -34,9 +34,10 @@
     "note": "Latest release: April 28, 2026"
   },
   "notes": "Uses Sparkle framework with publicly accessible appcast. Homebrew cask available (livecheck strategy: :sparkle). Assets hosted on rescuetime.com CDN (CloudFront). One of the easiest apps to track programmatically.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "cloud-backup",
   "license": "free",
-  "skip": false
+  "skip": false,
+  "bundle_id": "com.rescuetime.rescuetime"
 }

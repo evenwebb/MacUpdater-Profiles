@@ -77,6 +77,15 @@ for d in sorted(REPO.iterdir()):
             print(f"FAIL {rel}: missing required field 'slug'")
             errors += 1
 
+
+        # WARN on missing bundle_id for active profiles (matching depends on it)
+        if not data.get("skip") and not data.get("bundle_id"):
+            print(f"WARN {rel}: missing bundle_id — bundle-ID matching will fail")
+        elif data.get("bundle_id") and not data.get("skip"):
+            bid = data["bundle_id"]
+            if not all(part for part in bid.split(".")):
+                print(f"WARN {rel}: bundle_id '{bid}' looks malformed (should be reverse-DNS)")
+
 # Check manifest
 manifest_path = REPO / "manifest.json"
 if manifest_path.exists():

@@ -4,7 +4,7 @@
   "bundle_id": "io.raindrop.macapp",
   "category": "utilities",
   "license": "free",
-  "description": "Bookmark manager and web clipper — organize bookmarks with tags and collections",
+  "description": "Bookmark manager and web clipper \u2014 organize bookmarks with tags and collections",
   "website": "https://raindrop.io",
   "platform": "macOS",
   "architecture": "separate",
@@ -38,5 +38,8 @@
     "field": "published_at"
   },
   "notes": "Electron app using electron-updater with GitHub provider. Also has a latest-mac.yml manifest. Separate x64 and arm64 DMG downloads.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-21",
+  "alternate_bundle_ids": [
+    "io.raindrop.safari"
+  ]
 }
