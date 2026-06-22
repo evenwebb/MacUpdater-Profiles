@@ -45,7 +45,7 @@
     "url": "https://www.titanium-software.fr/en/onyx.html",
     "note": "Date in plain text near version number (e.g. 'June 15, 2026'). No structured date. Not on release page."
   },
-  "notes": "No Sparkle feed, no API, no XML/JSON endpoints. Pure HTML scraping only. Version is strictly coupled to macOS release \u2014 never use OnyX built for a different macOS version. App is NOT notarized (requires right-click Open). No Cloudflare protection.",
+  "notes": "No Sparkle feed, no API, no XML/JSON endpoints. Pure HTML scraping only. Version is strictly coupled to macOS release , never use OnyX built for a different macOS version. App is NOT notarized (requires right-click Open). No Cloudflare protection.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",

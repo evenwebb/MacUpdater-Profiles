@@ -1,7 +1,7 @@
 {
   "name": "KeepingYouAwake",
   "slug": "keepingyouawake",
-  "description": "Prevents your Mac from going to sleep \u2014 lightweight menu bar utility, the modern successor to Caffeine",
+  "description": "Prevents your Mac from going to sleep , lightweight menu bar utility, the modern successor to Caffeine",
   "website": "https://keepingyouawake.app",
   "platform": "macOS",
   "architecture": "universal",

@@ -37,6 +37,6 @@
     "method": "github_api",
     "field": "published_at"
   },
-  "notes": "Open source (AGPL). No Sparkle — uses GitHub Releases. Version check may also use Bambu Lab internal API for non-release builds. x86_64 only (Rosetta 2 on Apple Silicon).",
+  "notes": "Open source (AGPL). No Sparkle , uses GitHub Releases. Version check may also use Bambu Lab internal API for non-release builds. x86_64 only (Rosetta 2 on Apple Silicon).",
   "last_updated": "2026-06-21"
 }

@@ -35,7 +35,7 @@
     "source": null,
     "note": "UNCERTAIN: No confirmed machine-readable release date source. The what's-new page may include dates. The Sparkle appcast (if accessible) would provide pubDate."
   },
-  "notes": "Paid app from Readdle. Also available on the Mac App Store. UNCERTAINTY: Sparkle usage is likely but not confirmed \u2014 the exact Sparkle feed URL is not publicly documented. The direct download zip URL is for PDF Expert 3 (pem3 path component). Version detection without access to the Sparkle feed may require scraping or manual checking.",
+  "notes": "Paid app from Readdle. Also available on the Mac App Store. UNCERTAINTY: Sparkle usage is likely but not confirmed , the exact Sparkle feed URL is not publicly documented. The direct download zip URL is for PDF Expert 3 (pem3 path component). Version detection without access to the Sparkle feed may require scraping or manual checking.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",

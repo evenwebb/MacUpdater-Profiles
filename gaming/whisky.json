@@ -1,7 +1,7 @@
 {
   "name": "Whisky",
   "slug": "whisky",
-  "description": "Modern Wine wrapper for macOS \u2014 run Windows games and apps on Apple Silicon with a native SwiftUI interface",
+  "description": "Modern Wine wrapper for macOS , run Windows games and apps on Apple Silicon with a native SwiftUI interface",
   "website": "https://getwhisky.app",
   "platform": "macOS",
   "architecture": "universal",

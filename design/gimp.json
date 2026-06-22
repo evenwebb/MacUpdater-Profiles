@@ -1,7 +1,7 @@
 {
   "name": "GIMP",
   "slug": "gimp",
-  "description": "GNU Image Manipulation Program \u2014 free and open-source image editor",
+  "description": "GNU Image Manipulation Program , free and open-source image editor",
   "website": "https://www.gimp.org",
   "platform": "macOS",
   "architecture": "separate",

@@ -1,7 +1,7 @@
 {
   "name": "Shotcut",
   "slug": "shotcut",
-  "description": "Free, open source, cross-platform video editor \u2014 wide format support, native timeline editing, and 4K resolution support",
+  "description": "Free, open source, cross-platform video editor , wide format support, native timeline editing, and 4K resolution support",
   "website": "https://shotcut.org",
   "platform": "macOS",
   "architecture": "universal",

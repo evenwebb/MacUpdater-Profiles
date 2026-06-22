@@ -1,7 +1,7 @@
 {
   "name": "Zed",
   "slug": "zed",
-  "description": "High-performance, multiplayer code editor from the creators of Atom \u2014 written in Rust with GPU-accelerated rendering",
+  "description": "High-performance, multiplayer code editor from the creators of Atom , written in Rust with GPU-accelerated rendering",
   "website": "https://zed.dev",
   "platform": "macOS",
   "architecture": "universal",

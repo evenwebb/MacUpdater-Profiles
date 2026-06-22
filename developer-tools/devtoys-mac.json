@@ -1,7 +1,7 @@
 {
   "name": "DevToys",
   "slug": "devtoys-mac",
-  "description": "Swiss Army knife for developers \u2014 JSON/YAML formatter, regex tester, JWT decoder, hash generator, and 30+ more tools",
+  "description": "Swiss Army knife for developers , JSON/YAML formatter, regex tester, JWT decoder, hash generator, and 30+ more tools",
   "website": "https://devtoys.app",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "DaisyDisk",
   "slug": "daisydisk",
-  "description": "Disk space analyzer \u2014 visual sunburst map of storage usage with fast scanning",
+  "description": "Disk space analyzer , visual sunburst map of storage usage with fast scanning",
   "website": "https://daisydiskapp.com",
   "platform": "macOS",
   "architecture": "universal",

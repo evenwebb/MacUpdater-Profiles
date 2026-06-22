@@ -1,7 +1,7 @@
 {
   "name": "Ice",
   "slug": "ice-menu-bar",
-  "description": "Powerful menu bar manager for macOS \u2014 hide, show, and organize menu bar items with custom spacing and profiles",
+  "description": "Powerful menu bar manager for macOS , hide, show, and organize menu bar items with custom spacing and profiles",
   "website": "https://github.com/jordanbaird/Ice",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "Kdenlive",
   "slug": "kdenlive",
-  "description": "Open source video editor \u2014 multi-track editing, effects, transitions, and support for virtually all video formats",
+  "description": "Open source video editor , multi-track editing, effects, transitions, and support for virtually all video formats",
   "website": "https://kdenlive.org",
   "platform": "macOS",
   "architecture": "universal",

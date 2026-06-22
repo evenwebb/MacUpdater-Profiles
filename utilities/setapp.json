@@ -1,7 +1,7 @@
 {
   "name": "Setapp",
   "slug": "setapp",
-  "description": "Mac app subscription service \u2014 desktop client that manages Setapp collections and installs",
+  "description": "Mac app subscription service , desktop client that manages Setapp collections and installs",
   "website": "https://setapp.com",
   "platform": "macOS",
   "architecture": "universal",

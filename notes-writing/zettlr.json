@@ -1,7 +1,7 @@
 {
   "name": "Zettlr",
   "slug": "zettlr",
-  "description": "One-stop publication workbench \u2014 Markdown editor for academic writing with Zettelkasten, citations, and export",
+  "description": "One-stop publication workbench , Markdown editor for academic writing with Zettelkasten, citations, and export",
   "website": "https://www.zettlr.com",
   "platform": "macOS",
   "architecture": "universal",

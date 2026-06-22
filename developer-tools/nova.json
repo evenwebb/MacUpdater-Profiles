@@ -1,7 +1,7 @@
 {
   "name": "Nova",
   "slug": "nova",
-  "description": "Native Mac code editor from Panic \u2014 built for web development with first-class support for HTML, CSS, JS, PHP, Python, and more",
+  "description": "Native Mac code editor from Panic , built for web development with first-class support for HTML, CSS, JS, PHP, Python, and more",
   "website": "https://nova.app",
   "platform": "macOS",
   "architecture": "universal",

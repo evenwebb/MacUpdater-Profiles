@@ -4,7 +4,7 @@
   "bundle_id": "org.herf.Flux",
   "category": "utilities",
   "license": "free",
-  "description": "f.lux makes your computer screen's color adapt to the time of day \u2014 warm at night and like sunlight during the day \u2014 to reduce eye strain and improve sleep.",
+  "description": "f.lux makes your computer screen's color adapt to the time of day , warm at night and like sunlight during the day , to reduce eye strain and improve sleep.",
   "website": "https://justgetflux.com",
   "platform": "macOS",
   "architecture": "x86_64",

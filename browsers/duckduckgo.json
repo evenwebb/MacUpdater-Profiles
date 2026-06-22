@@ -1,7 +1,7 @@
 {
   "name": "DuckDuckGo Browser",
   "slug": "duckduckgo",
-  "description": "Privacy-focused web browser from DuckDuckGo \u2014 built-in tracker blocking, email protection, and Smarter Encryption",
+  "description": "Privacy-focused web browser from DuckDuckGo , built-in tracker blocking, email protection, and Smarter Encryption",
   "website": "https://duckduckgo.com/app",
   "platform": "macOS",
   "architecture": "universal",

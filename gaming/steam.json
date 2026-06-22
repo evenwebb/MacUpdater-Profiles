@@ -27,7 +27,7 @@
   "release_date": {
     "method": null
   },
-  "notes": "Intel only (requires Rosetta 2 on Apple Silicon). Self-updates on launch \u2014 no version API of any kind exists. Download URL always returns the latest DMG. Version only retrievable from installed app's Info.plist. macOS 10.15 or later.",
+  "notes": "Intel only (requires Rosetta 2 on Apple Silicon). Self-updates on launch , no version API of any kind exists. Download URL always returns the latest DMG. Version only retrievable from installed app's Info.plist. macOS 10.15 or later.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "gaming",

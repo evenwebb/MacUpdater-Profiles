@@ -1,7 +1,7 @@
 {
   "name": "Alacritty",
   "slug": "alacritty",
-  "description": "Cross-platform, GPU-accelerated terminal emulator \u2014 focused on simplicity and performance",
+  "description": "Cross-platform, GPU-accelerated terminal emulator , focused on simplicity and performance",
   "website": "https://alacritty.org",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "Transmit",
   "slug": "transmit",
-  "description": "The gold standard of macOS file transfer apps \u2014 FTP, SFTP, WebDAV, and cloud storage all in one",
+  "description": "The gold standard of macOS file transfer apps , FTP, SFTP, WebDAV, and cloud storage all in one",
   "website": "https://panic.com/transmit",
   "platform": "macOS",
   "architecture": "universal",

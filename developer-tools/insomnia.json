@@ -1,7 +1,7 @@
 {
   "name": "Insomnia",
   "slug": "insomnia",
-  "description": "Open-source API client for REST, GraphQL, and gRPC \u2014 design, debug, and test APIs with a beautiful interface",
+  "description": "Open-source API client for REST, GraphQL, and gRPC , design, debug, and test APIs with a beautiful interface",
   "website": "https://insomnia.rest",
   "platform": "macOS",
   "architecture": "universal",

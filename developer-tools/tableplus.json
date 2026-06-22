@@ -30,7 +30,7 @@
     "method": "webpage_scrape",
     "field": "Scrape date from changelog page or pubDate from appcast (if reachable)"
   },
-  "notes": "Paid application with free trial. Sparkle appcast URL is not publicly documented \u2014 likely at https://tableplus.com/release/macos/{version} or similar pattern. Also available on Mac App Store and Setapp. Universal binary.",
+  "notes": "Paid application with free trial. Sparkle appcast URL is not publicly documented , likely at https://tableplus.com/release/macos/{version} or similar pattern. Also available on Mac App Store and Setapp. Universal binary.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",

@@ -38,7 +38,7 @@
     "source": "Sparkle appcast (cdn.loom.com)",
     "note": "UNCERTAINTY: Not accessible publicly due to 403 on appcast feed."
   },
-  "notes": "Atlassian-acquired (2023). Uses Sparkle 2. The Sparkle appcast on cdn.loom.com is access-restricted \u2014 returns HTTP 403 without proper referrer/auth headers. Automated version checking is unreliable without reverse-engineering the CDN access requirements. The download page redirect pattern may be a more reliable (but indirect) method. UNCERTAINTIES: Exact appcast URL unknown. CDN access restrictions may change. In-app update checking may be the only fully reliable method.",
+  "notes": "Atlassian-acquired (2023). Uses Sparkle 2. The Sparkle appcast on cdn.loom.com is access-restricted , returns HTTP 403 without proper referrer/auth headers. Automated version checking is unreliable without reverse-engineering the CDN access requirements. The download page redirect pattern may be a more reliable (but indirect) method. UNCERTAINTIES: Exact appcast URL unknown. CDN access restrictions may change. In-app update checking may be the only fully reliable method.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",

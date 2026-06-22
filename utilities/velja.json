@@ -1,7 +1,7 @@
 {
   "name": "Velja",
   "slug": "velja",
-  "description": "Powerful browser picker for macOS \u2014 open links in the right browser or app with rules, prompts, and focus filters",
+  "description": "Powerful browser picker for macOS , open links in the right browser or app with rules, prompts, and focus filters",
   "website": "https://sindresorhus.com/velja",
   "platform": "macOS",
   "architecture": "universal",

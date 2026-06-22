@@ -1,7 +1,7 @@
 {
   "name": "LibreWolf",
   "slug": "librewolf",
-  "description": "Independent fork of Firefox with a focus on privacy, security, and freedom \u2014 no telemetry, no data collection",
+  "description": "Independent fork of Firefox with a focus on privacy, security, and freedom , no telemetry, no data collection",
   "website": "https://librewolf.net",
   "platform": "macOS",
   "architecture": "universal",

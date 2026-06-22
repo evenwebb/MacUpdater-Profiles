@@ -1,7 +1,7 @@
 {
   "name": "Beekeeper Studio",
   "slug": "beekeeper-studio",
-  "description": "Open-source SQL editor and database manager \u2014 supports MySQL, Postgres, SQLite, SQL Server, and more",
+  "description": "Open-source SQL editor and database manager , supports MySQL, Postgres, SQLite, SQL Server, and more",
   "website": "https://www.beekeeperstudio.io",
   "platform": "macOS",
   "architecture": "universal",

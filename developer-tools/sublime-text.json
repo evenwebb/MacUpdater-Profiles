@@ -30,7 +30,7 @@
     "method": "blog_scrape",
     "field": null
   },
-  "notes": "NOT Sparkle. Custom JSON update check. $.latest_version is integer (e.g. 4200). Incremental .pak.xz downloads; initial install uses .dmg. Unique update system with manifest files. Release date not in JSON \u2014 scrape blog.",
+  "notes": "NOT Sparkle. Custom JSON update check. $.latest_version is integer (e.g. 4200). Incremental .pak.xz downloads; initial install uses .dmg. Unique update system with manifest files. Release date not in JSON , scrape blog.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",

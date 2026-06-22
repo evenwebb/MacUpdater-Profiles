@@ -1,7 +1,7 @@
 {
   "name": "Background Music",
   "slug": "background-music",
-  "description": "Per-application volume control for macOS \u2014 automatically pause music when other audio starts playing",
+  "description": "Per-application volume control for macOS , automatically pause music when other audio starts playing",
   "website": "https://github.com/kyleneideck/BackgroundMusic",
   "platform": "macOS",
   "architecture": "universal",

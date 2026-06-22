@@ -4,7 +4,7 @@
   "bundle_id": "com.ookla.speedtest-macos",
   "category": "utilities",
   "license": "free",
-  "description": "Internet connection speed test — measure download, upload, and ping",
+  "description": "Internet connection speed test , measure download, upload, and ping",
   "website": "https://speedtest.net",
   "platform": "macOS",
   "architecture": "universal",

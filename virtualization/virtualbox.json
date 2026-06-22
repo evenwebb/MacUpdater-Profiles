@@ -34,7 +34,7 @@
     "method": "scrape_changelog_wiki",
     "note": "Parse from changelog wiki page near version header"
   },
-  "notes": "No build in LATEST.TXT \u2014 discover from directory listing at download.virtualbox.org/virtualbox/{version}/ or by reading SHA256SUMS. Intel uses 'OSX' suffix, Apple Silicon uses 'macOSArm64'. Also available: LATEST-STABLE.TXT (same as LATEST.TXT), LATEST-BETA.TXT.",
+  "notes": "No build in LATEST.TXT , discover from directory listing at download.virtualbox.org/virtualbox/{version}/ or by reading SHA256SUMS. Intel uses 'OSX' suffix, Apple Silicon uses 'macOSArm64'. Also available: LATEST-STABLE.TXT (same as LATEST.TXT), LATEST-BETA.TXT.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "virtualization",

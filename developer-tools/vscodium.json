@@ -1,7 +1,7 @@
 {
   "name": "VSCodium",
   "slug": "vscodium",
-  "description": "Free/Libre Open Source Software Binaries of VS Code \u2014 VS Code without Microsoft telemetry and branding",
+  "description": "Free/Libre Open Source Software Binaries of VS Code , VS Code without Microsoft telemetry and branding",
   "website": "https://vscodium.com",
   "platform": "macOS",
   "architecture": "universal",

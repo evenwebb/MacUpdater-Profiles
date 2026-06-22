@@ -1,7 +1,7 @@
 {
   "name": "Latest",
   "slug": "latest",
-  "description": "Free, open-source app for checking if your Mac apps are up to date \u2014 supports Sparkle, Homebrew, and App Store apps",
+  "description": "Free, open-source app for checking if your Mac apps are up to date , supports Sparkle, Homebrew, and App Store apps",
   "website": "https://max.codes/latest",
   "platform": "macOS",
   "architecture": "universal",

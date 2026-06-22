@@ -1,7 +1,7 @@
 {
   "name": "Standard Notes",
   "slug": "standard-notes",
-  "description": "Simple, private, end-to-end encrypted notes app \u2014 syncs across all your devices with a focus on longevity",
+  "description": "Simple, private, end-to-end encrypted notes app , syncs across all your devices with a focus on longevity",
   "website": "https://standardnotes.com",
   "platform": "macOS",
   "architecture": "universal",

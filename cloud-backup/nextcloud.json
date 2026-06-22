@@ -1,7 +1,7 @@
 {
   "name": "Nextcloud Desktop",
   "slug": "nextcloud",
-  "description": "Self-hosted productivity platform \u2014 sync, share, and collaborate on files, calendars, contacts, and more",
+  "description": "Self-hosted productivity platform , sync, share, and collaborate on files, calendars, contacts, and more",
   "website": "https://nextcloud.com",
   "platform": "macOS",
   "architecture": "universal",

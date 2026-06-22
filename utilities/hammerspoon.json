@@ -1,7 +1,7 @@
 {
   "name": "Hammerspoon",
   "slug": "hammerspoon",
-  "description": "Staggeringly powerful macOS automation tool \u2014 bridge between Lua scripting engine and macOS APIs for window management, keyboard shortcuts, and more",
+  "description": "Staggeringly powerful macOS automation tool , bridge between Lua scripting engine and macOS APIs for window management, keyboard shortcuts, and more",
   "website": "https://www.hammerspoon.org",
   "platform": "macOS",
   "architecture": "universal",

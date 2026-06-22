@@ -30,7 +30,7 @@
     "field": "currentVersionReleaseDate",
     "source": "https://itunes.apple.com/lookup?id=1236045954"
   },
-  "notes": "Proprietary. Mac App Store only \u2014 no direct download, no Sparkle. UNCERTAINTY: iTunes API longevity concern as with all App Store-only apps. The App Store Connect API (authenticated) would be the official replacement path.",
+  "notes": "Proprietary. Mac App Store only , no direct download, no Sparkle. UNCERTAINTY: iTunes API longevity concern as with all App Store-only apps. The App Store Connect API (authenticated) would be the official replacement path.",
   "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "email",

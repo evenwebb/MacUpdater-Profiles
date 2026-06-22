@@ -1,7 +1,7 @@
 {
   "name": "Mullvad VPN",
   "slug": "mullvad",
-  "description": "Privacy-focused VPN service \u2014 no email, no personal data required, pay anonymously with cash or crypto",
+  "description": "Privacy-focused VPN service , no email, no personal data required, pay anonymously with cash or crypto",
   "website": "https://mullvad.net",
   "platform": "macOS",
   "architecture": "universal",

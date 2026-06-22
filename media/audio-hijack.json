@@ -1,7 +1,7 @@
 {
   "name": "Audio Hijack",
   "slug": "audio-hijack",
-  "description": "Record any application's audio on your Mac \u2014 perfect for podcasts, streaming, and VoIP calls",
+  "description": "Record any application's audio on your Mac , perfect for podcasts, streaming, and VoIP calls",
   "website": "https://rogueamoeba.com/audiohijack",
   "platform": "macOS",
   "architecture": "universal",

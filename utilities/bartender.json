@@ -1,7 +1,7 @@
 {
   "name": "Bartender",
   "slug": "bartender",
-  "description": "Menu bar manager \u2014 hide, rearrange, and organize menu bar icons",
+  "description": "Menu bar manager , hide, rearrange, and organize menu bar icons",
   "website": "https://www.macbartender.com",
   "platform": "macOS",
   "architecture": "universal",
@@ -33,7 +33,7 @@
     "method": "sparkle_appcast",
     "field": "pubDate"
   },
-  "notes": "Paid app (Bartender 5 is the current version). Uses Sparkle for auto-updates. Also available via Mac App Store. Note: Bartender changed ownership in 2024 and underwent security scrutiny \u2014 users should verify the authenticity of updates. The appcast URL pattern assumes Bartender5 directory; older versions (Bartender 4, Bartender 3) used different paths.",
+  "notes": "Paid app (Bartender 5 is the current version). Uses Sparkle for auto-updates. Also available via Mac App Store. Note: Bartender changed ownership in 2024 and underwent security scrutiny , users should verify the authenticity of updates. The appcast URL pattern assumes Bartender5 directory; older versions (Bartender 4, Bartender 3) used different paths.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",

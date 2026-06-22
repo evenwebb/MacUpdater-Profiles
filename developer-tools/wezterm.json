@@ -1,7 +1,7 @@
 {
   "name": "WezTerm",
   "slug": "wezterm",
-  "description": "GPU-accelerated cross-platform terminal emulator and multiplexer \u2014 written in Rust with Lua configuration",
+  "description": "GPU-accelerated cross-platform terminal emulator and multiplexer , written in Rust with Lua configuration",
   "website": "https://wezfurlong.org/wezterm",
   "platform": "macOS",
   "architecture": "universal",

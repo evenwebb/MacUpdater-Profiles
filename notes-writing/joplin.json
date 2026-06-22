@@ -1,7 +1,7 @@
 {
   "name": "Joplin",
   "slug": "joplin",
-  "description": "Open source note-taking app \u2014 capture your thoughts and access them from any device",
+  "description": "Open source note-taking app , capture your thoughts and access them from any device",
   "website": "https://joplinapp.org",
   "platform": "macOS",
   "architecture": "separate",

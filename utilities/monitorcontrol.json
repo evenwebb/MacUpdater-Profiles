@@ -1,7 +1,7 @@
 {
   "name": "MonitorControl",
   "slug": "monitorcontrol",
-  "description": "MonitorControl is an open source utility that lets you control your external display brightness, contrast, and volume directly from macOS \u2014 using keyboard shortcuts or a menu bar slider. Works with DDC/CI compatible monitors and Apple displays.",
+  "description": "MonitorControl is an open source utility that lets you control your external display brightness, contrast, and volume directly from macOS , using keyboard shortcuts or a menu bar slider. Works with DDC/CI compatible monitors and Apple displays.",
   "website": "https://monitorcontrol.app",
   "platform": "macOS",
   "architecture": "universal",

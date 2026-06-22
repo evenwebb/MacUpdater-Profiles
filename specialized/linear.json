@@ -31,7 +31,7 @@
     "method": "webpage_scrape",
     "field": "Scrape date from https://linear.app/changelog"
   },
-  "notes": "Electron-based desktop app. Uses electron-updater framework \u2014 update API endpoint is not publicly documented. Version can be inferred from changelog or download page scraping. Universal binary. SaaS product with free and paid team plans.",
+  "notes": "Electron-based desktop app. Uses electron-updater framework , update API endpoint is not publicly documented. Version can be inferred from changelog or download page scraping. Universal binary. SaaS product with free and paid team plans.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",

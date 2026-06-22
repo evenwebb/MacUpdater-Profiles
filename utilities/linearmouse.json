@@ -1,7 +1,7 @@
 {
   "name": "LinearMouse",
   "slug": "linearmouse",
-  "description": "Mouse and trackpad utility for macOS \u2014 customize cursor acceleration, scrolling behavior, and button mappings",
+  "description": "Mouse and trackpad utility for macOS , customize cursor acceleration, scrolling behavior, and button mappings",
   "website": "https://linearmouse.app",
   "platform": "macOS",
   "architecture": "universal",

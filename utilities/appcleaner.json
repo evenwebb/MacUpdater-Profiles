@@ -29,5 +29,5 @@
     "url": "https://freemacsoft.net/appcleaner"
   },
   "last_updated": "2026-06-22",
-  "notes": "No Sparkle appcast \u2014 version must be scraped from the download page HTML. Download URL uses version in filename: AppCleaner_X.X.X.zip"
+  "notes": "No Sparkle appcast , version must be scraped from the download page HTML. Download URL uses version in filename: AppCleaner_X.X.X.zip"
 }

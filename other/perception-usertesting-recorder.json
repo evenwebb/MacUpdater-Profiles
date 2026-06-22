@@ -32,7 +32,7 @@
     "method": "app_store_api",
     "field": "results[0].currentVersionReleaseDate in iTunes API JSON"
   },
-  "notes": "Perception was the original branding (by UserZoom/Boltmade). UserTesting acquired it and renamed to 'UserTesting Recorder Extension.' Login required to access from the dashboard at app.usertesting.com. Help center at help.usertesting.com is behind Cloudflare bot protection (403 to WebFetch). No direct download URL \u2014 App Store only.",
+  "notes": "Perception was the original branding (by UserZoom/Boltmade). UserTesting acquired it and renamed to 'UserTesting Recorder Extension.' Login required to access from the dashboard at app.usertesting.com. Help center at help.usertesting.com is behind Cloudflare bot protection (403 to WebFetch). No direct download URL , App Store only.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",

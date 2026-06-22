@@ -34,7 +34,7 @@
     "url": "https://www.alfredapp.com/changelog/",
     "note": "Format: 'Build {build}, {day_name} {ordinal} {month} {year}'. Not in plist as machine-readable date."
   },
-  "notes": "Not Sparkle \u2014 custom Apple plist format. Keys: version (string), build (integer), location (download URL), fingerprint (checksum), changelogdata (embedded markdown). Alfred 4 and 3 use /update4/ and /update/ paths respectively.",
+  "notes": "Not Sparkle , custom Apple plist format. Keys: version (string), build (integer), location (download URL), fingerprint (checksum), changelogdata (embedded markdown). Alfred 4 and 3 use /update4/ and /update/ paths respectively.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",

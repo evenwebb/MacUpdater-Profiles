@@ -32,7 +32,7 @@
     "method": "sourceforge_json",
     "field": "platform_releases.mac.date"
   },
-  "notes": "No Sparkle. Built-in 'Check for Updates' is broken (bouncer service dead). x86-64 only, no native Apple Silicon. SourceForge 'latest' redirect points to OOo 3.3.0 from 2012 \u2014 do NOT use it. Very slow release cadence (~1 per year).",
+  "notes": "No Sparkle. Built-in 'Check for Updates' is broken (bouncer service dead). x86-64 only, no native Apple Silicon. SourceForge 'latest' redirect points to OOo 3.3.0 from 2012 , do NOT use it. Very slow release cadence (~1 per year).",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "office",

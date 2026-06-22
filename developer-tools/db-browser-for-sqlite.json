@@ -1,7 +1,7 @@
 {
   "name": "DB Browser for SQLite",
   "slug": "db-browser-for-sqlite",
-  "description": "Visual, open-source tool to create, design, and edit SQLite database files \u2014 no SQL knowledge required",
+  "description": "Visual, open-source tool to create, design, and edit SQLite database files , no SQL knowledge required",
   "website": "https://sqlitebrowser.org",
   "platform": "macOS",
   "architecture": "universal",

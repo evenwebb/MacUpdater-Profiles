@@ -29,6 +29,6 @@
     "method": "none",
     "field": null
   },
-  "notes": "Uses internal auto-updater. No public version API. Download page requires user interaction; actual download URL may use CDN redirects. Download page URL is uncertain \u2014 verify before use.",
+  "notes": "Uses internal auto-updater. No public version API. Download page requires user interaction; actual download URL may use CDN redirects. Download page URL is uncertain , verify before use.",
   "last_updated": "2026-06-22"
 }

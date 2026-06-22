@@ -32,7 +32,7 @@
     "field": "pubDate",
     "source": "https://sourceforge.net/projects/skim-app/rss?path=/Skim"
   },
-  "notes": "Open source (BSD-style license). Uses Sparkle for in-app updates (SUFeedURL in app bundle), but the Sparkle feed URL is not publicly documented \u2014 SourceForge RSS is the reliable public endpoint. UNCERTAINTY: The regex pattern for extracting version from RSS item titles may need adjustment if SourceForge changes their naming convention.",
+  "notes": "Open source (BSD-style license). Uses Sparkle for in-app updates (SUFeedURL in app bundle), but the Sparkle feed URL is not publicly documented , SourceForge RSS is the reliable public endpoint. UNCERTAINTY: The regex pattern for extracting version from RSS item titles may need adjustment if SourceForge changes their naming convention.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "rss-reading",

@@ -44,7 +44,7 @@
       "note": "Extracts version and date from text like '1.10.2 - Jun 10, 2026'. Use group 2 for date."
     }
   },
-  "notes": "Gmail only (no IMAP support). Subscription required. Apple Silicon native only \u2014 no Intel support. UNCERTAINTIES: The exact Sparkle feed URL is not publicly documented and must be extracted from the app bundle. Version detection via the releases page is a reliable fallback. The download redirect target may change format.",
+  "notes": "Gmail only (no IMAP support). Subscription required. Apple Silicon native only , no Intel support. UNCERTAINTIES: The exact Sparkle feed URL is not publicly documented and must be extracted from the app bundle. Version detection via the releases page is a reliable fallback. The download redirect target may change format.",
   "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "email",

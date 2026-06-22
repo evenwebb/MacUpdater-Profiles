@@ -1,7 +1,7 @@
 {
   "name": "yabai",
   "slug": "yabai",
-  "description": "Tiling window manager for macOS \u2014 automatic window tiling with keyboard shortcuts, spaces, and displays support",
+  "description": "Tiling window manager for macOS , automatic window tiling with keyboard shortcuts, spaces, and displays support",
   "website": "https://github.com/koekeishiya/yabai",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "GrandPerspective",
   "slug": "grandperspective",
-  "description": "Graphical disk usage utility for macOS \u2014 uses tree maps to visualize disk usage",
+  "description": "Graphical disk usage utility for macOS , uses tree maps to visualize disk usage",
   "website": "https://grandperspectiv.sourceforge.net",
   "platform": "macOS",
   "architecture": "universal",

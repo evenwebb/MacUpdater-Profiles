@@ -30,7 +30,7 @@
   "release_date": {
     "method": null
   },
-  "notes": "JSON API for version detection. Multiple legacy branches (mac11, mac7, etc.) \u2014 current branch is mac_qt. Download is a zip containing 'ExpressVPN Installer.app'. Requires sudo for installation. macOS 11 or later.",
+  "notes": "JSON API for version detection. Multiple legacy branches (mac11, mac7, etc.) , current branch is mac_qt. Download is a zip containing 'ExpressVPN Installer.app'. Requires sudo for installation. macOS 11 or later.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",

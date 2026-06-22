@@ -31,7 +31,7 @@
     "field": "currentVersionReleaseDate",
     "source": "https://itunes.apple.com/lookup?id=441258766"
   },
-  "notes": "Paid app. Mac App Store only \u2014 no direct download available (the developer's website confirms this). No Sparkle. UNCERTAINTY: iTunes API longevity concern \u2014 Apple may deprecate this endpoint in favor of the authenticated App Store Connect API. Version information published by the App Store may lag behind rollout due to Apple's phased release mechanism.",
+  "notes": "Paid app. Mac App Store only , no direct download available (the developer's website confirms this). No Sparkle. UNCERTAINTY: iTunes API longevity concern , Apple may deprecate this endpoint in favor of the authenticated App Store Connect API. Version information published by the App Store may lag behind rollout due to Apple's phased release mechanism.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",

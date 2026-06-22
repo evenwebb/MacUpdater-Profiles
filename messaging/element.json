@@ -1,7 +1,7 @@
 {
   "name": "Element",
   "slug": "element",
-  "description": "All-in-one secure chat app for teams, friends, and organisations \u2014 built on the Matrix protocol with end-to-end encryption",
+  "description": "All-in-one secure chat app for teams, friends, and organisations , built on the Matrix protocol with end-to-end encryption",
   "website": "https://element.io",
   "platform": "macOS",
   "architecture": "universal",

@@ -36,7 +36,7 @@
     "url": "https://blogs.vmware.com/teamfusion/",
     "note": "Blog post dates only"
   },
-  "notes": "Free for personal use since Nov 2024 (Broadcom acquisition). Downloads REQUIRE Broadcom account. No public version-check API. Version naming changed from 13.x to year-semester (e.g., 26H1). Homebrew cask disabled June 2025. MOST LOCKED-DOWN app \u2014 automated update checking is extremely difficult.",
+  "notes": "Free for personal use since Nov 2024 (Broadcom acquisition). Downloads REQUIRE Broadcom account. No public version-check API. Version naming changed from 13.x to year-semester (e.g., 26H1). Homebrew cask disabled June 2025. MOST LOCKED-DOWN app , automated update checking is extremely difficult.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "virtualization",

@@ -30,7 +30,7 @@
     "method": null,
     "field": "not exposed"
   },
-  "notes": "Universal Catalyst app. No Sparkle, no Electron updater. CDN download tokens expire quickly \u2014 redirect URL must be used immediately. No public changelog or release date endpoint.",
+  "notes": "Universal Catalyst app. No Sparkle, no Electron updater. CDN download tokens expire quickly , redirect URL must be used immediately. No public changelog or release date endpoint.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "messaging",

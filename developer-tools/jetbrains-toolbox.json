@@ -1,7 +1,7 @@
 {
   "name": "JetBrains Toolbox",
   "slug": "jetbrains-toolbox",
-  "description": "Manage all your JetBrains IDEs in one place \u2014 install, update, and roll back IntelliJ, PyCharm, WebStorm, and more",
+  "description": "Manage all your JetBrains IDEs in one place , install, update, and roll back IntelliJ, PyCharm, WebStorm, and more",
   "website": "https://www.jetbrains.com/toolbox-app",
   "platform": "macOS",
   "architecture": "universal",

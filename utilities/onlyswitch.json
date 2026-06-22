@@ -1,7 +1,7 @@
 {
   "name": "OnlySwitch",
   "slug": "onlyswitch",
-  "description": "All-in-one menu bar switch \u2014 toggle dark mode, hide desktop icons, manage Bluetooth, mute mic, and 50+ other switches",
+  "description": "All-in-one menu bar switch , toggle dark mode, hide desktop icons, manage Bluetooth, mute mic, and 50+ other switches",
   "website": "https://github.com/jacklandrin/OnlySwitch",
   "platform": "macOS",
   "architecture": "universal",

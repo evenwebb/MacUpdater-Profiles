@@ -35,7 +35,7 @@
     "method": "sparkle_pub_date",
     "field": "pubDate in appcast <item>"
   },
-  "notes": "Same developer as A Better Finder Rename 11 \u2014 identical Sparkle pattern. Version extracted from sparkle:version attribute on first item's enclosure. CDN behind CloudFront (d3k6s0oeufjjjn.cloudfront.net).",
+  "notes": "Same developer as A Better Finder Rename 11 , identical Sparkle pattern. Version extracted from sparkle:version attribute on first item's enclosure. CDN behind CloudFront (d3k6s0oeufjjjn.cloudfront.net).",
   "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",

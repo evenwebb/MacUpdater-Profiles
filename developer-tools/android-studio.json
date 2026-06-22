@@ -1,7 +1,7 @@
 {
   "name": "Android Studio",
   "slug": "android-studio",
-  "description": "Official IDE for Android app development \u2014 intelligent code editor, flexible build system, and emulator",
+  "description": "Official IDE for Android app development , intelligent code editor, flexible build system, and emulator",
   "website": "https://developer.android.com/studio",
   "platform": "macOS",
   "architecture": "universal",

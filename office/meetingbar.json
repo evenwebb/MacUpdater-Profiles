@@ -1,7 +1,7 @@
 {
   "name": "MeetingBar",
   "slug": "meetingbar",
-  "description": "Menu bar app for your calendar meetings \u2014 one-click join, shows upcoming meetings, integrates with Zoom, Teams, and more",
+  "description": "Menu bar app for your calendar meetings , one-click join, shows upcoming meetings, integrates with Zoom, Teams, and more",
   "website": "https://meetingbar.app",
   "platform": "macOS",
   "architecture": "universal",

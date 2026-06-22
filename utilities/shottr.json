@@ -1,7 +1,7 @@
 {
   "name": "Shottr",
   "slug": "shottr",
-  "description": "Screenshot tool optimized for UI/UX designers \u2014 pixel-perfect scrolling capture, OCR, measurements",
+  "description": "Screenshot tool optimized for UI/UX designers , pixel-perfect scrolling capture, OCR, measurements",
   "website": "https://shottr.cc",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "LocalSend",
   "slug": "localsend",
-  "description": "Open-source AirDrop alternative \u2014 share files and messages with nearby devices over local network, cross-platform",
+  "description": "Open-source AirDrop alternative , share files and messages with nearby devices over local network, cross-platform",
   "website": "https://localsend.org",
   "platform": "macOS",
   "architecture": "universal",

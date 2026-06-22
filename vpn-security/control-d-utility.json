@@ -1,7 +1,7 @@
 {
   "name": "Control D Utility",
   "slug": "control-d-utility",
-  "description": "DNS/network control utility GUI app \u2014 companion to ctrld CLI daemon",
+  "description": "DNS/network control utility GUI app , companion to ctrld CLI daemon",
   "website": "https://controld.com",
   "platform": "macOS",
   "architecture": "separate",
@@ -33,7 +33,7 @@
     "method": "github_api",
     "field": "published_at in GitHub release JSON"
   },
-  "notes": "The GUI app auto-updates with no public Sparkle feed or version endpoint. The controld.com website is Cloudflare-protected (404 to automated fetchers). No Mac App Store \u2014 web-only distribution. The CLI daemon (ctrld) is open-source on GitHub with proper release versioning. Mapping GUI version to CLI version is approximate.",
+  "notes": "The GUI app auto-updates with no public Sparkle feed or version endpoint. The controld.com website is Cloudflare-protected (404 to automated fetchers). No Mac App Store , web-only distribution. The CLI daemon (ctrld) is open-source on GitHub with proper release versioning. Mapping GUI version to CLI version is approximate.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",

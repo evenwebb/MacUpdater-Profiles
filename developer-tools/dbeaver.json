@@ -33,7 +33,7 @@
     "field": "published_at",
     "source": "https://api.github.com/repos/dbeaver/dbeaver/releases/latest"
   },
-  "notes": "Open source (Apache 2.0). Java-based (Eclipse RCP platform). No Sparkle \u2014 uses Eclipse P2 update mechanism for in-app updates. The download URL pattern above points to the 'latest' redirect; for pinned/archived versions, use GitHub release assets. Checkers must handle separate architecture-specific downloads. UNCERTAINTY: The 'latest' redirect URLs may change. For robust version pinning, use the GitHub release assets API instead.",
+  "notes": "Open source (Apache 2.0). Java-based (Eclipse RCP platform). No Sparkle , uses Eclipse P2 update mechanism for in-app updates. The download URL pattern above points to the 'latest' redirect; for pinned/archived versions, use GitHub release assets. Checkers must handle separate architecture-specific downloads. UNCERTAINTY: The 'latest' redirect URLs may change. For robust version pinning, use the GitHub release assets API instead.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",

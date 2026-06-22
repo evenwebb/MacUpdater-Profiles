@@ -1,7 +1,7 @@
 {
   "name": "Little Snitch",
   "slug": "littlesnitch",
-  "description": "Powerful personal firewall for macOS \u2014 monitor and control your network traffic with per-app rules",
+  "description": "Powerful personal firewall for macOS , monitor and control your network traffic with per-app rules",
   "website": "https://www.obdev.at/products/littlesnitch",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "Scroll Reverser",
   "slug": "scroll-reverser",
-  "description": "Reverse the scroll direction independently for mouse and trackpad \u2014 keeps natural scrolling on trackpad, classic on mouse",
+  "description": "Reverse the scroll direction independently for mouse and trackpad , keeps natural scrolling on trackpad, classic on mouse",
   "website": "https://pilotmoon.com/scrollreverser",
   "platform": "macOS",
   "architecture": "universal",

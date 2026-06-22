@@ -36,6 +36,6 @@
     "method": "github_api",
     "field": "published_at"
   },
-  "notes": "Open source (AGPL), fork of Bambu Studio. Universal DMG for both Intel and Apple Silicon. No Sparkle — uses GitHub Releases. Also has cloud API at api.orcaslicer.com (requires auth).",
+  "notes": "Open source (AGPL), fork of Bambu Studio. Universal DMG for both Intel and Apple Silicon. No Sparkle , uses GitHub Releases. Also has cloud API at api.orcaslicer.com (requires auth).",
   "last_updated": "2026-06-21"
 }

@@ -40,7 +40,7 @@
     "format": "YYYY-MM-DD",
     "note": "Unique \u2014 uses custom forklift:releaseDate element. Also in HTML release notes header."
   },
-  "notes": "Uses Sparkle with custom BinaryNights namespace. Custom forklift:releaseDate element is a unique feature \u2014 most apps don't include date in appcast. Minimum macOS 14.6. ForkLift 5 does NOT exist yet (ForkLift5/update.xml returns 403). Legacy ForkLift3 appcast exists but only prompts upgrade.",
+  "notes": "Uses Sparkle with custom BinaryNights namespace. Custom forklift:releaseDate element is a unique feature , most apps don't include date in appcast. Minimum macOS 14.6. ForkLift 5 does NOT exist yet (ForkLift5/update.xml returns 403). Legacy ForkLift3 appcast exists but only prompts upgrade.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",

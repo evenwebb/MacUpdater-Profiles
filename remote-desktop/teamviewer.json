@@ -31,7 +31,7 @@
     "method": "sparkle_pub_date",
     "field": "pubDate in Sparkle XML (ISO 8601)"
   },
-  "notes": "Sparkle XML with TeamViewer custom namespace extensions. Website download is DMG (~122 MB), in-app updates use PKG via Sparkle enclosure. The update URL requires query parameters for OS version \u2014 adjust osversion to match current macOS.",
+  "notes": "Sparkle XML with TeamViewer custom namespace extensions. Website download is DMG (~122 MB), in-app updates use PKG via Sparkle enclosure. The update URL requires query parameters for OS version , adjust osversion to match current macOS.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "remote-desktop",

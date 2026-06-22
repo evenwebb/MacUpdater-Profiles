@@ -1,7 +1,7 @@
 {
   "name": "Godot",
   "slug": "godot",
-  "description": "Free and open source game engine \u2014 create 2D and 3D games with a unified interface and comprehensive toolset",
+  "description": "Free and open source game engine , create 2D and 3D games with a unified interface and comprehensive toolset",
   "website": "https://godotengine.org",
   "platform": "macOS",
   "architecture": "universal",

@@ -34,7 +34,7 @@
     "url": "https://blogs.opera.com/desktop/feed/",
     "note": "Parse pubDate from matching item in RSS feed"
   },
-  "notes": "4-segment version (e.g., 132.0.5905.73). Single universal DMG for both Intel and Apple Silicon. opera.com/download uses a gateway redirect \u2014 use get.opera.com CDN for direct access. Each DMG has a .sha256sum companion file.",
+  "notes": "4-segment version (e.g., 132.0.5905.73). Single universal DMG for both Intel and Apple Silicon. opera.com/download uses a gateway redirect , use get.opera.com CDN for direct access. Each DMG has a .sha256sum companion file.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "browsers",

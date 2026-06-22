@@ -1,7 +1,7 @@
 {
   "name": "Ghostty",
   "slug": "ghostty",
-  "description": "Fast, native, feature-rich terminal emulator pushing modern features \u2014 GPU-accelerated with native UI on every platform",
+  "description": "Fast, native, feature-rich terminal emulator pushing modern features , GPU-accelerated with native UI on every platform",
   "website": "https://ghostty.org",
   "platform": "macOS",
   "architecture": "universal",

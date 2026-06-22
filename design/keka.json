@@ -1,7 +1,7 @@
 {
   "name": "Keka",
   "slug": "keka",
-  "description": "File archiver and extractor \u2014 supports 7z, Zip, Tar, RAR and many more formats",
+  "description": "File archiver and extractor , supports 7z, Zip, Tar, RAR and many more formats",
   "website": "https://www.keka.io",
   "platform": "macOS",
   "architecture": "universal",

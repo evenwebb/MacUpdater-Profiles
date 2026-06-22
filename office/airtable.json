@@ -1,7 +1,7 @@
 {
   "name": "Airtable",
   "slug": "airtable",
-  "description": "Spreadsheet-database hybrid \u2014 organize anything with the power of a database and the simplicity of a spreadsheet",
+  "description": "Spreadsheet-database hybrid , organize anything with the power of a database and the simplicity of a spreadsheet",
   "website": "https://airtable.com",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "Skype",
   "slug": "skype",
-  "description": "Microsoft's video calling, messaging, and VoIP application \u2014 connect with anyone, anywhere",
+  "description": "Microsoft's video calling, messaging, and VoIP application , connect with anyone, anywhere",
   "website": "https://www.skype.com",
   "platform": "macOS",
   "architecture": "universal",
@@ -28,5 +28,5 @@
     "url": "https://support.microsoft.com/en-us/skype/skype-for-mac-release-notes"
   },
   "last_updated": "2026-06-22",
-  "notes": "DISCONTINUED \u2014 Skype was retired May 5, 2025 and replaced by Microsoft Teams. No further updates will be released."
+  "notes": "DISCONTINUED , Skype was retired May 5, 2025 and replaced by Microsoft Teams. No further updates will be released."
 }

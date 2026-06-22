@@ -4,7 +4,7 @@
   "bundle_id": "io.raindrop.macapp",
   "category": "utilities",
   "license": "free",
-  "description": "Bookmark manager and web clipper \u2014 organize bookmarks with tags and collections",
+  "description": "Bookmark manager and web clipper , organize bookmarks with tags and collections",
   "website": "https://raindrop.io",
   "platform": "macOS",
   "architecture": "separate",

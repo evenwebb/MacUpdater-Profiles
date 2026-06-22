@@ -4,7 +4,7 @@
   "bundle_id": "org.grunenberg.EasyFind",
   "category": "utilities",
   "license": "free",
-  "description": "EasyFind is a free file search tool for macOS by DEVONtechnologies. It finds files and folders by name, content, or tags \u2014 including in system files and packages that Spotlight ignores.",
+  "description": "EasyFind is a free file search tool for macOS by DEVONtechnologies. It finds files and folders by name, content, or tags , including in system files and packages that Spotlight ignores.",
   "website": "https://www.devontechnologies.com/apps/freeware",
   "platform": "macOS",
   "architecture": "universal",

@@ -30,7 +30,7 @@
     "method": "pubDate_or_blog",
     "field": "pubDate"
   },
-  "notes": "Sparkle feed URL not publicly documented \u2014 check app's SUFeedURL in Info.plist. Appcast behind Cloudflare or uses generated URL pattern. Subscription/free tier. File may be dmg or zip. Release date via pubDate in appcast or blog post date.",
+  "notes": "Sparkle feed URL not publicly documented , check app's SUFeedURL in Info.plist. Appcast behind Cloudflare or uses generated URL pattern. Subscription/free tier. File may be dmg or zip. Release date via pubDate in appcast or blog post date.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",

@@ -1,7 +1,7 @@
 {
   "name": "Bruno",
   "slug": "bruno",
-  "description": "Open-source offline-first API client \u2014 stores collections as plain text files in your repo, no cloud sync",
+  "description": "Open-source offline-first API client , stores collections as plain text files in your repo, no cloud sync",
   "website": "https://www.usebruno.com",
   "platform": "macOS",
   "architecture": "universal",

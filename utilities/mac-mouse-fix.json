@@ -1,7 +1,7 @@
 {
   "name": "Mac Mouse Fix",
   "slug": "mac-mouse-fix",
-  "description": "Make your third-party mouse work like a Magic Mouse \u2014 smooth scrolling, button mapping, and cursor acceleration control",
+  "description": "Make your third-party mouse work like a Magic Mouse , smooth scrolling, button mapping, and cursor acceleration control",
   "website": "https://macmousefix.com",
   "platform": "macOS",
   "architecture": "universal",

@@ -1,7 +1,7 @@
 {
   "name": "Rectangle",
   "slug": "rectangle",
-  "description": "Window manager \u2014 move and resize windows with keyboard shortcuts and snap areas",
+  "description": "Window manager , move and resize windows with keyboard shortcuts and snap areas",
   "website": "https://rectangleapp.com",
   "platform": "macOS",
   "architecture": "universal",

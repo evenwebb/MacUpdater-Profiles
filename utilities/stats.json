@@ -1,7 +1,7 @@
 {
   "name": "Stats",
   "slug": "stats",
-  "description": "macOS system monitor in your menu bar \u2014 CPU, GPU, memory, disk, network, sensors, battery",
+  "description": "macOS system monitor in your menu bar , CPU, GPU, memory, disk, network, sensors, battery",
   "website": "https://github.com/exelban/stats",
   "platform": "macOS",
   "architecture": "universal",

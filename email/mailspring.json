@@ -1,7 +1,7 @@
 {
   "name": "Mailspring",
   "slug": "mailspring",
-  "description": "Beautiful, fast email client with unified inbox, read receipts, link tracking, and translation \u2014 open-source core",
+  "description": "Beautiful, fast email client with unified inbox, read receipts, link tracking, and translation , open-source core",
   "website": "https://www.getmailspring.com",
   "platform": "macOS",
   "architecture": "universal",

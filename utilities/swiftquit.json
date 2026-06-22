@@ -1,7 +1,7 @@
 {
   "name": "SwiftQuit",
   "slug": "swiftquit",
-  "description": "Automatically quit Mac apps when their last window closes \u2014 saves memory and keeps your Dock clean",
+  "description": "Automatically quit Mac apps when their last window closes , saves memory and keeps your Dock clean",
   "website": "https://github.com/onebadmouse/SwiftQuit",
   "platform": "macOS",
   "architecture": "universal",

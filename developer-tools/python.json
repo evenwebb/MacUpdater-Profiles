@@ -29,6 +29,6 @@
     "method": "none",
     "field": null
   },
-  "notes": "Not an .app \u2014 system PKG installer. Installs to /Library/Frameworks/Python.framework. No built-in auto-updater.",
+  "notes": "Not an .app , system PKG installer. Installs to /Library/Frameworks/Python.framework. No built-in auto-updater.",
   "last_updated": "2026-06-22"
 }

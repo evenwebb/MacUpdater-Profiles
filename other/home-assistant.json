@@ -1,7 +1,7 @@
 {
   "name": "Home Assistant",
   "slug": "home-assistant",
-  "description": "Smart home companion app \u2014 macOS Catalyst port of the iOS app",
+  "description": "Smart home companion app , macOS Catalyst port of the iOS app",
   "website": "https://home-assistant.io",
   "platform": "macOS",
   "architecture": "universal",

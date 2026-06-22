@@ -1,7 +1,7 @@
 {
   "name": "RStudio",
   "slug": "rstudio",
-  "description": "Integrated development environment for R \u2014 the most popular IDE for data science and statistical computing",
+  "description": "Integrated development environment for R , the most popular IDE for data science and statistical computing",
   "website": "https://posit.co/products/open-source/rstudio",
   "platform": "macOS",
   "architecture": "universal",

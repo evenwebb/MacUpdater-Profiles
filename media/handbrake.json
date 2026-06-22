@@ -1,7 +1,7 @@
 {
   "name": "HandBrake",
   "slug": "handbrake",
-  "description": "Open source video transcoder \u2014 convert video from nearly any format to a selection of modern, widely supported codecs",
+  "description": "Open source video transcoder , convert video from nearly any format to a selection of modern, widely supported codecs",
   "website": "https://handbrake.fr",
   "platform": "macOS",
   "architecture": "separate",

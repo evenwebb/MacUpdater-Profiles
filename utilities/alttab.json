@@ -1,7 +1,7 @@
 {
   "name": "AltTab",
   "slug": "alttab",
-  "description": "Windows alt-tab window switcher for macOS \u2014 brings the power of Windows-style window switching to Mac",
+  "description": "Windows alt-tab window switcher for macOS , brings the power of Windows-style window switching to Mac",
   "website": "https://alt-tab-macos.netlify.app",
   "platform": "macOS",
   "architecture": "universal",

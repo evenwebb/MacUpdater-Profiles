@@ -1,7 +1,7 @@
 {
   "name": "Detail Camera.plugin",
   "slug": "detail-camera-plugin",
-  "description": "Virtual camera plugin for Detail video app \u2014 enables iPhone/iPad as Mac webcam at high quality",
+  "description": "Virtual camera plugin for Detail video app , enables iPhone/iPad as Mac webcam at high quality",
   "website": "https://detail.co",
   "platform": "macOS",
   "architecture": "universal",
@@ -32,7 +32,7 @@
     "method": "app_store_api",
     "field": "results[0].currentVersionReleaseDate in iTunes API JSON"
   },
-  "notes": "The Camera.plugin is NOT a separate app \u2014 it is the virtual camera component inside Detail Studio for Mac. Free app with IAP. Plugin version matches main Detail app version.",
+  "notes": "The Camera.plugin is NOT a separate app , it is the virtual camera component inside Detail Studio for Mac. Free app with IAP. Plugin version matches main Detail app version.",
   "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",

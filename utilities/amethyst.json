@@ -1,7 +1,7 @@
 {
   "name": "Amethyst",
   "slug": "amethyst",
-  "description": "Automatic tiling window manager for macOS \u2014 keeps your windows organized in tiles with keyboard shortcuts",
+  "description": "Automatic tiling window manager for macOS , keeps your windows organized in tiles with keyboard shortcuts",
   "website": "https://ianyh.com/amethyst",
   "platform": "macOS",
   "architecture": "universal",

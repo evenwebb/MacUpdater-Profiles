@@ -30,7 +30,7 @@
     "method": "yaml_field",
     "field": "releaseDate (ISO 8601)"
   },
-  "notes": "Uses Electron updater YAML manifest. Filename extracted from YAML 'files' array \u2014 pick the universal dmg entry. Separate arch builds available (x64, arm64, universal).",
+  "notes": "Uses Electron updater YAML manifest. Filename extracted from YAML 'files' array , pick the universal dmg entry. Separate arch builds available (x64, arm64, universal).",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "messaging",

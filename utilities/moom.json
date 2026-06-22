@@ -1,7 +1,7 @@
 {
   "name": "Moom",
   "slug": "moom",
-  "description": "Window manager \u2014 move, zoom, and snap windows with mouse or keyboard shortcuts",
+  "description": "Window manager , move, zoom, and snap windows with mouse or keyboard shortcuts",
   "website": "https://manytricks.com/moom/",
   "platform": "macOS",
   "architecture": "universal",

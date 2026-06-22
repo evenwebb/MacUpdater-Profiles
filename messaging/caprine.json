@@ -1,7 +1,7 @@
 {
   "name": "Caprine",
   "slug": "caprine",
-  "description": "Elegant third-party Facebook Messenger desktop app \u2014 dark mode, privacy-focused, and keyboard shortcuts",
+  "description": "Elegant third-party Facebook Messenger desktop app , dark mode, privacy-focused, and keyboard shortcuts",
   "website": "https://sindresorhus.com/caprine",
   "platform": "macOS",
   "architecture": "universal",

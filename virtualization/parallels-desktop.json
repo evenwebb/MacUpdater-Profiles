@@ -34,7 +34,7 @@
     "url": "blog post for the major version",
     "note": "KB article 124223 (system requirements) has a 'Last Review' date"
   },
-  "notes": "Cloudflare-protected website. Old update.parallels.com XML feeds all return 404. Major version now matches macOS version (e.g., PD 26 for macOS 26 Tahoe). No Sparkle feed \u2014 uses proprietary update mechanism. Auth/entitlement required for full version (trial available). Download links require ?experience=enter_key parameter.",
+  "notes": "Cloudflare-protected website. Old update.parallels.com XML feeds all return 404. Major version now matches macOS version (e.g., PD 26 for macOS 26 Tahoe). No Sparkle feed , uses proprietary update mechanism. Auth/entitlement required for full version (trial available). Download links require ?experience=enter_key parameter.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "virtualization",

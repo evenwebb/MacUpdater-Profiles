@@ -32,7 +32,7 @@
     "source": "https://releases.eggerapps.at/postico2/changelog?update_channel=2",
     "note": "UNCERTAINTY: The changelog page lists per-version release dates (e.g., 'Version X.Y.Z - Month Day, Year'). Date must be scraped from the HTML. The Sparkle appcast pubDate (if accessible) is a cleaner source."
   },
-  "notes": "Paid app. Two update channels: stable (channel ID 2) and dev/pre-release (channel ID 1). UNCERTAINTIES: The appcast URL is likely but not confirmed \u2014 if Postico uses a different host or path, this will need adjustment. The download URL redirect pattern may require a specific User-Agent. The changelog page format could change. Inspecting the app bundle's SUFeedURL is the definitive way to confirm the Sparkle feed URL.",
+  "notes": "Paid app. Two update channels: stable (channel ID 2) and dev/pre-release (channel ID 1). UNCERTAINTIES: The appcast URL is likely but not confirmed , if Postico uses a different host or path, this will need adjustment. The download URL redirect pattern may require a specific User-Agent. The changelog page format could change. Inspecting the app bundle's SUFeedURL is the definitive way to confirm the Sparkle feed URL.",
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",

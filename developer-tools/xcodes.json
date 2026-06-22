@@ -1,7 +1,7 @@
 {
   "name": "Xcodes",
   "slug": "xcodes",
-  "description": "Manage multiple Xcode versions with a single click \u2014 download, install, switch between versions, and clean up old ones",
+  "description": "Manage multiple Xcode versions with a single click , download, install, switch between versions, and clean up old ones",
   "website": "https://github.com/XcodesOrg/XcodesApp",
   "platform": "macOS",
   "architecture": "universal",

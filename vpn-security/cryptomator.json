@@ -1,7 +1,7 @@
 {
   "name": "Cryptomator",
   "slug": "cryptomator",
-  "description": "Multi-platform transparent client-side encryption for your cloud files \u2014 encrypt your files before uploading to Dropbox, Google Drive, or any cloud",
+  "description": "Multi-platform transparent client-side encryption for your cloud files , encrypt your files before uploading to Dropbox, Google Drive, or any cloud",
   "website": "https://cryptomator.org",
   "platform": "macOS",
   "architecture": "universal",

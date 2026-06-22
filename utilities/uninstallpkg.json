@@ -1,7 +1,7 @@
 {
   "name": "UninstallPKG",
   "slug": "uninstallpkg",
-  "description": "Tool for cleanly uninstalling .pkg-installed software from macOS \u2014 removes all files installed by a package",
+  "description": "Tool for cleanly uninstalling .pkg-installed software from macOS , removes all files installed by a package",
   "website": "https://corecode.io/uninstallpkg",
   "platform": "macOS",
   "architecture": "universal",

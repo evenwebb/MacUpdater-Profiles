@@ -31,7 +31,7 @@
     "method": "appcast_field_or_webpage_scrape",
     "field": "pubDate in Sparkle appcast (if reachable) or scrape from https://sparkmailapp.com/blog"
   },
-  "notes": "Sparkle SUFeedURL is only visible inside the app bundle's Info.plist or from Sparkle framework internals \u2014 not publicly documented. Also distributed via Mac App Store and Setapp. The website download page may serve the Setapp-managed or standalone version. Developed by Readdle (now Spark Mail Inc.). iOS, Android, and Windows versions also available.",
+  "notes": "Sparkle SUFeedURL is only visible inside the app bundle's Info.plist or from Sparkle framework internals , not publicly documented. Also distributed via Mac App Store and Setapp. The website download page may serve the Setapp-managed or standalone version. Developed by Readdle (now Spark Mail Inc.). iOS, Android, and Windows versions also available.",
   "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "email",

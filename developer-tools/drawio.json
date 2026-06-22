@@ -1,7 +1,7 @@
 {
   "name": "draw.io",
   "slug": "drawio",
-  "description": "Free diagramming and whiteboarding app \u2014 flowcharts, UML, network diagrams, and more with offline support",
+  "description": "Free diagramming and whiteboarding app , flowcharts, UML, network diagrams, and more with offline support",
   "website": "https://www.diagrams.net",
   "platform": "macOS",
   "architecture": "universal",
