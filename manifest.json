@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": 2,
-  "updated": "2026-06-22T16:55:20Z",
+  "updated": "2026-06-22T16:57:47Z",
   "total_profiles": 302,
   "apps": {
     "1password": {
@@ -180,7 +180,9 @@
       "name": "AnyDesk",
       "bundle_id": "com.philandro.anydesk",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/anydesk.png"
+      },
       "category": "remote-desktop",
       "license": "free",
       "path": "remote-desktop/anydesk.json",
@@ -616,7 +618,9 @@
       "name": "Cyberduck",
       "bundle_id": "ch.sudo.cyberduck",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/cyberduck.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/cyberduck.json",
@@ -624,9 +628,11 @@
     },
     "daisydisk": {
       "name": "DaisyDisk",
-      "bundle_id": "com.daisydiskapp.DaisyDisk",
+      "bundle_id": "com.daisydiskapp.DaisyDiskStandAlone",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/daisydisk.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/daisydisk.json",
@@ -746,7 +752,9 @@
       "name": "Dropbox",
       "bundle_id": "com.getdropbox.dropbox",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/dropbox.png"
+      },
       "category": "cloud-backup",
       "license": "free",
       "path": "cloud-backup/dropbox.json",

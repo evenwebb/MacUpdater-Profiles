@@ -36,5 +36,8 @@
   "category": "developer-tools",
   "license": "free",
   "skip": false,
-  "bundle_id": "ch.sudo.cyberduck"
+  "bundle_id": "ch.sudo.cyberduck",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/cyberduck.png"
+  }
 }

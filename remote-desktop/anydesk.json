@@ -5,7 +5,7 @@
   "website": "https://anydesk.com",
   "platform": "macOS",
   "architecture": "universal",
-  "min_os": "10.13",
+  "min_os": "macOS 11.0.0",
   "auto_updates": true,
   "version_check": {
     "method": "scrape_html",
@@ -43,5 +43,8 @@
   "category": "remote-desktop",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.philandro.anydesk"
+  "bundle_id": "com.philandro.anydesk",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/anydesk.png"
+  }
 }

@@ -5,7 +5,7 @@
   "website": "https://dropbox.com",
   "platform": "macOS",
   "architecture": "separate",
-  "min_os": "11.0",
+  "min_os": "macOS 10.13",
   "auto_updates": true,
   "version_check": {
     "method": "redirect_trace",
@@ -45,5 +45,8 @@
   "category": "cloud-backup",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.getdropbox.dropbox"
+  "bundle_id": "com.getdropbox.dropbox",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/dropbox.png"
+  }
 }

@@ -282,6 +282,138 @@ def update_profile_icon(slug: str) -> None:
         f.write("\n")
 
 
+# ── audit ─────────────────────────────────────────────────────────────
+
+def _read_plist(app_path: str) -> dict | None:
+    """Read Info.plist from a .app bundle and return key fields."""
+    plist_path = os.path.join(app_path, "Contents", "Info.plist")
+    if not os.path.isfile(plist_path):
+        return None
+
+    # Try plistlib first (binary plist reader)
+    import plistlib
+    try:
+        with open(plist_path, "rb") as f:
+            return plistlib.load(f)
+    except Exception:
+        pass
+
+    # Fall back to parsing XML plist as plain text
+    try:
+        import re
+        text = open(plist_path, "rb").read().decode("utf-8", errors="replace")
+        result = {}
+        for key, pattern in [
+            ("CFBundleIdentifier", r"<key>CFBundleIdentifier</key>\s*<string>([^<]+)</string>"),
+            ("CFBundleShortVersionString", r"<key>CFBundleShortVersionString</key>\s*<string>([^<]+)</string>"),
+            ("CFBundleVersion", r"<key>CFBundleVersion</key>\s*<string>([^<]+)</string>"),
+            ("LSMinimumSystemVersion", r"<key>LSMinimumSystemVersion</key>\s*<string>([^<]+)</string>"),
+        ]:
+            m = re.search(pattern, text)
+            if m:
+                result[key] = m.group(1)
+        return result if result else None
+    except Exception:
+        return None
+
+
+def _check_architecture(app_path: str) -> str | None:
+    """Run 'file' on the main binary to determine architecture."""
+    info_plist = os.path.join(app_path, "Contents", "Info.plist")
+    exec_name = os.path.basename(app_path).replace(".app", "")
+    if os.path.isfile(info_plist):
+        try:
+            import re
+            text = open(info_plist, "rb").read().decode("utf-8", errors="replace")
+            m = re.search(r"<key>CFBundleExecutable</key>\s*<string>([^<]+)</string>", text)
+            if m:
+                exec_name = m.group(1)
+        except Exception:
+            pass
+
+    binary = os.path.join(app_path, "Contents", "MacOS", exec_name)
+    if not os.path.isfile(binary):
+        return None
+
+    try:
+        r = subprocess.run(["file", binary], capture_output=True, text=True, timeout=10)
+        out = r.stdout
+        if "arm64" in out and "x86_64" in out:
+            return "universal"
+        elif "arm64" in out:
+            return "arm64"
+        elif "x86_64" in out:
+            return "x86_64"
+    except Exception:
+        pass
+    return None
+
+
+def audit_app_bundle(app_path: str, slug: str, profile: dict) -> None:
+    """
+    Compare extracted .app metadata against the profile and fix discrepancies.
+    Updates the profile JSON in place if corrections are needed.
+    """
+    plist = _read_plist(app_path)
+    if not plist:
+        return
+
+    arch = _check_architecture(app_path)
+    fixes = {}
+
+    # Check bundle_id
+    actual_bid = plist.get("CFBundleIdentifier")
+    profile_bid = profile.get("bundle_id")
+    if actual_bid and profile_bid and actual_bid != profile_bid:
+        print(f"    🔧 bundle_id mismatch: profile={profile_bid} actual={actual_bid}")
+        fixes["bundle_id"] = actual_bid
+
+    # Check min_os
+    actual_min = plist.get("LSMinimumSystemVersion")
+    profile_min = (profile.get("min_os") or "").replace("macOS ", "").strip()
+    if actual_min and profile_min:
+        try:
+            actual_parts = tuple(int(x) for x in actual_min.split("."))
+            profile_parts = tuple(int(x) for x in profile_min.split("."))
+            if actual_parts != profile_parts:
+                print(f"    🔧 min_os mismatch: profile={profile_min} actual={actual_min}")
+                fixes["min_os"] = f"macOS {actual_min}"
+        except (ValueError, TypeError):
+            pass
+
+    # Check architecture
+    profile_arch = profile.get("architecture", "universal")
+    if arch and arch != profile_arch:
+        # Only fix if profile says universal but actual is specific (common mistake)
+        if profile_arch == "universal" and arch in ("arm64", "x86_64"):
+            print(f"    🔧 architecture mismatch: profile={profile_arch} actual={arch}")
+            fixes["architecture"] = arch
+
+    # Check version
+    actual_ver = plist.get("CFBundleShortVersionString")
+    if actual_ver:
+        profile_ver = None
+        vc = profile.get("version_check", {})
+        if vc.get("extraction", {}).get("example"):
+            profile_ver = vc["extraction"]["example"]
+        if actual_ver:
+            pass  # Just report, don't fix — version_check URL is the source of truth
+            # print(f"    ℹ version in bundle: {actual_ver}")
+
+    if fixes:
+        manifest = json.loads(MANIFEST_PATH.read_text()) if MANIFEST_PATH.exists() else {}
+        entry = manifest.get("apps", {}).get(slug)
+        if entry:
+            profile_path = REPO / entry.get("path", "")
+            if profile_path.exists():
+                updated = json.loads(profile_path.read_text())
+                updated.update(fixes)
+                with open(profile_path, "w") as f:
+                    json.dump(updated, f, indent=2)
+                    f.write("\n")
+                print(f"    ✅ {len(fixes)} field(s) corrected in {slug}.json")
+
+
 # ── main logic ────────────────────────────────────────────────────────
 
 def process_slug(slug: str) -> bool:
@@ -356,6 +488,9 @@ def process_slug(slug: str) -> bool:
         if not icns_path:
             print(f"    ⚠ no .icns file found in {os.path.basename(app_path)}")
             return False
+
+        # Audit the extracted app bundle against profile data
+        audit_app_bundle(app_path, slug, profile)
 
         # Convert
         result = icns_to_png(icns_path, slug)
