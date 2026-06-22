@@ -4,8 +4,8 @@
   "description": "Privacy-first, open-source knowledge base that works on top of local plain-text Markdown and Org-mode files",
   "website": "https://logseq.com",
   "platform": "macOS",
-  "architecture": "universal",
-  "bundle_id": "com.electron.logseq",
+  "architecture": "separate",
+  "bundle_id": "com.logseq.logseq",
   "category": "notes-writing",
   "license": "free",
   "min_os": "macOS 10.14",
@@ -17,7 +17,8 @@
     "extraction": {
       "type": "json_path",
       "path": "tag_name"
-    }
+    },
+    "notes": "Separate darwin-x64 and darwin-arm64 builds via electron-updater"
   },
   "download": {
     "method": "direct_url",

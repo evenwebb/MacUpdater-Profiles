@@ -12,11 +12,11 @@
   "auto_updates": true,
   "skip": false,
   "version_check": {
-    "method": "github_api",
-    "url": "https://api.github.com/repos/Caldis/Mos/releases/latest",
+    "method": "sparkle_appcast",
+    "url": "https://mos.caldis.me/appcast.xml",
     "extraction": {
-      "type": "json_path",
-      "path": "tag_name"
+      "type": "xpath",
+      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']"
     }
   },
   "download": {

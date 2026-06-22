@@ -43,7 +43,18 @@ def main():
         "total_profiles": count,
         "apps": dict(sorted(apps.items())),
     }
-    (REPO / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+
+    # Preserve existing timestamp if apps haven't actually changed
+    manifest_path = REPO / "manifest.json"
+    if manifest_path.exists():
+        try:
+            old = json.loads(manifest_path.read_text())
+            if old.get("apps") == manifest["apps"] and old.get("total_profiles") == count:
+                manifest["updated"] = old.get("updated", manifest["updated"])
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
     print(f"Manifest updated: {count} profiles")
 
 

@@ -4,8 +4,8 @@
   "description": "Open source note-taking app \u2014 capture your thoughts and access them from any device",
   "website": "https://joplinapp.org",
   "platform": "macOS",
-  "architecture": "universal",
-  "bundle_id": "net.cozic.joplin-desktop",
+  "architecture": "separate",
+  "bundle_id": "net.cozic.joplin",
   "category": "notes-writing",
   "license": "free",
   "min_os": "macOS 10.14",
@@ -17,7 +17,8 @@
     "extraction": {
       "type": "json_path",
       "path": "tag_name"
-    }
+    },
+    "notes": "Separate Intel (latest-mac.yml) and Apple Silicon (latest-mac-arm64.yml) builds via electron-updater"
   },
   "download": {
     "method": "direct_url",

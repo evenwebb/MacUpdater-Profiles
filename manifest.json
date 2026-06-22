@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "version": 2,
-  "updated": "2026-06-22T10:36:40Z",
+  "updated": "2026-06-22T10:39:17Z",
   "total_profiles": 270,
   "apps": {
     "1password": {
@@ -886,7 +886,7 @@
     },
     "joplin": {
       "name": "Joplin",
-      "bundle_id": "net.cozic.joplin-desktop",
+      "bundle_id": "net.cozic.joplin",
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/joplin.json",
@@ -1054,7 +1054,7 @@
     },
     "logseq": {
       "name": "Logseq",
-      "bundle_id": "com.electron.logseq",
+      "bundle_id": "com.logseq.logseq",
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/logseq.json",

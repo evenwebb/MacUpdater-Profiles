@@ -8,15 +8,15 @@
   "bundle_id": "org.pqrs.Karabiner-Elements",
   "category": "utilities",
   "license": "free",
-  "min_os": "macOS 11.0",
+  "min_os": "macOS 13.0",
   "auto_updates": true,
   "skip": false,
   "version_check": {
-    "method": "github_api",
-    "url": "https://api.github.com/repos/pqrs-org/Karabiner-Elements/releases/latest",
+    "method": "sparkle_appcast",
+    "url": "https://appcast.pqrs.org/karabiner-elements-appcast.xml",
     "extraction": {
-      "type": "json_path",
-      "path": "tag_name"
+      "type": "xpath",
+      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']"
     }
   },
   "download": {
