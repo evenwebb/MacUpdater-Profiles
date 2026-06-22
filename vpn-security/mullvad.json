@@ -1,0 +1,36 @@
+{
+  "name": "Mullvad VPN",
+  "slug": "mullvad",
+  "description": "Privacy-focused VPN service \u2014 no email, no personal data required, pay anonymously with cash or crypto",
+  "website": "https://mullvad.net",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "net.mullvad.MullvadVPN",
+  "category": "vpn-security",
+  "license": "free",
+  "min_os": "macOS 11.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/mullvad/mullvadvpn-app/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://mullvad.net/download",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/mullvad/mullvadvpn-app/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

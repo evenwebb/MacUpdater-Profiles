@@ -1,0 +1,36 @@
+{
+  "name": "Mailspring",
+  "slug": "mailspring",
+  "description": "Beautiful, fast email client with unified inbox, read receipts, link tracking, and translation \u2014 open-source core",
+  "website": "https://www.getmailspring.com",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.getmailspring.Mailspring",
+  "category": "email",
+  "license": "free",
+  "min_os": "macOS 10.15",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/Foundry376/Mailspring/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://www.getmailspring.com/download",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/Foundry376/Mailspring/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

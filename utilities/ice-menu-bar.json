@@ -1,0 +1,36 @@
+{
+  "name": "Ice",
+  "slug": "ice-menu-bar",
+  "description": "Powerful menu bar manager for macOS \u2014 hide, show, and organize menu bar items with custom spacing and profiles",
+  "website": "https://github.com/jordanbaird/Ice",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.jordanbaird.Ice",
+  "category": "utilities",
+  "license": "free",
+  "min_os": "macOS 14.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/jordanbaird/Ice/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://github.com/jordanbaird/Ice/releases/latest",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/jordanbaird/Ice/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

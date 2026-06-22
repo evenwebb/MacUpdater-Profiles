@@ -1,0 +1,36 @@
+{
+  "name": "Insomnia",
+  "slug": "insomnia",
+  "description": "Open-source API client for REST, GraphQL, and gRPC \u2014 design, debug, and test APIs with a beautiful interface",
+  "website": "https://insomnia.rest",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.insomnia.app",
+  "category": "developer-tools",
+  "license": "free",
+  "min_os": "macOS 11.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/Kong/insomnia/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://insomnia.rest/download",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/Kong/insomnia/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

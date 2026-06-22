@@ -1,0 +1,36 @@
+{
+  "name": "DevToys",
+  "slug": "devtoys-mac",
+  "description": "Swiss Army knife for developers \u2014 JSON/YAML formatter, regex tester, JWT decoder, hash generator, and 30+ more tools",
+  "website": "https://devtoys.app",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.devtoys.app",
+  "category": "developer-tools",
+  "license": "free",
+  "min_os": "macOS 12.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/DevToys-app/DevToysMac/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://devtoys.app/download",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/DevToys-app/DevToysMac/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

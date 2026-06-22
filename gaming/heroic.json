@@ -1,0 +1,36 @@
+{
+  "name": "Heroic Games Launcher",
+  "slug": "heroic",
+  "description": "Open-source Epic Games, GOG, and Amazon Prime Gaming launcher \u2014 play your games on macOS with Wine/CrossOver support",
+  "website": "https://heroicgameslauncher.com",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.heroicgameslauncher.hgl",
+  "category": "gaming",
+  "license": "free",
+  "min_os": "macOS 11.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://heroicgameslauncher.com/download",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

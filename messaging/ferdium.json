@@ -1,0 +1,36 @@
+{
+  "name": "Ferdium",
+  "slug": "ferdium",
+  "description": "All your messaging apps in one place \u2014 WhatsApp, Telegram, Slack, Discord, and dozens more in a single app",
+  "website": "https://ferdium.org",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "org.ferdium.ferdium-app",
+  "category": "messaging",
+  "license": "free",
+  "min_os": "macOS 10.15",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/ferdium/ferdium-app/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://ferdium.org/download",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/ferdium/ferdium-app/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

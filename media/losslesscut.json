@@ -1,0 +1,36 @@
+{
+  "name": "LosslessCut",
+  "slug": "losslesscut",
+  "description": "Swiss army knife of lossless video/audio editing \u2014 trim, cut, and extract without re-encoding for instant results",
+  "website": "https://mifi.no/losslesscut",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "no.mifi.losslesscut",
+  "category": "media",
+  "license": "free",
+  "min_os": "macOS 11.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/mifi/lossless-cut/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://github.com/mifi/lossless-cut/releases/latest",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/mifi/lossless-cut/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

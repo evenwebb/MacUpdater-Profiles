@@ -1,0 +1,36 @@
+{
+  "name": "Background Music",
+  "slug": "background-music",
+  "description": "Per-application volume control for macOS \u2014 automatically pause music when other audio starts playing",
+  "website": "https://github.com/kyleneideck/BackgroundMusic",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.bearisdriving.BGM",
+  "category": "media",
+  "license": "free",
+  "min_os": "macOS 10.14",
+  "auto_updates": false,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/kyleneideck/BackgroundMusic/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://github.com/kyleneideck/BackgroundMusic/releases/latest",
+    "file_type": "pkg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/kyleneideck/BackgroundMusic/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

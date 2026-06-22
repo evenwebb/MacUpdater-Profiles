@@ -1,0 +1,36 @@
+{
+  "name": "Caprine",
+  "slug": "caprine",
+  "description": "Elegant third-party Facebook Messenger desktop app \u2014 dark mode, privacy-focused, and keyboard shortcuts",
+  "website": "https://sindresorhus.com/caprine",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.sindresorhus.caprine",
+  "category": "messaging",
+  "license": "free",
+  "min_os": "macOS 10.15",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/sindresorhus/caprine/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://github.com/sindresorhus/caprine/releases/latest",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/sindresorhus/caprine/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

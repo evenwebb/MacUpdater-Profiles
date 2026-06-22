@@ -1,0 +1,32 @@
+{
+  "name": "JetBrains Toolbox",
+  "slug": "jetbrains-toolbox",
+  "description": "Manage all your JetBrains IDEs in one place \u2014 install, update, and roll back IntelliJ, PyCharm, WebStorm, and more",
+  "website": "https://www.jetbrains.com/toolbox-app",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.jetbrains.toolbox",
+  "category": "developer-tools",
+  "license": "free",
+  "min_os": "macOS 11.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "json_api",
+    "url": "https://data.services.jetbrains.com/products/releases?code=TBA&latest=true&type=release",
+    "extraction": {
+      "type": "json_path",
+      "path": "TBA.0.version"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://www.jetbrains.com/toolbox-app/download",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://www.jetbrains.com/toolbox-app/whatsnew"
+  },
+  "last_updated": "2026-06-22"
+}

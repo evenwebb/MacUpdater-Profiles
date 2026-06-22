@@ -1,0 +1,32 @@
+{
+  "name": "LibreWolf",
+  "slug": "librewolf",
+  "description": "Independent fork of Firefox with a focus on privacy, security, and freedom \u2014 no telemetry, no data collection",
+  "website": "https://librewolf.net",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "io.gitlab.librewolf-community",
+  "category": "browsers",
+  "license": "free",
+  "min_os": "macOS 11.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/LibreWolf-Browser/LibreWolf-MacOS-Updater/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://librewolf.net/installation/macos",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://librewolf.net/blog"
+  },
+  "last_updated": "2026-06-22"
+}

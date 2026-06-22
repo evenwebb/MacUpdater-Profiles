@@ -1,0 +1,36 @@
+{
+  "name": "Beekeeper Studio",
+  "slug": "beekeeper-studio",
+  "description": "Open-source SQL editor and database manager \u2014 supports MySQL, Postgres, SQLite, SQL Server, and more",
+  "website": "https://www.beekeeperstudio.io",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.beekeeperstudio.Beekeeper-Studio",
+  "category": "developer-tools",
+  "license": "free",
+  "min_os": "macOS 10.15",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/beekeeper-studio/beekeeper-studio/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://www.beekeeperstudio.io/get",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/beekeeper-studio/beekeeper-studio/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

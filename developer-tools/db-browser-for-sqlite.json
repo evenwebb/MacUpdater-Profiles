@@ -1,0 +1,36 @@
+{
+  "name": "DB Browser for SQLite",
+  "slug": "db-browser-for-sqlite",
+  "description": "Visual, open-source tool to create, design, and edit SQLite database files \u2014 no SQL knowledge required",
+  "website": "https://sqlitebrowser.org",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "org.sqlitebrowser.sqlitebrowser",
+  "category": "developer-tools",
+  "license": "free",
+  "min_os": "macOS 10.15",
+  "auto_updates": false,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/sqlitebrowser/sqlitebrowser/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://sqlitebrowser.org/dl",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/sqlitebrowser/sqlitebrowser/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}

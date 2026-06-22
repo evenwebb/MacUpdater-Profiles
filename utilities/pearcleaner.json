@@ -1,0 +1,36 @@
+{
+  "name": "PearCleaner",
+  "slug": "pearcleaner",
+  "description": "Free, open-source Mac app cleaner \u2014 thoroughly uninstall apps and remove leftover files with a clean native UI",
+  "website": "https://itsalin.com/appInfo/?id=pearcleaner",
+  "platform": "macOS",
+  "architecture": "universal",
+  "bundle_id": "com.alienator88.Pearcleaner",
+  "category": "utilities",
+  "license": "free",
+  "min_os": "macOS 13.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/alienator88/PearCleaner/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name"
+    }
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://github.com/alienator88/PearCleaner/releases/latest",
+    "file_type": "dmg"
+  },
+  "changelog": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/alienator88/PearCleaner/releases/latest"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "last_updated": "2026-06-22"
+}
