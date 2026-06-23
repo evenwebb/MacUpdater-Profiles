@@ -205,6 +205,7 @@ def check_profile(slug: str) -> dict:
 def main():
     import argparse
     p = argparse.ArgumentParser(description="Remote profile health check")
+    p.add_argument("--slug", default="", help="Check single profile by slug")
     p.add_argument("--sample", type=int, default=0, help="Check random sample of N profiles")
     p.add_argument("--offset", type=int, default=0, help="Skip first N profiles (for batch rotation)")
     p.add_argument("--submit", action="store_true", help="Submit results as anonymous gist")

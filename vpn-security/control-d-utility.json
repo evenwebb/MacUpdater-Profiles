@@ -19,10 +19,8 @@
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
-    "file_type": "dmg",
-    "headers": {},
-    "url": "https://github.com/Control-D-Inc/ctrld/releases/download/v1.5.2/ctrld_1.5.2_windows_386.zip"
+    "method": "app_store_only",
+    "note": "GUI auto-updates in-app. The ctrld GitHub repo publishes CLI tarballs only — no macOS .app/.dmg for MacUpdater to install."
   },
   "changelog": {
     "method": "github_releases",
@@ -33,8 +31,8 @@
     "method": "github_api",
     "field": "published_at in GitHub release JSON"
   },
-  "notes": "The GUI app auto-updates with no public Sparkle feed or version endpoint. The controld.com website is Cloudflare-protected (404 to automated fetchers). No Mac App Store , web-only distribution. The CLI daemon (ctrld) is open-source on GitHub with proper release versioning. Mapping GUI version to CLI version is approximate.",
-  "last_updated": "2026-06-21",
+  "notes": "The GUI app auto-updates with no public Sparkle feed or version endpoint. The controld.com website is Cloudflare-protected (404 to automated fetchers). No Mac App Store , web-only distribution. The CLI daemon (ctrld) is open-source on GitHub with proper release versioning. Mapping GUI version to CLI version is approximate. MacUpdater can report approximate CLI release versions but cannot install updates.",
+  "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
   "license": "free",
