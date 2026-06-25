@@ -32,6 +32,7 @@ MANIFEST_PATH = REPO / "manifest.json"
 TIMEOUT = 15
 WORKERS = 8
 UA = "MacUpdater-HealthCheck/2.0"
+GITHUB_TOKEN = __import__("os").environ.get("GITHUB_TOKEN", "")
 
 # Methods that can't be checked remotely (require local app, auth, etc.)
 SKIP_METHODS = {
@@ -59,7 +60,10 @@ def fetch(url: str, timeout: int = TIMEOUT) -> tuple[int, str]:
     """Fetch a URL. Returns (status_code, body)."""
     if not url.startswith(("http://", "https://")):
         return -1, f"Invalid URL: {url[:80]}"
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    headers = {"User-Agent": UA}
+    if "api.github.com" in url and GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    req = urllib.request.Request(url, headers=headers)
     try:
         resp = urllib.request.urlopen(req, timeout=timeout)
         return resp.status, resp.read().decode("utf-8", "replace")
