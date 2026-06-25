@@ -57,6 +57,8 @@ def normalize_method(m: str) -> str:
 
 def fetch(url: str, timeout: int = TIMEOUT) -> tuple[int, str]:
     """Fetch a URL. Returns (status_code, body)."""
+    if not url.startswith(("http://", "https://")):
+        return -1, f"Invalid URL: {url[:80]}"
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     try:
         resp = urllib.request.urlopen(req, timeout=timeout)
