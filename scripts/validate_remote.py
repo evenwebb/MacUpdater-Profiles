@@ -69,6 +69,25 @@ def fetch(url: str, timeout: int = TIMEOUT) -> tuple[int, str]:
         return -1, str(e)
 
 
+def _normalize_extraction(raw) -> dict:
+    """Convert extraction string/None shorthand to a dict the extractors can use."""
+    if isinstance(raw, dict):
+        return raw
+    if raw is None:
+        return {}
+    if isinstance(raw, str):
+        s = raw.strip()
+        if s.startswith("regex:"):
+            return {"pattern": s[len("regex:"):]}
+        if s.startswith("sparkle:"):
+            return {}  # Sparkle extractor handles version fields natively
+        if s in ("tag_name", "product", "version"):
+            return {"json_path": s}
+        # Custom shorthand — pass as pattern for scrape/plain text
+        return {"pattern": s}
+    return {}
+
+
 def extract_version(profile: dict) -> tuple[str | None, str | None]:
     """
     Try to extract a version string from the profile's endpoint.
@@ -80,7 +99,7 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
         return None, "No version URL"
 
     method = normalize_method(vc.get("method", ""))
-    extraction = vc.get("extraction", {})
+    extraction = _normalize_extraction(vc.get("extraction"))
 
     code, body = fetch(url)
     if code not in (200, 301, 302):
@@ -100,6 +119,8 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
             return _extract_yaml(body, extraction)
         elif method == "scrape_html":
             return _extract_html(body, extraction)
+        elif method == "sourceforge_json":
+            return _extract_json(body, extraction)
         elif method == "redirect_trace":
             code2, body2 = fetch(url)
             return (f"HTTP {code2}" if code2 else None, None)
@@ -142,6 +163,13 @@ def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
 
 def _extract_github(body: str) -> tuple[str | None, str | None]:
     data = json.loads(body)
+    # Handle array response (list of releases)
+    if isinstance(data, list):
+        if not data:
+            return None, "Empty release list"
+        data = data[0]
+    if not isinstance(data, dict):
+        return None, "Unexpected GitHub response type"
     tag = data.get("tag_name", "")
     ver = tag.lstrip("v").lstrip("release/")
     ver = re.sub(r"^(desktop-|Audacity-|mac-|XQuartz-)", "", ver)
@@ -156,11 +184,16 @@ def _extract_json(body: str, extraction: dict) -> tuple[str | None, str | None]:
         key = key.split("[")[0]
         if isinstance(data, dict):
             data = data.get(key)
-        elif isinstance(data, list) and key.isdigit():
-            data = data[int(key)]
+        elif isinstance(data, list):
+            if key.isdigit():
+                data = data[int(key)]
+            elif data and isinstance(data[0], dict):
+                data = data[0].get(key)
+            else:
+                data = data[0] if data else None
         else:
-            return None, f"Path {path} not found"
-    return (str(data) if data else None, None)
+            return None, f"Path {path} not found (got {type(data).__name__})"
+    return (str(data) if data is not None else None, None)
 
 
 def _extract_yaml(body: str, extraction: dict) -> tuple[str | None, str | None]:
