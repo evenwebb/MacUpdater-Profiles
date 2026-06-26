@@ -33,7 +33,7 @@ MANIFEST_PATH = REPO / "manifest.json"
 TIMEOUT = 15
 WORKERS = 8
 RETRIES = 2
-UA = "MacUpdater-HealthCheck/3.0"
+UA = "MacUpdater-HealthCheck/3.0 Sparkle/2.0"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN", "")
 
 # ---------------------------------------------------------------------------
@@ -340,12 +340,24 @@ def check_profile(slug: str) -> Result:
     if code in (400, 401, 402, 405, 407, 408, 409):
         return {**base, "status": "BROKEN", "error": f"HTTP {code}"}
 
-    # Redirects — still works, just moved
+    # Redirects — follow them and try the new URL
     if code in (301, 302, 307, 308):
-        # Try to extract anyway if we got a body
-        if body:
-            return _try_extract(base, method, body, extraction)
-        return {**base, "status": "DEGRADED", "error": f"HTTP {code} redirect — no body to parse"}
+        import urllib.request as ur2
+        redirect_handler = ur2.HTTPRedirectHandler()
+        opener = ur2.build_opener(redirect_handler)
+        try:
+            req2 = ur2.Request(url, headers={"User-Agent": UA})
+            resp2 = opener.open(req2, timeout=TIMEOUT)
+            raw2 = resp2.read()
+            if resp2.headers.get("Content-Encoding") == "gzip" or raw2[:2] == b"\x1f\x8b":
+                import gzip
+                raw2 = gzip.decompress(raw2)
+            body2 = raw2.decode("utf-8", "replace")
+            new_url = resp2.geturl()
+            base2 = {**base} if new_url == url else {**base, "url": new_url}
+            return _try_extract(base2, method, body2, extraction)
+        except Exception as e:
+            return {**base, "status": "DEGRADED", "error": f"HTTP {code} — {str(e)[:60]}"}
 
     if code != 200:
         return {**base, "status": "BROKEN", "error": f"Unexpected HTTP {code}"}

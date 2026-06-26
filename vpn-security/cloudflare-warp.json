@@ -9,7 +9,7 @@
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "https://1111-releases.cloudflareclient.com/mac/appcast.xml",
+    "url": "https://downloads.cloudflareclient.com/v1/update/sparkle",
     "extraction": {
       "type": "xpath",
       "xpath": "sparkle:shortVersionString",

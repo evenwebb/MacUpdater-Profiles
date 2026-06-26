@@ -132,16 +132,6 @@
       "path": "utilities/alttab.json",
       "skip": false
     },
-    "amazon-music": {
-      "name": "Amazon Music",
-      "bundle_id": "com.amazon.music",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "media",
-      "license": "free",
-      "path": "media/amazon-music.json",
-      "skip": false
-    },
     "amethyst": {
       "name": "Amethyst",
       "bundle_id": "com.amethyst.Amethyst",
@@ -372,16 +362,6 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/burn.json",
-      "skip": false
-    },
-    "caffeine": {
-      "name": "Caffeine",
-      "bundle_id": "com.lightheadsw.Caffeine",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/caffeine.json",
       "skip": false
     },
     "calibre": {
@@ -902,16 +882,6 @@
       "path": "developer-tools/forklift.json",
       "skip": false
     },
-    "garmin-express": {
-      "name": "Garmin Express",
-      "bundle_id": "com.garmin.renu",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/garmin-express.json",
-      "skip": false
-    },
     "gemini": {
       "name": "Gemini",
       "bundle_id": "com.macpaw.site.Gemini2",
@@ -1148,16 +1118,6 @@
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/insomnia.json",
-      "skip": false
-    },
-    "insta360-studio": {
-      "name": "Insta360 Studio",
-      "bundle_id": "com.insta360.studio",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "specialized",
-      "license": "free",
-      "path": "specialized/insta360-studio.json",
       "skip": false
     },
     "ip-scanner": {
@@ -1500,16 +1460,6 @@
       "category": "specialized",
       "license": "free",
       "path": "specialized/macfuse.json",
-      "skip": false
-    },
-    "macpar-deluxe": {
-      "name": "MacPAR deLuxe",
-      "bundle_id": "com.xs4all.macpardeluxe",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/macpar-deluxe.json",
       "skip": false
     },
     "mactracker": {
@@ -1856,16 +1806,6 @@
       "path": "utilities/orca-slicer.json",
       "skip": false
     },
-    "parallels-desktop": {
-      "name": "Parallels Desktop",
-      "bundle_id": "com.parallels.Parallels",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "virtualization",
-      "license": "paid",
-      "path": "virtualization/parallels-desktop.json",
-      "skip": false
-    },
     "parsec": {
       "name": "Parsec",
       "bundle_id": "tv.parsec.www",
@@ -1940,16 +1880,6 @@
       "path": "vpn-security/pia.json",
       "skip": false
     },
-    "pic-time-uploader": {
-      "name": "Pic-Time Uploader",
-      "bundle_id": "com.pic-time.uploader",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "cloud-backup",
-      "license": "free",
-      "path": "cloud-backup/pic-time-uploader.json",
-      "skip": false
-    },
     "pixelmator-pro": {
       "name": "Pixelmator Pro",
       "bundle_id": "com.pixelmator.PixelmatorPro",
@@ -1978,16 +1908,6 @@
       "category": "media",
       "license": "free",
       "path": "media/plex.json",
-      "skip": false
-    },
-    "poedit": {
-      "name": "Poedit",
-      "bundle_id": "com.agilebits.Poedit",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/poedit.json",
       "skip": false
     },
     "postico": {
