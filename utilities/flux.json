@@ -13,7 +13,7 @@
   "skip": false,
   "version_check": {
     "method": "sparkle_appcast",
-    "url": null,
+    "url": "https://secure.herf.org/flux/macflux.xml",
     "extraction": "sparkle:version"
   },
   "download": {
