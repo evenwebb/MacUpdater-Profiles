@@ -142,16 +142,6 @@
       "path": "utilities/amethyst.json",
       "skip": false
     },
-    "amphetamine": {
-      "name": "Amphetamine",
-      "bundle_id": "com.if.Amphetamine",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/amphetamine.json",
-      "skip": false
-    },
     "anydesk": {
       "name": "AnyDesk",
       "bundle_id": "com.philandro.anydesk",
@@ -272,28 +262,6 @@
       "path": "utilities/batchmod.json",
       "skip": false
     },
-    "battle-net": {
-      "name": "Battle.net",
-      "bundle_id": "net.battle.bootstrapper",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/battle-net.png"
-      },
-      "category": "gaming",
-      "license": "free",
-      "path": "gaming/battle-net.json",
-      "skip": false
-    },
-    "bear": {
-      "name": "Bear",
-      "bundle_id": "net.shinyfrog.bear",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "notes-writing",
-      "license": "free",
-      "path": "notes-writing/bear.json",
-      "skip": false
-    },
     "beekeeper-studio": {
       "name": "Beekeeper Studio",
       "bundle_id": "com.beekeeperstudio.Beekeeper-Studio",
@@ -374,16 +342,6 @@
       "path": "office/calibre.json",
       "skip": false
     },
-    "canary-mail": {
-      "name": "Canary Mail",
-      "bundle_id": "com.canarymail.CanaryMail",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "email",
-      "license": "paid",
-      "path": "email/canary-mail.json",
-      "skip": false
-    },
     "canva": {
       "name": "Canva",
       "bundle_id": "com.canva.CanvaDesktop",
@@ -425,16 +383,6 @@
       "license": "free",
       "path": "ai-tools/chatgpt.json",
       "skip": false
-    },
-    "cheatsheet": {
-      "name": "CheatSheet",
-      "bundle_id": "com.mediaatelier.CheatSheet",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/cheatsheet.json",
-      "skip": true
     },
     "chromium": {
       "name": "Chromium",
@@ -608,16 +556,6 @@
       "path": "developer-tools/dbeaver.json",
       "skip": false
     },
-    "detail-camera-plugin": {
-      "name": "Detail Camera.plugin",
-      "bundle_id": "com.detail.camera-plugin",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "specialized",
-      "license": "free",
-      "path": "specialized/detail-camera-plugin.json",
-      "skip": false
-    },
     "devonthink": {
       "name": "DEVONthink",
       "bundle_id": "com.devon-technologies.think4",
@@ -710,16 +648,6 @@
       "path": "browsers/duckduckgo.json",
       "skip": false
     },
-    "easyfind": {
-      "name": "EasyFind",
-      "bundle_id": "org.grunenberg.EasyFind",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/easyfind.json",
-      "skip": false
-    },
     "element": {
       "name": "Element",
       "bundle_id": "im.riot.app",
@@ -730,16 +658,6 @@
       "category": "messaging",
       "license": "free",
       "path": "messaging/element.json",
-      "skip": false
-    },
-    "elephas": {
-      "name": "Elephas",
-      "bundle_id": "com.kamban.elephas",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "paid",
-      "path": "utilities/elephas.json",
       "skip": false
     },
     "elgato-stream-deck": {
@@ -776,18 +694,6 @@
       "path": "notes-writing/evernote.json",
       "skip": false
     },
-    "expandrive": {
-      "name": "ExpanDrive",
-      "bundle_id": "com.expandrive.ExpanDrive",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/expandrive.png"
-      },
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/expandrive.json",
-      "skip": false
-    },
     "expressvpn": {
       "name": "ExpressVPN",
       "bundle_id": "com.expressvpn.ExpressVPN",
@@ -806,16 +712,6 @@
       "category": "utilities",
       "license": "paid",
       "path": "utilities/fantastical.json",
-      "skip": false
-    },
-    "fast-clicker": {
-      "name": "Fast Clicker",
-      "bundle_id": "com.fastclicker.app",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/fast-clicker.json",
       "skip": false
     },
     "ferdium": {
@@ -982,16 +878,6 @@
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/grammarly-desktop.json",
-      "skip": false
-    },
-    "grammarly-for-safari": {
-      "name": "Grammarly for Safari",
-      "bundle_id": "com.grammarly.safari",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "email",
-      "license": "free",
-      "path": "email/grammarly-for-safari.json",
       "skip": false
     },
     "hammerspoon": {
@@ -1188,18 +1074,6 @@
       "path": "notes-writing/joplin.json",
       "skip": false
     },
-    "kaleidoscope": {
-      "name": "Kaleidoscope",
-      "bundle_id": "app.kaleidoscope.v4",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/kaleidoscope.png"
-      },
-      "category": "developer-tools",
-      "license": "paid",
-      "path": "developer-tools/kaleidoscope.json",
-      "skip": false
-    },
     "karabiner-elements": {
       "name": "Karabiner-Elements",
       "bundle_id": "org.pqrs.Karabiner-Elements",
@@ -1232,18 +1106,6 @@
       "category": "design",
       "license": "free",
       "path": "design/keka.json",
-      "skip": false
-    },
-    "keybase": {
-      "name": "Keybase",
-      "bundle_id": "keybase.Electron",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/keybase.png"
-      },
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/keybase.json",
       "skip": false
     },
     "keyboard-maestro": {
@@ -1320,16 +1182,6 @@
       "path": "utilities/latest.json",
       "skip": false
     },
-    "librewolf": {
-      "name": "LibreWolf",
-      "bundle_id": "io.gitlab.librewolf-community",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "browsers",
-      "license": "free",
-      "path": "browsers/librewolf.json",
-      "skip": false
-    },
     "linearmouse": {
       "name": "LinearMouse",
       "bundle_id": "com.lujjjh.LinearMouse",
@@ -1340,16 +1192,6 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/linearmouse.json",
-      "skip": false
-    },
-    "littlesnitch": {
-      "name": "Little Snitch",
-      "bundle_id": "at.obdev.LittleSnitch6",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "vpn-security",
-      "license": "paid",
-      "path": "vpn-security/littlesnitch.json",
       "skip": false
     },
     "lm-studio": {
@@ -1370,16 +1212,6 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/localsend.json",
-      "skip": false
-    },
-    "logic-pro": {
-      "name": "Logic Pro",
-      "bundle_id": "com.apple.logic10",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "media",
-      "license": "free",
-      "path": "media/logic-pro.json",
       "skip": false
     },
     "logitech-options-plus": {
@@ -1472,16 +1304,6 @@
       "path": "utilities/mactracker.json",
       "skip": false
     },
-    "magnet": {
-      "name": "Magnet",
-      "bundle_id": "com.crowdcafe.Magnet",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/magnet.json",
-      "skip": false
-    },
     "mailspring": {
       "name": "Mailspring",
       "bundle_id": "com.getmailspring.Mailspring",
@@ -1534,16 +1356,6 @@
       "category": "office",
       "license": "free",
       "path": "office/meetingbar.json",
-      "skip": false
-    },
-    "microsoft-edge": {
-      "name": "Microsoft Edge",
-      "bundle_id": "com.microsoft.edgemac",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "browsers",
-      "license": "free",
-      "path": "browsers/microsoft-edge.json",
       "skip": false
     },
     "microsoft-excel": {
@@ -1848,16 +1660,6 @@
       "path": "utilities/pearcleaner.json",
       "skip": false
     },
-    "perception-usertesting-recorder": {
-      "name": "Perception / UserTesting Recorder",
-      "bundle_id": "com.usertesting.recorder",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "other",
-      "license": "free",
-      "path": "other/perception-usertesting-recorder.json",
-      "skip": false
-    },
     "photobulk": {
       "name": "PhotoBulk",
       "bundle_id": "com.eltima.photobulk",
@@ -1868,26 +1670,6 @@
       "category": "design",
       "license": "paid",
       "path": "design/photobulk.json",
-      "skip": false
-    },
-    "pia": {
-      "name": "Private Internet Access",
-      "bundle_id": "com.privateinternetaccess.vpn",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "vpn-security",
-      "license": "paid",
-      "path": "vpn-security/pia.json",
-      "skip": false
-    },
-    "pixelmator-pro": {
-      "name": "Pixelmator Pro",
-      "bundle_id": "com.pixelmator.PixelmatorPro",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "design",
-      "license": "paid",
-      "path": "design/pixelmator-pro.json",
       "skip": false
     },
     "pixelsnap": {
@@ -2018,16 +1800,6 @@
       "path": "utilities/rectangle.json",
       "skip": false
     },
-    "reeder5": {
-      "name": "Reeder 5",
-      "bundle_id": "com.reederapp.reeder5",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "rss-reading",
-      "license": "free",
-      "path": "rss-reading/reeder5.json",
-      "skip": false
-    },
     "rescuetime": {
       "name": "RescueTime",
       "bundle_id": "com.rescuetime.rescuetime",
@@ -2048,28 +1820,6 @@
       "category": "gaming",
       "license": "free",
       "path": "gaming/roblox.json",
-      "skip": false
-    },
-    "screens": {
-      "name": "Screens 5",
-      "bundle_id": "com.edovia.screens.mac",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "remote-desktop",
-      "license": "free",
-      "path": "remote-desktop/screens.json",
-      "skip": false
-    },
-    "scrivener": {
-      "name": "Scrivener",
-      "bundle_id": "com.literatureandlatte.scrivener3",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/scrivener.png"
-      },
-      "category": "notes-writing",
-      "license": "paid",
-      "path": "notes-writing/scrivener.json",
       "skip": false
     },
     "scroll-reverser": {
@@ -2168,16 +1918,6 @@
       "path": "design/sketch.json",
       "skip": false
     },
-    "skype": {
-      "name": "Skype",
-      "bundle_id": "com.skype.skype",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "messaging",
-      "license": "free",
-      "path": "messaging/skype.json",
-      "skip": true
-    },
     "smartreporter": {
       "name": "SMARTReporter",
       "bundle_id": "com.corecode.SMARTReporter",
@@ -2190,16 +1930,6 @@
       "path": "utilities/smartreporter.json",
       "skip": false
     },
-    "sourcetree": {
-      "name": "SourceTree",
-      "bundle_id": "com.torusknot.SourceTreeNotMAS",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/sourcetree.json",
-      "skip": false
-    },
     "spark-mail": {
       "name": "Spark Mail",
       "bundle_id": "com.readdle.SparkDesktop",
@@ -2208,18 +1938,6 @@
       "category": "email",
       "license": "paid",
       "path": "email/spark-mail.json",
-      "skip": false
-    },
-    "spotify": {
-      "name": "Spotify",
-      "bundle_id": "com.spotify.client",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/spotify.png"
-      },
-      "category": "media",
-      "license": "free",
-      "path": "media/spotify.json",
       "skip": false
     },
     "spyderxpro": {
@@ -2394,18 +2112,6 @@
       "path": "utilities/the-unarchiver.json",
       "skip": false
     },
-    "things": {
-      "name": "Things",
-      "bundle_id": "com.culturedcode.ThingsMac",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/things.png"
-      },
-      "category": "notes-writing",
-      "license": "paid",
-      "path": "notes-writing/things.json",
-      "skip": false
-    },
     "thunderbird": {
       "name": "Thunderbird",
       "bundle_id": "org.mozilla.thunderbird",
@@ -2480,16 +2186,6 @@
       "path": "developer-tools/transmit.json",
       "skip": false
     },
-    "trello": {
-      "name": "Trello",
-      "bundle_id": "com.trello.Trello",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "office",
-      "license": "free",
-      "path": "office/trello.json",
-      "skip": false
-    },
     "tunnelblick": {
       "name": "Tunnelblick",
       "bundle_id": "net.tunnelblick.tunnelblick",
@@ -2510,16 +2206,6 @@
       "path": "notes-writing/typeface.json",
       "skip": false
     },
-    "ulysses": {
-      "name": "Ulysses",
-      "bundle_id": "com.soulmen.ulysses-pad",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "notes-writing",
-      "license": "paid",
-      "path": "notes-writing/ulysses.json",
-      "skip": false
-    },
     "uninstallpkg": {
       "name": "UninstallPKG",
       "bundle_id": "com.corecode.UninstallPKG",
@@ -2530,28 +2216,6 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/uninstallpkg.json",
-      "skip": false
-    },
-    "velja": {
-      "name": "Velja",
-      "bundle_id": "com.sindresorhus.Velja",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/velja.json",
-      "skip": false
-    },
-    "viber": {
-      "name": "Viber",
-      "bundle_id": "com.viber.osx",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/viber.png"
-      },
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/viber.json",
       "skip": false
     },
     "virtualbox": {

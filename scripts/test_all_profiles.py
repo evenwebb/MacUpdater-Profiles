@@ -117,7 +117,12 @@ def fetch(url: str) -> tuple[int, str]:
             raw = gzip.decompress(raw)
         return resp.status, raw.decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
-        return e.code, ""
+        # Capture body even for non-200 responses (redirects often have content)
+        try:
+            body = e.read().decode("utf-8", "replace")
+        except Exception:
+            body = ""
+        return e.code, body
     except Exception as e:
         return -1, str(e)
 
