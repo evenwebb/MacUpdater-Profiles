@@ -122,16 +122,6 @@
       "path": "developer-tools/alacritty.json",
       "skip": false
     },
-    "alfred": {
-      "name": "Alfred",
-      "bundle_id": "com.runningwithcrayons.Alfred",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "paid",
-      "path": "utilities/alfred.json",
-      "skip": false
-    },
     "alttab": {
       "name": "AltTab",
       "bundle_id": "com.lwouis.alt-tab-macos",
@@ -170,16 +160,6 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/amphetamine.json",
-      "skip": false
-    },
-    "android-studio": {
-      "name": "Android Studio",
-      "bundle_id": "com.google.android.studio",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/android-studio.json",
       "skip": false
     },
     "anydesk": {
@@ -250,16 +230,6 @@
       "path": "media/audio-hijack.json",
       "skip": false
     },
-    "backblaze": {
-      "name": "Backblaze",
-      "bundle_id": "com.backblaze.bzbmenu",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "cloud-backup",
-      "license": "free",
-      "path": "cloud-backup/backblaze.json",
-      "skip": false
-    },
     "background-music": {
       "name": "Background Music",
       "bundle_id": "com.bearisdriving.BGM",
@@ -324,16 +294,6 @@
       "path": "gaming/battle-net.json",
       "skip": false
     },
-    "bbedit": {
-      "name": "BBEdit",
-      "bundle_id": "com.barebones.bbedit",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "paid",
-      "path": "developer-tools/bbedit.json",
-      "skip": false
-    },
     "bear": {
       "name": "Bear",
       "bundle_id": "net.shinyfrog.bear",
@@ -352,16 +312,6 @@
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/beekeeper-studio.json",
-      "skip": false
-    },
-    "bettertouchtool": {
-      "name": "BetterTouchTool",
-      "bundle_id": "com.hegenberg.BetterTouchTool",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "paid",
-      "path": "utilities/bettertouchtool.json",
       "skip": false
     },
     "betterzip": {
@@ -484,16 +434,6 @@
       "category": "cloud-backup",
       "license": "paid",
       "path": "cloud-backup/carbon-copy-cloner.json",
-      "skip": false
-    },
-    "ccleaner": {
-      "name": "CCleaner",
-      "bundle_id": "com.piriform.ccleaner",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/ccleaner.json",
       "skip": false
     },
     "chatgpt": {
@@ -856,16 +796,6 @@
       "path": "notes-writing/evernote.json",
       "skip": false
     },
-    "evoto": {
-      "name": "Evoto",
-      "bundle_id": "com.evotoai.Evoto",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "specialized",
-      "license": "free",
-      "path": "specialized/evoto.json",
-      "skip": false
-    },
     "expandrive": {
       "name": "ExpanDrive",
       "bundle_id": "com.expandrive.ExpanDrive",
@@ -1094,18 +1024,6 @@
       "path": "email/grammarly-for-safari.json",
       "skip": false
     },
-    "grandperspective": {
-      "name": "GrandPerspective",
-      "bundle_id": "net.sourceforge.grandperspectiv",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/grandperspective.png"
-      },
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/grandperspective.json",
-      "skip": false
-    },
     "hammerspoon": {
       "name": "Hammerspoon",
       "bundle_id": "org.hammerspoon.Hammerspoon",
@@ -1222,16 +1140,6 @@
       "path": "media/imageoptim.json",
       "skip": false
     },
-    "inkscape": {
-      "name": "Inkscape",
-      "bundle_id": "org.inkscape.Inkscape",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "media",
-      "license": "free",
-      "path": "media/inkscape.json",
-      "skip": false
-    },
     "insomnia": {
       "name": "Insomnia",
       "bundle_id": "com.insomnia.app",
@@ -1342,16 +1250,6 @@
       "path": "utilities/karabiner-elements.json",
       "skip": false
     },
-    "kdenlive": {
-      "name": "Kdenlive",
-      "bundle_id": "org.kde.kdenlive",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "media",
-      "license": "free",
-      "path": "media/kdenlive.json",
-      "skip": false
-    },
     "keepingyouawake": {
       "name": "KeepingYouAwake",
       "bundle_id": "info.marcel-dierkes.KeepingYouAwake",
@@ -1440,26 +1338,6 @@
       "path": "media/kodi.json",
       "skip": false
     },
-    "krita": {
-      "name": "Krita",
-      "bundle_id": "org.kde.krita",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "media",
-      "license": "free",
-      "path": "media/krita.json",
-      "skip": false
-    },
-    "la-texit": {
-      "name": "LaTeXiT",
-      "bundle_id": "fr.chachatelier.pierre.LaTeXiT",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/la-texit.json",
-      "skip": false
-    },
     "lapce": {
       "name": "Lapce",
       "bundle_id": "dev.lapce.lapce",
@@ -1482,16 +1360,6 @@
       "path": "utilities/latest.json",
       "skip": false
     },
-    "libreoffice": {
-      "name": "LibreOffice",
-      "bundle_id": "org.libreoffice.script",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "office",
-      "license": "free",
-      "path": "office/libreoffice.json",
-      "skip": false
-    },
     "librewolf": {
       "name": "LibreWolf",
       "bundle_id": "io.gitlab.librewolf-community",
@@ -1500,18 +1368,6 @@
       "category": "browsers",
       "license": "free",
       "path": "browsers/librewolf.json",
-      "skip": false
-    },
-    "linear": {
-      "name": "Linear",
-      "bundle_id": "com.linear",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/linear.png"
-      },
-      "category": "specialized",
-      "license": "free",
-      "path": "specialized/linear.json",
       "skip": false
     },
     "linearmouse": {
@@ -1590,16 +1446,6 @@
       "path": "notes-writing/logseq.json",
       "skip": false
     },
-    "loom": {
-      "name": "Loom",
-      "bundle_id": "com.loom.desktop",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "specialized",
-      "license": "free",
-      "path": "specialized/loom.json",
-      "skip": false
-    },
     "losslesscut": {
       "name": "LosslessCut",
       "bundle_id": "no.mifi.losslesscut-mac",
@@ -1664,18 +1510,6 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/macpar-deluxe.json",
-      "skip": false
-    },
-    "macs-fan-control": {
-      "name": "Macs Fan Control",
-      "bundle_id": "com.crystalidea.macsfancontrol",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/macs-fan-control.png"
-      },
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/macs-fan-control.json",
       "skip": false
     },
     "mactracker": {
@@ -1868,16 +1702,6 @@
       "path": "vpn-security/mullvad.json",
       "skip": false
     },
-    "mysql-workbench": {
-      "name": "MySQL Workbench",
-      "bundle_id": "com.oracle.mysql.workbench",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/mysql-workbench.json",
-      "skip": false
-    },
     "neovide": {
       "name": "Neovide",
       "bundle_id": "com.neovide.neovide",
@@ -1980,16 +1804,6 @@
       "path": "utilities/omnidisksweeper.json",
       "skip": false
     },
-    "one-switch": {
-      "name": "One Switch",
-      "bundle_id": "studio.fireball.OneSwitch",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/one-switch.json",
-      "skip": false
-    },
     "onlyswitch": {
       "name": "OnlySwitch",
       "bundle_id": "jacklandrin.OnlySwitch",
@@ -2022,16 +1836,6 @@
       "path": "gaming/openclaw.json",
       "skip": false
     },
-    "opencore-legacy-patcher": {
-      "name": "OpenCore Legacy Patcher",
-      "bundle_id": "com.dortania.opencore-legacy-patcher",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/opencore-patcher.json",
-      "skip": false
-    },
     "openoffice": {
       "name": "Apache OpenOffice",
       "bundle_id": "org.openoffice.script",
@@ -2040,16 +1844,6 @@
       "category": "office",
       "license": "free",
       "path": "office/openoffice.json",
-      "skip": false
-    },
-    "opera": {
-      "name": "Opera",
-      "bundle_id": "com.operasoftware.Opera",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "browsers",
-      "license": "free",
-      "path": "browsers/opera.json",
       "skip": false
     },
     "orca-slicer": {
@@ -2102,16 +1896,6 @@
       "path": "utilities/path-finder.json",
       "skip": false
     },
-    "pdf-expert": {
-      "name": "PDF Expert",
-      "bundle_id": "com.readdle.PDFExpert-Mac",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "specialized",
-      "license": "paid",
-      "path": "specialized/pdf-expert.json",
-      "skip": false
-    },
     "pearcleaner": {
       "name": "PearCleaner",
       "bundle_id": "com.alienator88.Pearcleaner",
@@ -2132,16 +1916,6 @@
       "category": "other",
       "license": "free",
       "path": "other/perception-usertesting-recorder.json",
-      "skip": false
-    },
-    "permute": {
-      "name": "Permute",
-      "bundle_id": "com.charliemonroe.Permute-4",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "paid",
-      "path": "utilities/permute.json",
       "skip": false
     },
     "photobulk": {
@@ -2226,18 +2000,6 @@
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/postico.json",
-      "skip": false
-    },
-    "postman": {
-      "name": "Postman",
-      "bundle_id": "com.postmanlabs.mac",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/postman.png"
-      },
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/postman.json",
       "skip": false
     },
     "protonvpn": {
@@ -2368,28 +2130,6 @@
       "path": "gaming/roblox.json",
       "skip": false
     },
-    "rstudio": {
-      "name": "RStudio",
-      "bundle_id": "com.rstudio.desktop",
-      "alternate_bundle_ids": [],
-      "icons": {
-        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/rstudio.png"
-      },
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/rstudio.json",
-      "skip": false
-    },
-    "screenflow": {
-      "name": "ScreenFlow",
-      "bundle_id": "net.telestream.screenflow10",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "media",
-      "license": "paid",
-      "path": "media/screenflow.json",
-      "skip": false
-    },
     "screens": {
       "name": "Screens 5",
       "bundle_id": "com.edovia.screens.mac",
@@ -2434,16 +2174,6 @@
       "path": "browsers/seamonkey.json",
       "skip": false
     },
-    "sequel-ace": {
-      "name": "Sequel Ace",
-      "bundle_id": "com.sequel-ace.Sequel-Ace",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/sequel-ace.json",
-      "skip": false
-    },
     "session": {
       "name": "Session",
       "bundle_id": "com.loki-project.loki-messenger",
@@ -2474,16 +2204,6 @@
       "category": "media",
       "license": "free",
       "path": "media/shotcut.json",
-      "skip": false
-    },
-    "shottr": {
-      "name": "Shottr",
-      "bundle_id": "cc.shottr.shottr",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "paid",
-      "path": "utilities/shottr.json",
       "skip": false
     },
     "signal": {
@@ -2528,16 +2248,6 @@
       "path": "design/sketch.json",
       "skip": false
     },
-    "skim": {
-      "name": "Skim",
-      "bundle_id": "net.sourceforge.skim-app.skim",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "rss-reading",
-      "license": "free",
-      "path": "rss-reading/skim.json",
-      "skip": false
-    },
     "skype": {
       "name": "Skype",
       "bundle_id": "com.skype.skype",
@@ -2547,16 +2257,6 @@
       "license": "free",
       "path": "messaging/skype.json",
       "skip": true
-    },
-    "slack": {
-      "name": "Slack",
-      "bundle_id": "com.tinyspec.Slack",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "messaging",
-      "license": "free",
-      "path": "messaging/slack.json",
-      "skip": false
     },
     "smartreporter": {
       "name": "SMARTReporter",
@@ -2588,16 +2288,6 @@
       "category": "email",
       "license": "paid",
       "path": "email/spark-mail.json",
-      "skip": false
-    },
-    "speedtest": {
-      "name": "Speedtest by Ookla",
-      "bundle_id": "com.ookla.speedtest-macos",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/speedtest.json",
       "skip": false
     },
     "spotify": {
@@ -2708,16 +2398,6 @@
       "path": "cloud-backup/syncthing.json",
       "skip": false
     },
-    "tableplus": {
-      "name": "TablePlus",
-      "bundle_id": "com.tinyapp.TablePlus",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "paid",
-      "path": "developer-tools/tableplus.json",
-      "skip": false
-    },
     "tailscale": {
       "name": "Tailscale",
       "bundle_id": "com.tailscale.ipn.macos",
@@ -2814,16 +2494,6 @@
       "category": "email",
       "license": "free",
       "path": "email/thunderbird.json",
-      "skip": false
-    },
-    "timemachineeditor": {
-      "name": "TimeMachineEditor",
-      "bundle_id": "com.tclementdev.timemachineeditor.application",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/timemachineeditor.json",
       "skip": false
     },
     "tinkertool": {
@@ -3026,26 +2696,6 @@
       "path": "developer-tools/vscodium.json",
       "skip": false
     },
-    "wacom-tablet-driver": {
-      "name": "Wacom Tablet Driver",
-      "bundle_id": "com.wacom.WacomTabletDriver",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/wacom-tablet-driver.json",
-      "skip": false
-    },
-    "warp": {
-      "name": "Warp",
-      "bundle_id": "dev.warp.Warp-Stable",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/warp.json",
-      "skip": false
-    },
     "wezterm": {
       "name": "WezTerm",
       "bundle_id": "com.github.wez.wezterm",
@@ -3078,26 +2728,6 @@
       "path": "gaming/whisky.json",
       "skip": false
     },
-    "windsurf": {
-      "name": "Windsurf",
-      "bundle_id": "com.codeium.windsurf",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "developer-tools",
-      "license": "free",
-      "path": "developer-tools/windsurf.json",
-      "skip": false
-    },
-    "wine": {
-      "name": "Wine",
-      "bundle_id": "org.winehq.Wine",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "utilities",
-      "license": "free",
-      "path": "utilities/wine.json",
-      "skip": false
-    },
     "wireshark": {
       "name": "WireShark",
       "bundle_id": "org.wireshark.Wireshark",
@@ -3118,16 +2748,6 @@
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/xcodes.json",
-      "skip": false
-    },
-    "xld": {
-      "name": "X Lossless Decoder (XLD)",
-      "bundle_id": "org.tmkk.XLD",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "media",
-      "license": "free",
-      "path": "media/xld.json",
       "skip": false
     },
     "xquartz": {
@@ -3190,16 +2810,6 @@
       "category": "messaging",
       "license": "free",
       "path": "messaging/zoom-workplace.json",
-      "skip": false
-    },
-    "zotero": {
-      "name": "Zotero",
-      "bundle_id": "org.zotero.zotero",
-      "alternate_bundle_ids": [],
-      "icons": {},
-      "category": "office",
-      "license": "free",
-      "path": "office/zotero.json",
       "skip": false
     }
   },

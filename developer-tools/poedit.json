@@ -13,7 +13,7 @@
   "skip": false,
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "https://poedit.net/appcast",
+    "url": "https://poedit.com/appcast2.xml",
     "extraction": "sparkle:version"
   },
   "download": {
