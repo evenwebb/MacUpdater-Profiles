@@ -9,7 +9,7 @@
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "https://flexibits.com/fantastical/appcast.xml",
+    "url": "https://flexibits.com/fantastical/appcast2.php",
     "extraction": {
       "type": "xpath",
       "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']",
