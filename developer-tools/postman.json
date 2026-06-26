@@ -14,7 +14,8 @@
       "type": "sparkle_feed",
       "pattern": null
     },
-    "headers": {}
+    "headers": {},
+    "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
     "method": "redirect_url",

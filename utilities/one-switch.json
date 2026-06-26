@@ -9,7 +9,8 @@
     "version_example": "1.35.4",
     "build_example": "440",
     "note": "Version extraction method assumed to be Sparkle based on macOS app conventions, but not confirmed via public documentation",
-    "headers": {}
+    "headers": {},
+    "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
     "url": "https://fireball.studio/media/uploads/files/OneSwitchOfficial-{BUILD}.dmg",

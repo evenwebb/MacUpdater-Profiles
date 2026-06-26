@@ -4,7 +4,7 @@
   "description": "AI writing assistant for Mac",
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "appcast URL embedded in app (probable: https://elephas.app/appcast.xml or https://assets.elephas.app/appcast.xml \u2014 blocked/404 when probed externally)",
+    "url": "https://assets.elephas.app/appcast.xml",
     "version_field": "sparkle:shortVersionString",
     "version_example": "11.7008",
     "headers": {}

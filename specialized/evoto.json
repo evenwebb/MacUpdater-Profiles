@@ -13,7 +13,8 @@
       "field": "Version text on download page",
       "note": "Download page shows version and date text (Update Time: YYYY-MM-DD)"
     },
-    "headers": {}
+    "headers": {},
+    "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
     "url": "https://www.evoto.ai/download",

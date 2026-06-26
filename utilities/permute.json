@@ -4,7 +4,7 @@
   "description": "Media converter",
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "appcast URL embedded in app bundle (likely https://software.charliemonroe.net/permute/appcast.xml)",
+    "url": "https://software.charliemonroe.net/appcast/permute.xml",
     "version_field": "sparkle:shortVersionString",
     "version_example": "4.0.4",
     "build_example": "4129",

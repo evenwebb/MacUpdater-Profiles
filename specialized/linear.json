@@ -15,7 +15,8 @@
       "pattern": "BLOCKED or undocumented \u2014 electron-updater endpoint not publicly confirmed"
     },
     "fallback": "Scrape https://linear.app/download for version string, or check changelog page",
-    "headers": {}
+    "headers": {},
+    "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
     "method": "direct_url",

@@ -8,11 +8,10 @@
   "min_os": "macOS 13+ (Ventura and later)",
   "auto_updates": true,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "Sparkle appcast URL is BLOCKED behind Cloudflare protection \u2014 not publicly accessible",
+    "method": "json_api",
+    "url": "https://releases.raycast.com/releases/latest",
     "extraction": {
-      "type": "xpath",
-      "pattern": "sparkle:shortVersionString (appcast not reachable)"
+      "json_path": "version"
     },
     "fallback": "Follow redirect on https://releases.raycast.com/releases/latest/download?build=universal to get versioned download URL, or scrape https://www.raycast.com/changelog",
     "headers": {}

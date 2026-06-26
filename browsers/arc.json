@@ -15,7 +15,8 @@
       "pattern": "sparkle:shortVersionString (appcast not reachable)"
     },
     "fallback": "Check HTTP Last-Modified header on https://releases.arc.net/release/Arc-latest.dmg or scrape https://arc.net/blog for release announcements",
-    "headers": {}
+    "headers": {},
+    "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
     "method": "direct_url",

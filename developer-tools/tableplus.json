@@ -14,7 +14,8 @@
       "type": "xpath",
       "pattern": "sparkle:shortVersionString (inferred, exact appcast URL not confirmed)"
     },
-    "headers": {}
+    "headers": {},
+    "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
     "method": "direct_url",

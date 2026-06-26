@@ -4,7 +4,7 @@
   "description": "Photo culling and editing",
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "appcast URL embedded in app (probable: https://updates.aftershoot.com/appcast/mac/stable/appcast.xml \u2014 connection refused when probed; may be IP-restricted)",
+    "url": "https://cdn.aftershoot.com/appcast.xml",
     "version_field": "sparkle:shortVersionString",
     "version_example": "2.3.0",
     "headers": {}

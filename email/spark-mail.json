@@ -15,7 +15,8 @@
       "pattern": "sparkle:shortVersionString (if appcast URL discovered from app bundle)"
     },
     "fallback": "Check Mac App Store listing (id:1176895641), Setapp version, or scrape https://sparkmailapp.com/download for version metadata",
-    "headers": {}
+    "headers": {},
+    "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
     "method": "direct_url",
