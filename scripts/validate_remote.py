@@ -142,7 +142,12 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
 
 def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
     ns = {"sparkle": "http://www.andymatuschak.org/xml-namespaces/sparkle"}
-    root = ET.fromstring(body)
+    if not body.strip().startswith("<?xml") and not body.strip().startswith("<rss") and not body.strip().startswith("<feed"):
+        return None, "Response is not XML"
+    try:
+        root = ET.fromstring(body)
+    except ET.ParseError as e:
+        return None, f"XML parse error: {str(e)[:80]}"
     items = root.findall("channel/item")
     if not items:
         return None, "No items in feed"
@@ -166,7 +171,10 @@ def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
 
 
 def _extract_github(body: str) -> tuple[str | None, str | None]:
-    data = json.loads(body)
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError as e:
+        return None, f"Invalid JSON from GitHub API: {str(e)[:60]}"
     # Handle array response (list of releases)
     if isinstance(data, list):
         if not data:
@@ -181,7 +189,10 @@ def _extract_github(body: str) -> tuple[str | None, str | None]:
 
 
 def _extract_json(body: str, extraction: dict) -> tuple[str | None, str | None]:
-    data = json.loads(body)
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError as e:
+        return None, f"Invalid JSON response: {str(e)[:60]}"
     path = extraction.get("json_path") or extraction.get("path", "version")
     # Simple JSON path traversal
     for key in path.lstrip("$").lstrip(".").split("."):
@@ -227,7 +238,11 @@ def check_profile(slug: str) -> dict:
     if not path:
         return {"slug": slug, "status": "missing", "error": "Profile file not found"}
 
-    profile = json.loads(path.read_text())
+    try:
+        profile = json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError) as e:
+        return {"slug": slug, "status": "broken", "error": f"Failed to read profile: {e}"}
+
     vc = profile.get("version_check", {})
     method = normalize_method(vc.get("method", ""))
 
