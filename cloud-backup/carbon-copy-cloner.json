@@ -18,10 +18,11 @@
     "headers": {}
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://bombich.com/download/get"
+    "url": "https://bombich.com/download/get",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "webpage",

@@ -21,9 +21,10 @@
     "notes": "Separate Intel (latest-mac.yml) and Apple Silicon (latest-mac-arm64.yml) builds via electron-updater"
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "url": "https://joplinapp.org/download",
-    "file_type": "dmg"
+    "file_type": "dmg",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "github_api",

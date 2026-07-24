@@ -23,7 +23,7 @@
     "note": "GitHub Desktop tags are plain version numbers (e.g. '3.5.12'), no prefix stripping needed."
   },
   "download": {
-    "method": "construct_url",
+    "method": "redirect_url",
     "url": "https://central.github.com/api/deployments/desktop/desktop/latest?version={VERSION}&env=production",
     "file_type": "zip",
     "headers": {},

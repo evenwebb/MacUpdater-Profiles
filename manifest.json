@@ -1,13 +1,16 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-07-24T12:51:55Z",
+  "updated": "2026-07-24T13:01:35Z",
   "total_profiles": 230,
   "apps": {
     "1password": {
       "name": "1Password",
       "bundle_id": "com.1password.1password",
-      "alternate_bundle_ids": [],
+      "alternate_bundle_ids": [
+        "com.agilebits.onepassword7",
+        "com.agilebits.onepassword4"
+      ],
       "icons": {},
       "category": "password-managers",
       "license": "paid",
@@ -295,7 +298,9 @@
     "bitwarden": {
       "name": "Bitwarden",
       "bundle_id": "com.bitwarden.desktop",
-      "alternate_bundle_ids": [],
+      "alternate_bundle_ids": [
+        "com.8bit.bitwarden"
+      ],
       "icons": {},
       "category": "password-managers",
       "license": "free",
@@ -651,7 +656,9 @@
     "duckduckgo": {
       "name": "DuckDuckGo Browser",
       "bundle_id": "com.duckduckgo.macos.browser",
-      "alternate_bundle_ids": [],
+      "alternate_bundle_ids": [
+        "com.duckduckgo.mobile.ios"
+      ],
       "icons": {},
       "category": "browsers",
       "license": "free",
@@ -1381,7 +1388,9 @@
     "microsoft-teams": {
       "name": "Microsoft Teams",
       "bundle_id": "com.microsoft.teams2",
-      "alternate_bundle_ids": [],
+      "alternate_bundle_ids": [
+        "com.microsoft.teams"
+      ],
       "icons": {},
       "category": "messaging",
       "license": "free",
@@ -2354,8 +2363,11 @@
     },
     "whatsapp": {
       "name": "WhatsApp",
-      "bundle_id": "com.facebook.WhatsApp",
-      "alternate_bundle_ids": [],
+      "bundle_id": "net.whatsapp.WhatsApp",
+      "alternate_bundle_ids": [
+        "desktop.WhatsApp",
+        "com.facebook.WhatsApp"
+      ],
       "icons": {},
       "category": "messaging",
       "license": "free",

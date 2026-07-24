@@ -21,7 +21,7 @@
     "method": "construct_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/aonez/Keka/releases/download/v1.6.5/Keka-1.6.5.dmg"
+    "url": "https://github.com/aonez/Keka/releases/download/v{VERSION}/Keka-{VERSION}.dmg"
   },
   "changelog": {
     "method": "github_api",

@@ -20,7 +20,7 @@
     "method": "construct_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.dmg"
+    "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v{VERSION}/Obsidian-{VERSION}.dmg"
   },
   "changelog": {
     "method": "github_release",

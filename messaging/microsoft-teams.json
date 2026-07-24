@@ -36,5 +36,8 @@
   "category": "messaging",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.microsoft.teams2"
+  "bundle_id": "com.microsoft.teams2",
+  "alternate_bundle_ids": [
+    "com.microsoft.teams"
+  ]
 }

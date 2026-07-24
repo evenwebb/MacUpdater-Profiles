@@ -24,7 +24,7 @@
     "filter": "$.assets[?(@.name =~ /\\.dmg$/)].browser_download_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.10/rpi-imager-v2.0.10.dmg"
+    "url": "https://github.com/raspberrypi/rpi-imager/releases/download/v{VERSION}/rpi-imager-v2.{VERSION}.dmg"
   },
   "changelog": {
     "method": "github_releases",

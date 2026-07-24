@@ -19,10 +19,11 @@
     "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://sparkmailapp.com/download"
+    "url": "https://sparkmailapp.com/download",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "webpage",

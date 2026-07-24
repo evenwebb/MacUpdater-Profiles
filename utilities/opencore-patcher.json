@@ -17,10 +17,10 @@
     "extraction": "tag_name"
   },
   "download": {
-    "method": "construct_url",
-    "url": null,
+    "method": "github_release",
     "file_type": "pkg",
-    "headers": {}
+    "headers": {},
+    "url": "https://github.com/dortania/OpenCore-Legacy-Patcher/releases/latest/download/OpenCore-Patcher.pkg"
   },
   "changelog": {
     "url": "https://github.com/dortania/OpenCore-Legacy-Patcher/releases"

@@ -20,7 +20,7 @@
     "method": "construct_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/github/CopilotForXcode/releases/download/0.50.0/GitHubCopilotForXcode.dmg"
+    "url": "https://github.com/github/CopilotForXcode/releases/download/v{VERSION}/GitHubCopilotForXcode.dmg"
   },
   "changelog": {
     "method": "github_release",

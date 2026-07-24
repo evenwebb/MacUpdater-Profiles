@@ -22,7 +22,7 @@
     "method": "construct_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/balena-io/etcher/releases/download/v2.1.6/balenaEtcher-2.1.6-arm64.dmg"
+    "url": "https://github.com/balena-io/etcher/releases/download/v{VERSION}/balenaEtcher-{VERSION}-arm64.dmg"
   },
   "changelog": {
     "method": "github_release",

@@ -18,11 +18,12 @@
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
+    "method": "extracted_from_json",
     "pattern": "https://download.gimp.org/gimp/v{MAJOR}.{MINOR}/macos/{FILENAME}",
     "filename_field": "STABLE[0].macos[*].filename (pick x86_64 or arm64)",
     "file_type": "dmg",
-    "headers": {}
+    "headers": {},
+    "note": "Filename chosen from gimp_versions.json macos assets for native arch."
   },
   "changelog": {
     "method": "construct_url",

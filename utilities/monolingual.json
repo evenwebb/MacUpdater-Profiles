@@ -17,10 +17,10 @@
     "extraction": "sparkle:version"
   },
   "download": {
-    "method": "construct_url",
-    "url": null,
+    "method": "sparkle_enclosure",
     "file_type": "dmg",
-    "headers": {}
+    "headers": {},
+    "url": "https://ingmarstein.github.io/Monolingual/appcast.xml"
   },
   "changelog": {
     "url": "https://github.com/IngmarStein/Monolingual/releases"

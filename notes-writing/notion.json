@@ -17,10 +17,11 @@
     "headers": {}
   },
   "download": {
-    "method": "constructed_url",
+    "method": "redirect_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://desktop-release.notion-static.com/Notion-{version}-arm64.dmg (ARM) or Notion-{version}.dmg (x64)"
+    "url": "https://desktop-release.notion-static.com/Notion-{version}-arm64.dmg (ARM) or Notion-{version}.dmg (x64)",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "scrape",

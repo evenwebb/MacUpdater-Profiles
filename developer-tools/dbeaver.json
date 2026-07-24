@@ -22,7 +22,7 @@
     "method": "construct_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/dbeaver/dbeaver/releases/download/26.1.1/dbeaver-ce-26.1.1-macos-aarch64.dmg"
+    "url": "https://github.com/dbeaver/dbeaver/releases/download/v{VERSION}/dbeaver-ce-{VERSION}-macos-aarch64.dmg"
   },
   "changelog": {
     "method": "github_releases",

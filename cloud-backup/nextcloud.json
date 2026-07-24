@@ -20,9 +20,10 @@
     }
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "url": "https://nextcloud.com/install",
-    "file_type": "pkg"
+    "file_type": "pkg",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "github_api",

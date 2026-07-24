@@ -21,10 +21,11 @@
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
+    "method": "redirect_url",
     "file_type": "zip",
     "headers": {},
-    "url": "https://downloads.vivaldi.com/stable-auto/Vivaldi.8.0.4033.50.universal.tar.xz"
+    "url": "https://downloads.vivaldi.com/stable-auto/Vivaldi.8.0.4033.50.universal.tar.xz",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "webpage",

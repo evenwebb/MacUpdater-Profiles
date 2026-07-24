@@ -20,7 +20,7 @@
     "note": "Official Cursor update API. Use darwin-arm64 or darwin-x64 variants if universal URL fails."
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "file_type": "zip",
     "headers": {},
     "url": "https://api2.cursor.sh/updates/api/update/darwin-universal/cursor/0.0.0/stable",

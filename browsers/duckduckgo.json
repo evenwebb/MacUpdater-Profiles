@@ -20,13 +20,17 @@
     }
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "url": "https://duckduckgo.com/app",
-    "file_type": "dmg"
+    "file_type": "dmg",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "web_scrape",
     "url": "https://duckduckgo.com/app/browser-release-notes"
   },
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-06-22",
+  "alternate_bundle_ids": [
+    "com.duckduckgo.mobile.ios"
+  ]
 }

@@ -20,7 +20,7 @@
   },
   "download": {
     "method": "construct_url",
-    "url": "https://github.com/pjasicek/OpenClaw/releases/download/v0.3/OpenClaw_v1.03.zip",
+    "url": "https://github.com/pjasicek/OpenClaw/releases/download/v{VERSION}/OpenClaw_v1.03.zip",
     "file_type": "source",
     "headers": {}
   },

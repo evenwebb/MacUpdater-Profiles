@@ -21,7 +21,7 @@
     "headers": {}
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "file_type": "zip",
     "headers": {},
     "url": "https://formulae.brew.sh/api/cask/affinity-designer.json",
