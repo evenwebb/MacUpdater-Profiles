@@ -31,11 +31,21 @@
     "method": "github_api",
     "field": "published_at in GitHub release JSON"
   },
-  "notes": "GUI Info.plist is a stub (CFBundleShortVersionString=1.0). MacUpdater reads the real version from Contents/Helpers/ctrld --version (matches Control-D-Inc/ctrld GitHub releases). GUI auto-updates in-app; no public .dmg for MacUpdater to install.",
+  "notes": "GUI Info.plist is a stub (CFBundleShortVersionString=1.0). installed_version.helper_cli reads Contents/Helpers/ctrld --version (matches Control-D-Inc/ctrld GitHub releases). GUI auto-updates in-app; no public .dmg for MacUpdater to install.",
   "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.controld.utility"
+  "bundle_id": "com.controld.utility",
+  "installed_version": {
+    "method": "helper_cli",
+    "path": "Contents/Helpers/ctrld",
+    "args": [
+      "--version"
+    ],
+    "pattern": "(?i)\\bversion\\s+v?([0-9.]+)",
+    "when": "plist_placeholder",
+    "timeout_sec": 3
+  }
 }

@@ -184,6 +184,67 @@
     "schema_version": {
       "type": "integer",
       "description": "Profile schema version (currently 2)"
+    },
+    "installed_version": {
+      "type": "object",
+      "description": "How MacUpdater should read the installed app version when Info.plist is wrong or incomplete. Omit to use CFBundleShortVersionString/CFBundleVersion only.",
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "plist",
+            "helper_cli"
+          ],
+          "description": "plist = Info.plist only (default). helper_cli = run a relative CLI inside the .app (never Contents/MacOS)."
+        },
+        "path": {
+          "type": "string",
+          "description": "Bundle-relative executable path, e.g. Contents/Helpers/ctrld"
+        },
+        "args": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Arguments passed to the helper (default [\"--version\"])"
+        },
+        "pattern": {
+          "type": "string",
+          "description": "Optional regex with a capture group for the version string"
+        },
+        "when": {
+          "type": "string",
+          "enum": [
+            "plist_placeholder",
+            "always"
+          ],
+          "description": "plist_placeholder (default) only runs when Info.plist looks like 1.0/0; always always prefers the helper"
+        },
+        "timeout_sec": {
+          "type": "number",
+          "description": "Helper timeout seconds (clamped 0.5\u201310, default 3)"
+        }
+      }
+    },
+    "match": {
+      "type": "object",
+      "description": "Optional matching policy overrides for this profile.",
+      "properties": {
+        "mas_primary_only": {
+          "type": "boolean",
+          "description": "If true (default client behavior), Mac App Store installs only bind when their bundle_id equals this profile's primary bundle_id \u2014 not alternate_bundle_ids. Set false only when a MAS build is intentionally the same product."
+        }
+      }
+    },
+    "install": {
+      "type": "object",
+      "description": "Optional install-time policy for free/direct downloads.",
+      "properties": {
+        "allow_rollout_lag": {
+          "type": "boolean",
+          "description": "If true (default), allow installing an archive newer than installed even when the version API is ahead (staged vendor rollouts, e.g. Chrome)."
+        }
+      }
     }
   },
   "_schema_version": 3

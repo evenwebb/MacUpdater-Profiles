@@ -37,7 +37,10 @@
     "method": "github_api",
     "field": "published_at"
   },
-  "notes": "Desktop Electron app (io.raindrop.macapp). Do NOT bind Safari extension io.raindrop.safari.",
+  "notes": "Desktop Electron app (io.raindrop.macapp). match.mas_primary_only keeps the Safari MAS extension (io.raindrop.safari) from binding to this desktop profile.",
   "last_updated": "2026-07-24",
-  "alternate_bundle_ids": []
+  "alternate_bundle_ids": [],
+  "match": {
+    "mas_primary_only": true
+  }
 }

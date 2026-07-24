@@ -5,7 +5,7 @@
   "bundle_id": "com.example.app",
   "category": "utilities",
   "license": "free",
-  "description": "What the app does — one sentence",
+  "description": "What the app does \u2014 one sentence",
   "website": "https://example.com",
   "platform": "macOS",
   "architecture": "universal",
@@ -38,5 +38,15 @@
     "field": "pubDate in appcast"
   },
   "notes": "Any quirks, Cloudflare issues, auth requirements, etc.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-21",
+  "installed_version": {
+    "method": "plist",
+    "note": "Optional. Use helper_cli + path/args/pattern when Info.plist is wrong (see control-d-utility)."
+  },
+  "match": {
+    "mas_primary_only": true
+  },
+  "install": {
+    "allow_rollout_lag": true
+  }
 }

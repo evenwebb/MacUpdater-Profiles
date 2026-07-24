@@ -40,5 +40,8 @@
   "category": "browsers",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.google.Chrome"
+  "bundle_id": "com.google.Chrome",
+  "install": {
+    "allow_rollout_lag": true
+  }
 }
