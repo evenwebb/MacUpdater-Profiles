@@ -8,19 +8,19 @@
   "min_os": "macOS 12",
   "auto_updates": true,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://updates.ia.net/writers/ia-writer_mac_{major}.xml",
+    "method": "itunes_api",
+    "url": "https://itunes.apple.com/lookup?id=775737590",
     "extraction": {
-      "type": "sparkle",
-      "pattern": "SUFeedURL from Info.plist provides the appcast URL"
+      "type": "json_path",
+      "path": "results[0].version",
+      "example": "8.0.5"
     },
     "headers": {}
   },
   "download": {
-    "method": "sparkle_enclosure",
-    "file_type": "dmg",
-    "headers": {},
-    "url": "Sparkle enclosure URL from appcast XML"
+    "method": "app_store_only",
+    "note": "Direct Sparkle feed requires a major-specific URL; MAS is the reliable channel.",
+    "url": "https://apps.apple.com/app/id775737590"
   },
   "changelog": {
     "method": "scrape",

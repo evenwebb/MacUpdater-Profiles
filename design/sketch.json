@@ -8,13 +8,14 @@
   "min_os": "macOS 12.0",
   "auto_updates": true,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://update.sketch.com/appcast.xml",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/sketch.json",
     "extraction": {
-      "type": "xpath",
-      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']",
-      "pattern": null,
-      "notes": "Primary feed URL from SUFeedURL in app bundle. Also available on Mac App Store (id402476602) via iTunes API (https://itunes.apple.com/lookup?id=402476602)."
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d{4}\\.\\d+(?:\\.\\d+)?)",
+      "example": "2026.2.1"
     },
     "headers": {}
   },

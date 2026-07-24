@@ -3,13 +3,13 @@
   "url": "https://www.roblox.com",
   "description": "Gaming platform",
   "version_check": {
-    "method": "scrape_html",
+    "method": "json_api",
     "url": "https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer",
-    "extraction": "Custom JSON endpoint",
-    "version_field": ".version",
-    "build_field": ".clientVersionUpload",
-    "version_example": "0.726.0.7261140",
-    "build_example": "version-d9748b94acff4b5d",
+    "extraction": {
+      "type": "json_path",
+      "path": "version",
+      "example": "0.731.0.7310942"
+    },
     "headers": {}
   },
   "download": {
@@ -17,7 +17,8 @@
     "url_x86_64": "https://setup.rbxcdn.com/mac/version-{CLIENTVERSIONUPLOAD}-RobloxPlayer.zip",
     "file_type": "zip",
     "headers": {},
-    "url": "https://setup.rbxcdn.com/mac/Roblox.dmg"
+    "url": "https://setup.rbxcdn.com/mac/Roblox.dmg",
+    "note": "Installers are keyed by clientVersionUpload from the same JSON endpoint (not marketing version)."
   },
   "changelog": {
     "url": "https://devforum.roblox.com/c/updates/",

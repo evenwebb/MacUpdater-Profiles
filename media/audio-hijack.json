@@ -12,18 +12,21 @@
   "auto_updates": true,
   "skip": false,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://rogueamoeba.net/ping/versionCheck.cgi?format=sparkle&bundleid=com.rogueamoeba.audiohijack&system=OSX&version=0",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/audio-hijack.json",
     "extraction": {
-      "type": "xpath",
-      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']"
-    }
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "example": "4.5.9"
+    },
+    "headers": {}
   },
   "download": {
-    "method": "redirect_url",
-    "url": "https://rogueamoeba.com/audiohijack/download.php",
-    "file_type": "dmg",
-    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
+    "method": "direct_url",
+    "url": "https://cdn.rogueamoeba.com/audiohijack/download/AudioHijack.zip",
+    "file_type": "zip",
+    "headers": {}
   },
   "changelog": {
     "method": "web_scrape",

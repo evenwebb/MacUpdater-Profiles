@@ -36,7 +36,7 @@ GITHUB_TOKEN = (__import__("os").environ.get("GITHUB_TOKEN") or __import__("os")
 
 # Methods that can't be checked remotely (require local app, auth, etc.)
 SKIP_METHODS = {
-    "itunes_api", "git_self_update", "none", "None", "",
+    "git_self_update", "none", "None", "",
     "microsoft_autoupdate", "broadcom_portal_only", "software_update_only",
     "download_and_parse_plist",
 }
@@ -66,11 +66,16 @@ def fetch(url: str, timeout: int = TIMEOUT) -> tuple[int, str]:
     req = urllib.request.Request(url, headers=headers)
     try:
         resp = urllib.request.urlopen(req, timeout=timeout)
-        return resp.status, resp.read().decode("utf-8", "replace")
+        data = resp.read()
+        if len(data) >= 2 and data[0] == 0x1F and data[1] == 0x8B:
+            import gzip
+            data = gzip.decompress(data)
+        return resp.status, data.decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
         return e.code, ""
     except Exception as e:
         return -1, str(e)
+
 
 
 def _normalize_extraction(raw) -> dict:
@@ -107,7 +112,14 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
 
     code, body = fetch(url)
     if code not in (200, 301, 302):
-        return None, f"HTTP {code}"
+        # Try fallback_urls when primary mirror is down.
+        for alt in (vc.get("fallback_urls") or []):
+            code, body = fetch(alt)
+            if code in (200, 301, 302):
+                url = alt
+                break
+        else:
+            return None, f"HTTP {code}"
 
     if code != 200:
         return None, f"HTTP {code} (redirect) — URL may still work"
@@ -117,7 +129,7 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
             return _extract_sparkle(body)
         elif method == "github_api":
             return _extract_github(body)
-        elif method == "json_api":
+        elif method in ("json_api", "itunes_api"):
             return _extract_json(body, extraction)
         elif method == "yaml_api":
             return _extract_yaml(body, extraction)
@@ -141,33 +153,69 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
 
 
 def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
-    ns = {"sparkle": "http://www.andymatuschak.org/xml-namespaces/sparkle"}
-    if not body.strip().startswith("<?xml") and not body.strip().startswith("<rss") and not body.strip().startswith("<feed"):
+    ns_uris = (
+        "http://www.andymatuschak.org/xml-namespaces/sparkle",
+        "https://sparkle-project.org/xml-namespaces/sparkle",
+    )
+    text = body.lstrip("\ufeff \t\r\n")
+    while text.startswith("<!--"):
+        endc = text.find("-->")
+        if endc < 0:
+            break
+        text = text[endc + 3:].lstrip()
+    if not (text.startswith("<?xml") or text.startswith("<rss") or text.startswith("<feed")):
         return None, "Response is not XML"
     try:
-        root = ET.fromstring(body)
+        root = ET.fromstring(text)
     except ET.ParseError as e:
         return None, f"XML parse error: {str(e)[:80]}"
+
     items = root.findall("channel/item")
+    if not items:
+        items = [el for el in root.iter() if el.tag.rsplit("}", 1)[-1] == "item"]
     if not items:
         return None, "No items in feed"
 
     best = None
     best_ver = None
     for item in items:
+        short_ver = None
+        sparkle_ver = None
         encl = item.find("enclosure")
-        sv = item.findtext("sparkle:shortVersionString", namespaces=ns)
-        if not sv and encl is not None:
-            sv = encl.get(f"{{{ns['sparkle']}}}shortVersionString")
-        ver = encl.get(f"{{{ns['sparkle']}}}version") if encl is not None else None
+        for uri in ns_uris:
+            ns = {"sparkle": uri}
+            short_ver = short_ver or item.findtext("sparkle:shortVersionString", namespaces=ns)
+            sparkle_ver = sparkle_ver or item.findtext("sparkle:version", namespaces=ns)
+            if encl is not None:
+                short_ver = short_ver or encl.get(f"{{{uri}}}shortVersionString")
+                sparkle_ver = sparkle_ver or encl.get(f"{{{uri}}}version")
+        if not short_ver or not sparkle_ver:
+            for el in item.iter():
+                tag = el.tag.rsplit("}", 1)[-1]
+                if tag == "shortVersionString" and (el.text or "").strip():
+                    short_ver = short_ver or el.text.strip()
+                elif tag == "version" and "}" in el.tag and (el.text or "").strip():
+                    sparkle_ver = sparkle_ver or el.text.strip()
+        if not short_ver and not sparkle_ver and encl is not None:
+            filename = (encl.get("url") or "").rsplit("/", 1)[-1]
+            m = re.search(r"(\d+(?:\.\d+)+)", filename)
+            if m:
+                short_ver = m.group(1)
+        if not short_ver and not sparkle_ver:
+            title = item.findtext("title") or ""
+            m = re.search(r"(\d+(?:\.\d+)+)", title)
+            if m:
+                short_ver = m.group(1)
+        cand = short_ver or sparkle_ver
         try:
-            vt = tuple(int(x) for x in (sv or ver or "").split("."))
+            vt = tuple(int(x) for x in (cand or "").split("."))
         except (ValueError, TypeError):
             vt = (0,)
         if best_ver is None or vt > best_ver:
-            best_ver, best = vt, (sv or ver)
+            best_ver, best = vt, cand
 
-    return (best, None)
+    return (best, None) if best else (None, "No version in Sparkle feed")
+
 
 
 def _extract_github(body: str) -> tuple[str | None, str | None]:
@@ -242,6 +290,9 @@ def check_profile(slug: str) -> dict:
         profile = json.loads(path.read_text())
     except (json.JSONDecodeError, OSError) as e:
         return {"slug": slug, "status": "broken", "error": f"Failed to read profile: {e}"}
+
+    if profile.get("skip") is True:
+        return {"slug": slug, "status": "skipped", "method": "skip"}
 
     vc = profile.get("version_check", {})
     method = normalize_method(vc.get("method", ""))

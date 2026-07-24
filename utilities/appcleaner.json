@@ -16,7 +16,8 @@
     "url": "https://freemacsoft.net/appcleaner",
     "extraction": {
       "type": "regex",
-      "pattern": "AppCleaner\\s+(\\d+\\.\\d+(?:\\.\\d+)?)"
+      "pattern": "Version\\s+(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "example": "3.6.8"
     }
   },
   "download": {

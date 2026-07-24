@@ -14,7 +14,12 @@
   "version_check": {
     "method": "scrape_html",
     "url": "https://www.python.org/downloads/",
-    "extraction": "regex:Python (\\d+\\.\\d+\\.\\d+)"
+    "extraction": {
+      "type": "regex",
+      "pattern": "Download Python\\s+(\\d+\\.\\d+\\.\\d+)",
+      "example": "3.14.6"
+    },
+    "headers": {}
   },
   "download": {
     "method": "direct_url",

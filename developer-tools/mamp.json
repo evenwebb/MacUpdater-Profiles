@@ -12,9 +12,16 @@
   "auto_updates": true,
   "skip": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://www.mamp.info/en/release-notes/mac/",
-    "extraction": "regex:Version (\\d+\\.\\d+\\.\\d+)"
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/mamp.json",
+    "extraction": {
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "example": "7.4"
+    },
+    "headers": {}
   },
   "download": {
     "method": "direct_url",

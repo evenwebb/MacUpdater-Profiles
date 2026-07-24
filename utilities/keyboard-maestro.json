@@ -8,12 +8,14 @@
   "min_os": "macOS 10.13",
   "auto_updates": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://www.keyboardmaestro.com/main/",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/keyboard-maestro.json",
     "extraction": {
-      "type": "pattern",
-      "pattern": "Version (\\\\d+\\\\.\\\\d+\\\\.\\\\d+)",
-      "notes": "NO Sparkle feed, NO version API, NO GitHub Releases. The only way to determine latest version is to scrape the main website (https://www.keyboardmaestro.com/main/) for the version string in the download link text, or download the zip and read CFBundleShortVersionString from Info.plist inside the app bundle."
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+)",
+      "example": "11.1"
     },
     "headers": {}
   },

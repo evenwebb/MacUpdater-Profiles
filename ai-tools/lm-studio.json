@@ -13,12 +13,15 @@
   "skip": false,
   "version_check": {
     "method": "json_api",
-    "url": "https://api.lmstudio.ai/v1/releases/latest",
+    "url": "https://formulae.brew.sh/api/cask/lm-studio.json",
     "extraction": {
       "type": "json_path",
-      "path": "version"
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+\\.\\d+)",
+      "example": "0.4.20"
     },
-    "note": "LM Studio download page scraping no longer reliable. If JSON API unavailable, fall back to https://api.github.com/repos/lmstudio-ai/lmstudio/releases/latest"
+    "headers": {}
   },
   "download": {
     "method": "redirect_url",

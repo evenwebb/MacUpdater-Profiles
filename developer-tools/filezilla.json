@@ -8,25 +8,26 @@
   "min_os": "11.0",
   "auto_updates": true,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://update.filezilla-project.org/updatecheck.php?platform=x86_64-apple-darwin20.1.0&version=0.0.0&osversion=11.0&channel=stable",
+    "method": "json_api",
+    "url": "https://cdn.ftpclient-mirror.org/latest.json",
     "extraction": {
-      "type": "xml_xpath",
-      "path": "/update/available/@version",
-      "example": "3.68.0"
-    },
-    "fallback_json": {
-      "method": "json_api",
-      "url": "https://cdn.ftpclient-mirror.org/latest.json",
-      "note": "Community mirror that bypasses JS encryption"
+      "type": "json_path",
+      "path": "version",
+      "example": "3.69.5",
+      "note": "Community mirror used because update.filezilla-project.org has a broken TLS chain."
     },
     "headers": {}
   },
   "download": {
     "method": "construct_url",
-    "pattern": "https://download.filezilla-project.org/client/mac/{ARCH}/FileZilla_{VERSION}_macos-{ARCH}.app.tar.bz2",
-    "file_type": "zip",
-    "headers": {}
+    "pattern": "https://download.filezilla-project.org/client/FileZilla_{VERSION}_macos-{ARCH}.app.tar.bz2",
+    "arch_map": {
+      "arm64": "arm64",
+      "x86_64": "x86"
+    },
+    "file_type": "tar.bz2",
+    "headers": {},
+    "note": "Official download host may 403 bots; MacUpdater uses browser-like UA."
   },
   "changelog": {
     "method": "embedded_in_xml",

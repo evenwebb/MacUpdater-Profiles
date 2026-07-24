@@ -8,22 +8,18 @@
   "min_os": "macOS 14.0",
   "auto_updates": true,
   "version_check": {
-    "protocol": "sparkle",
-    "sparkle_version": 2,
-    "appcast_url": "https://sipapp.fra1.digitaloceanspaces.com/updates/v4/sip.xml",
-    "xpath": "//rss/channel/item[1]/enclosure/@sparkle:shortVersionString",
-    "xpath_note": "e.g. 4.1.4; build via sparkle:version (e.g. 414)",
-    "headers": {},
     "method": "sparkle_appcast",
-    "url": "https://sipapp.fra1.digitaloceanspaces.com/updates/v4/sip.xml"
+    "url": "https://sipapp.fra1.digitaloceanspaces.com/updates/v5/sip.xml",
+    "extraction": {
+      "type": "sparkle"
+    },
+    "headers": {}
   },
   "download": {
-    "url_template": "https://sipapp.fra1.digitaloceanspaces.com/updates/v4/sip-{VERSION}.dmg",
-    "kind": "dmg",
-    "latest_alias": "https://sipapp.fra1.digitaloceanspaces.com/updates/v4/sip.dmg",
-    "headers": {},
-    "url": "https://sipapp.fra1.digitaloceanspaces.com/updates/v4/sip.dmg",
-    "file_type": "dmg"
+    "method": "direct_url",
+    "url": "https://sipapp.fra1.digitaloceanspaces.com/updates/v5/sip.dmg",
+    "file_type": "dmg",
+    "headers": {}
   },
   "changelog": "https://sipapp.io/updates",
   "release_date": {

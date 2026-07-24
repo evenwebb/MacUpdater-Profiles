@@ -11,17 +11,15 @@
     "method": "sparkle_appcast",
     "url": "https://itsycal.s3.amazonaws.com/itsycal.xml",
     "extraction": {
-      "type": "xpath",
-      "xpath": "sparkle:shortVersionString"
+      "type": "sparkle"
     },
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
-    "latest_url": "https://s3.amazonaws.com/itsycal/Itsycal.zip",
+    "method": "direct_url",
+    "url": "https://s3.amazonaws.com/itsycal/Itsycal.zip",
     "file_type": "zip",
-    "headers": {},
-    "url": "https://s3.amazonaws.com/itsycal/Itsycal-0.15.12.zip"
+    "headers": {}
   },
   "changelog": {
     "method": "web",

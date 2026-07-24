@@ -12,9 +12,16 @@
   "auto_updates": false,
   "skip": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://mirrors.kodi.tv/releases/osx/x86_64/",
-    "extraction": "regex:directory listing"
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/kodi.json",
+    "extraction": {
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "example": "21.3"
+    },
+    "headers": {}
   },
   "download": {
     "method": "direct_url",

@@ -8,12 +8,13 @@
   "min_os": "10.15",
   "auto_updates": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://loupedeck.com/downloads/",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/loupedeck.json",
     "extraction": {
-      "type": "regex",
-      "pattern": "/href=.*?LoupedeckInstaller(?:[._\\s-]|%20)+v?(\\d+(?:\\.\\d+)+)\\.dmg/i",
-      "fallback_regex": "Software version\\s+(\\d+(?:\\.\\d+)+)\\s+for macOS",
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+\\.\\d+)",
       "example": "6.3.0"
     },
     "headers": {}

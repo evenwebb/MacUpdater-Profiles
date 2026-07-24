@@ -8,25 +8,19 @@
   "min_os": "macOS 10.14",
   "auto_updates": false,
   "version_check": {
-    "method": "redirect_trace",
-    "url": "https://www.amazon.com/kindlemacdownload",
+    "method": "itunes_api",
+    "url": "https://itunes.apple.com/lookup?id=302584613",
     "extraction": {
-      "type": "regex_on_redirect_location",
-      "pattern": "KindleForMac-installer-([0-9.]+)\\.dmg",
-      "example": "1.40.65626"
-    },
-    "fallback_app_store": {
-      "method": "app_store_api",
-      "url": "https://itunes.apple.com/lookup?id=302584613",
-      "path": "results[0].version"
+      "type": "json_path",
+      "path": "results[0].version",
+      "example": "7.63"
     },
     "headers": {}
   },
   "download": {
-    "method": "redirect_url",
-    "url": "https://www.amazon.com/kindlemacdownload",
-    "file_type": "dmg",
-    "headers": {}
+    "method": "app_store_only",
+    "url": "https://apps.apple.com/app/id302584613",
+    "note": "Amazon direct download is bot-blocked; use Mac App Store / Kindle app updates."
   },
   "changelog": {
     "method": "none_available",

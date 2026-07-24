@@ -14,7 +14,10 @@
   "version_check": {
     "method": "sparkle_appcast",
     "url": "https://tunnelblick.net/appcast-s.rss",
-    "extraction": "sparkle:shortVersionString"
+    "extraction": {
+      "type": "sparkle"
+    },
+    "headers": {}
   },
   "download": {
     "method": "direct_url",

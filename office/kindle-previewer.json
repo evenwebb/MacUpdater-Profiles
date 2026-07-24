@@ -9,21 +9,13 @@
   "min_os": "11",
   "auto_updates": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261",
-    "extraction": {
-      "type": "regex",
-      "pattern": "UNCERTAIN",
-      "note": "UNCERTAINTY: No structured version endpoint exists. Attempt to scrape the download page for a version string (e.g., 'Kindle Previewer X.Y.Z'). Amazon may block automated HTTP requests (bot detection). Version may also be available in the filename of the downloaded package or its Info.plist."
-    },
-    "headers": {}
+    "method": "none",
+    "note": "Amazon bot-blocks version scraping; no public structured feed. Marked skip until a stable source exists."
   },
   "download": {
-    "method": "scrape",
-    "file_type": "pkg",
-    "file_type_note": "UNCERTAINTY: File type varies by release \u2014 historically pkg, but some versions ship as dmg. Approximately 760 MB download size.",
-    "headers": {},
-    "url": "https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261"
+    "method": "app_store_only",
+    "note": "Download manually from Amazon Kindle Previewer page.",
+    "url": "https://www.amazon.com/Kindle-Previewer/b?ie=UTF8&node=16885132011"
   },
   "changelog": {
     "method": "web",
@@ -40,6 +32,6 @@
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "office",
   "license": "free",
-  "skip": false,
+  "skip": true,
   "bundle_id": "com.amazon.kpfpreviewer"
 }

@@ -8,21 +8,22 @@
   "min_os": "macOS 12.0",
   "auto_updates": true,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://updates.cleanshot.com/v3/appcast.xml",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/cleanshot.json",
     "extraction": {
-      "type": "xpath",
-      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']",
-      "pattern": null,
-      "notes": "Uses Sparkle 2 with appcast hosted at updates.cleanshot.com. The /v3/ path corresponds to CleanShot X version 3.x series. Older /v2/ path may exist for legacy versions."
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "example": "4.8.10",
+      "note": "Sparkle appcast at updates.getcleanshot.com/v3 only lists 3.x; current 4.x builds are reflected in the Homebrew cask."
     },
     "headers": {}
   },
   "download": {
-    "method": "sparkle_enclosure",
+    "method": "direct_url",
+    "url": "https://updates.getcleanshot.com/v3/CleanShot-X-{VERSION}.dmg",
     "file_type": "dmg",
-    "headers": {},
-    "url": "https://updates.cleanshot.com/v3/CleanShot-X-{version}.dmg"
+    "headers": {}
   },
   "changelog": {
     "method": "sparkle_appcast",

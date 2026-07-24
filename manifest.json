@@ -2468,5 +2468,13 @@
       "path": "messaging/zoom-workplace.json",
       "skip": false
     }
+  },
+  "health": {
+    "checked_at": "2026-07-24T20:30:30Z",
+    "total": 147,
+    "ok": 147,
+    "broken": 0,
+    "skipped": 3,
+    "pct": 100
   }
 }

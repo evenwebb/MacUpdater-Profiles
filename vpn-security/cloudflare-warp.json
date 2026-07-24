@@ -8,20 +8,22 @@
   "min_os": "11",
   "auto_updates": true,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://downloads.cloudflareclient.com/v1/update/sparkle",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/cloudflare-warp.json",
     "extraction": {
-      "type": "xpath",
-      "xpath": "sparkle:shortVersionString",
-      "notes": "Standard Sparkle appcast. May require proper User-Agent or session cookies to avoid 403. Beta channel at /mac/beta/appcast.xml."
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "example": "2026.6.880.0"
     },
     "headers": {}
   },
   "download": {
     "method": "direct_url",
-    "file_type": "zip",
+    "file_type": "pkg",
     "headers": {},
-    "url": "https://1111-releases.cloudflareclient.com/mac/Cloudflare_WARP.zip"
+    "url": "https://downloads.cloudflareclient.com/v1/download/macos/ga",
+    "note": "Stable GA installer; brew cask URL is version-pinned."
   },
   "changelog": {
     "method": null

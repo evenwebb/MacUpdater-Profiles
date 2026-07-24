@@ -8,23 +8,13 @@
   "min_os": "13.0",
   "auto_updates": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://blogs.vmware.com/teamfusion/",
-    "fallback_homebrew": "Homebrew cask disabled June 2025 but may still have version in repo history",
-    "extraction": {
-      "type": "regex_on_blog",
-      "pattern": "Fusion (\\d+(?:\\.\\d+)+)",
-      "homebrew_format": "MAJOR.MINOR.PATCH,BUILD",
-      "example": "26H1"
-    },
-    "headers": {}
+    "method": "none",
+    "note": "Broadcom portal-only downloads; no public version API after free-tier transition."
   },
   "download": {
     "method": "broadcom_portal_only",
     "url": null,
-    "pattern": "https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/fusion/{VERSION}/{BUILD}/universal/core/com.vmware.fusion.zip.tar",
-    "file_type": "zip",
-    "headers": {}
+    "note": "Download from Broadcom/VMware customer portal."
   },
   "changelog": {
     "method": "broadcom_portal",
@@ -41,6 +31,6 @@
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "virtualization",
   "license": "paid",
-  "skip": false,
+  "skip": true,
   "bundle_id": "com.vmware.fusion"
 }

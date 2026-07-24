@@ -9,10 +9,10 @@
   "auto_updates": true,
   "version_check": {
     "method": "yaml_api",
-    "url": "https://app.dolphin-anty-mirror3.com/anty-app/latest-mac.yml",
+    "url": "https://app.dolphin-anty-mirror3.net/anty-app/latest-mac.yml",
     "fallback_urls": [
-      "https://app.dolphin-anty-mirror3.net/anty-app/latest-mac.yml",
       "https://app.dolphin-anty-mirror3.org/anty-app/latest-mac.yml",
+      "https://app.dolphin-anty-mirror3.com/anty-app/latest-mac.yml",
       "https://app.dolphin-anty-mirror2.net/anty-app/latest-mac.yml"
     ],
     "extraction": {
@@ -25,7 +25,7 @@
   },
   "download": {
     "method": "direct_url",
-    "url": "https://app.dolphin-anty-mirror3.com/anty-app/dolphin-anty-mac-universal-latest.dmg",
+    "url": "https://app.dolphin-anty-mirror3.net/anty-app/dolphin-anty-mac-universal-latest.dmg",
     "file_type": "dmg",
     "headers": {}
   },
@@ -35,7 +35,7 @@
   },
   "release_date": {
     "method": "yaml_field",
-    "url": "https://app.dolphin-anty-mirror3.com/anty-app/latest-mac.yml",
+    "url": "https://app.dolphin-anty-mirror3.net/anty-app/latest-mac.yml",
     "field": "releaseDate in YAML"
   },
   "notes": "Version uses date-based scheme YYYY.DDD.BUILD. Website is WordPress+Cloudflare but CDN mirrors have CORS headers and work programmatically. Mirror host resolved at page-load by racing GET requests; mirror3.com usually fastest.",

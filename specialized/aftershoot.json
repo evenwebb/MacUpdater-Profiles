@@ -3,17 +3,22 @@
   "url": "https://aftershoot.com",
   "description": "Photo culling and editing",
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://cdn.aftershoot.com/appcast.xml",
-    "version_field": "sparkle:shortVersionString",
-    "version_example": "2.3.0",
+    "method": "scrape_html",
+    "url": "https://aftershoot.com/downloads/",
+    "extraction": {
+      "type": "regex",
+      "pattern": "AfterShoot-mac-latest-(\\d+\\.\\d+\\.\\d+)\\.dmg",
+      "example": "2.21.1"
+    },
     "headers": {}
   },
   "download": {
-    "url": "https://aftershoot.com/downloads/",
-    "url_note": "Website blocks automated fetching (403). Download URL likely in form https://downloads.aftershoot.com/mac/Aftershoot-{VERSION}.dmg",
+    "method": "direct_url",
+    "url": "https://download.aftershoot.com/production/aarch64-macos/AfterShoot-mac-latest-{VERSION}.dmg",
+    "url_x86_64": "https://download.aftershoot.com/production/x86_64-macos/AfterShoot-mac-latest-{VERSION}.dmg",
     "file_type": "dmg",
-    "headers": {}
+    "headers": {},
+    "note": "Default URL is Apple Silicon; url_x86_64 for Intel."
   },
   "changelog": {
     "url": "https://aftershoot.com/blog/",
