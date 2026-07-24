@@ -252,8 +252,23 @@ def check_profile(slug: str) -> dict:
     version, error = extract_version(profile)
     if version:
         return {"slug": slug, "status": "ok", "version": version, "method": method}
-    else:
-        return {"slug": slug, "status": "broken", "error": error or "Unknown error", "method": method}
+
+    err = error or "Unknown error"
+    # Unauthenticated GitHub API runs hit secondary rate limits; don't count as profile breakage.
+    url = (profile.get("version_check") or {}).get("url", "")
+    if (
+        method == "github_api"
+        and "api.github.com" in url
+        and (err.startswith("HTTP 403") or err.startswith("HTTP 429"))
+        and not GITHUB_TOKEN
+    ):
+        return {
+            "slug": slug,
+            "status": "rate_limited",
+            "error": err + " (set GITHUB_TOKEN / GH_TOKEN for accurate checks)",
+            "method": method,
+        }
+    return {"slug": slug, "status": "broken", "error": err, "method": method}
 
 
 def main():
@@ -293,21 +308,27 @@ def main():
     ok = sum(1 for r in results if r["status"] == "ok")
     broken = sum(1 for r in results if r["status"] == "broken")
     skipped = sum(1 for r in results if r["status"] == "skipped")
+    rate_limited = sum(1 for r in results if r["status"] == "rate_limited")
     pct = (ok * 100 // (ok + broken)) if (ok + broken) else 0
 
     if args.badge:
         color = "green" if pct >= 90 else "yellow" if pct >= 70 else "red"
-        print(json.dumps({
+        badge = {
             "schemaVersion": 1,
             "label": "profile health",
             "message": f"{pct}%",
             "color": color,
-        }))
+        }
+        print(json.dumps(badge))
+        badge_path = REPO / "badges" / "health.json"
+        badge_path.parent.mkdir(parents=True, exist_ok=True)
+        badge_path.write_text(json.dumps(badge, indent=2) + "\n")
         return 0
 
     if args.report:
         print(f"# Profile Health Report\n")
-        print(f"**{ok}/{ok+broken} profiles healthy ({pct}%)** — {skipped} skipped\n")
+        extra = f", {rate_limited} rate-limited" if rate_limited else ""
+        print(f"**{ok}/{ok+broken} profiles healthy ({pct}%)** — {skipped} skipped{extra}\n")
         if broken:
             print("## Broken profiles\n")
             for r in results:
@@ -326,6 +347,8 @@ def main():
             print(f"  OK     {r['slug']:30s} → {r.get('version','?'):15s} ({r.get('method','?')})")
         elif r["status"] == "broken":
             print(f"  BROKEN {r['slug']:30s} — {r.get('error','?'):40s} ({r.get('method','?')})")
+        elif r["status"] == "rate_limited":
+            print(f"  LIMIT  {r['slug']:30s} — {r.get('error','?'):40s} ({r.get('method','?')})")
         else:
             print(f"  SKIP   {r['slug']:30s} ({r.get('method','?')})")
 
@@ -342,7 +365,7 @@ def main():
         MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + "\n")
         print(f"\nUpdated manifest.json with health stats")
 
-    print(f"\n{ok} ok, {broken} broken, {skipped} skipped — {pct}% healthy")
+    print(f"\n{ok} ok, {broken} broken, {skipped} skipped, {rate_limited} rate-limited — {pct}% healthy")
     return broken
 
 
