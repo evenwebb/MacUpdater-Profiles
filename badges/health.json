@@ -1,1 +1,6 @@
-{"schemaVersion": 1, "label": "profile health", "message": "80%", "color": "yellow"}
+{
+  "schemaVersion": 1,
+  "label": "profile health",
+  "message": "84%",
+  "color": "yellow"
+}
