@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "Perception",
+  "slug": "perception",
+  "bundle_id": "com.peslostudios.perception",
+  "category": "utilities",
+  "license": "paid",
+  "description": "Dashcam manager (iOS app running on Apple silicon Mac)",
+  "website": "https://apps.apple.com/app/perception-dashcam-manager/id6448377884",
+  "platform": "macOS",
+  "architecture": "arm64",
+  "min_os": "12.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "itunes_api",
+    "url": "https://itunes.apple.com/lookup?id=6448377884",
+    "extraction": {
+      "type": "json_path",
+      "path": "results[0].version",
+      "example": "2.13.0"
+    },
+    "headers": {}
+  },
+  "download": {
+    "method": "app_store_only",
+    "note": "Distributed via the App Store / iOS-on-Mac wrapper \u2014 update in the App Store."
+  },
+  "changelog": {
+    "method": "app_store",
+    "url": "https://apps.apple.com/app/perception-dashcam-manager/id6448377884"
+  },
+  "notes": "iOS WrappedBundle on Mac. No direct DMG.",
+  "last_updated": "2026-07-24"
+}

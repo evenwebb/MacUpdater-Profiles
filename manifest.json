@@ -1,8 +1,8 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-06-22T18:49:00Z",
-  "total_profiles": 225,
+  "updated": "2026-07-24T12:51:55Z",
+  "total_profiles": 230,
   "apps": {
     "1password": {
       "name": "1Password",
@@ -281,6 +281,16 @@
       "license": "paid",
       "path": "utilities/betterzip.json",
       "skip": false
+    },
+    "bionic": {
+      "name": "Bionic",
+      "bundle_id": "ai.elementlabs.bionic",
+      "alternate_bundle_ids": [],
+      "icons": {},
+      "category": "ai-tools",
+      "license": "free",
+      "path": "ai-tools/bionic.json",
+      "skip": true
     },
     "bitwarden": {
       "name": "Bitwarden",
@@ -1598,6 +1608,26 @@
       "path": "gaming/openclaw.json",
       "skip": false
     },
+    "opencore-legacy-patcher": {
+      "name": "OpenCore Legacy Patcher",
+      "bundle_id": "com.dortania.opencore-legacy-patcher",
+      "alternate_bundle_ids": [],
+      "icons": {},
+      "category": "utilities",
+      "license": "free",
+      "path": "utilities/opencore-patcher.json",
+      "skip": false
+    },
+    "openlauncher": {
+      "name": "OpenLauncher",
+      "bundle_id": "io.openrct2.openlauncher",
+      "alternate_bundle_ids": [],
+      "icons": {},
+      "category": "gaming",
+      "license": "free",
+      "path": "gaming/openlauncher.json",
+      "skip": false
+    },
     "openoffice": {
       "name": "Apache OpenOffice",
       "bundle_id": "org.openoffice.script",
@@ -1660,6 +1690,16 @@
       "path": "utilities/pearcleaner.json",
       "skip": false
     },
+    "perception": {
+      "name": "Perception",
+      "bundle_id": "com.peslostudios.perception",
+      "alternate_bundle_ids": [],
+      "icons": {},
+      "category": "utilities",
+      "license": "paid",
+      "path": "utilities/perception.json",
+      "skip": false
+    },
     "photobulk": {
       "name": "PhotoBulk",
       "bundle_id": "com.eltima.photobulk",
@@ -1702,6 +1742,16 @@
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/postico.json",
+      "skip": false
+    },
+    "private-internet-access": {
+      "name": "Private Internet Access",
+      "bundle_id": "com.privateinternetaccess.vpn",
+      "alternate_bundle_ids": [],
+      "icons": {},
+      "category": "vpn-security",
+      "license": "paid",
+      "path": "vpn-security/private-internet-access.json",
       "skip": false
     },
     "protonvpn": {
@@ -1747,9 +1797,7 @@
     "raindrop-io": {
       "name": "Raindrop.io",
       "bundle_id": "io.raindrop.macapp",
-      "alternate_bundle_ids": [
-        "io.raindrop.safari"
-      ],
+      "alternate_bundle_ids": [],
       "icons": {},
       "category": "utilities",
       "license": "free",
@@ -1808,6 +1856,16 @@
       "category": "cloud-backup",
       "license": "free",
       "path": "cloud-backup/rescuetime.json",
+      "skip": false
+    },
+    "resilio-sync": {
+      "name": "Resilio Sync",
+      "bundle_id": "com.resilio.Sync",
+      "alternate_bundle_ids": [],
+      "icons": {},
+      "category": "cloud-backup",
+      "license": "free",
+      "path": "cloud-backup/resilio-sync.json",
       "skip": false
     },
     "roblox": {
@@ -2039,7 +2097,9 @@
     "tailscale": {
       "name": "Tailscale",
       "bundle_id": "com.tailscale.ipn.macos",
-      "alternate_bundle_ids": [],
+      "alternate_bundle_ids": [
+        "io.tailscale.ipn.macsys"
+      ],
       "icons": {},
       "category": "vpn-security",
       "license": "free",
@@ -2396,13 +2456,5 @@
       "path": "messaging/zoom-workplace.json",
       "skip": false
     }
-  },
-  "health": {
-    "checked_at": "2026-06-25T23:07:41Z",
-    "total": 280,
-    "ok": 108,
-    "broken": 172,
-    "skipped": 21,
-    "pct": 38
   }
 }

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "Resilio Sync",
+  "slug": "resilio-sync",
+  "bundle_id": "com.resilio.Sync",
+  "category": "cloud-backup",
+  "license": "free",
+  "description": "P2P file sync (formerly BitTorrent Sync)",
+  "website": "https://www.resilio.com/sync",
+  "platform": "macOS",
+  "architecture": "universal",
+  "min_os": "10.13",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/resilio-sync.json",
+    "extraction": {
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+\\.\\d+)",
+      "example": "3.1.2",
+      "note": "Cask version includes a 4th build component; pattern keeps marketing version."
+    },
+    "headers": {}
+  },
+  "download": {
+    "method": "direct_url",
+    "file_type": "dmg",
+    "headers": {},
+    "url": "https://download-cdn.resilio.com/stable/mac/osx/0/Resilio-Sync.dmg"
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://www.resilio.com/sync/download"
+  },
+  "notes": "Stable DMG is at download-cdn.resilio.com/stable/mac/osx/0/Resilio-Sync.dmg (legacy /stable/osx/ paths 404).",
+  "last_updated": "2026-07-24"
+}

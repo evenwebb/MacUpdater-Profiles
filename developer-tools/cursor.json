@@ -8,20 +8,23 @@
   "min_os": "macOS 11+ (Big Sur and later)",
   "auto_updates": true,
   "version_check": {
-    "method": "yaml_api",
-    "url": "https://cursor.com/api/download?platform=darwinUniversal&releaseTrack=stable",
+    "method": "json_api",
+    "url": "https://api2.cursor.sh/updates/api/update/darwin-universal/cursor/0.0.0/stable",
     "extraction": {
       "type": "json_path",
-      "json_path": "Electron-updater API \u2014 endpoint is BLOCKED externally. Known pattern: follow redirect on download URL to get versioned filename, or check update API response (returns JSON with version, url, etc.)"
+      "path": "name",
+      "download_path": "url",
+      "example": "3.13.10"
     },
-    "fallback": "Follow redirect on https://cursor.com/downloads?platform=darwinUniversal to get version from filename pattern",
-    "headers": {}
+    "headers": {},
+    "note": "Official Cursor update API. Use darwin-arm64 or darwin-x64 variants if universal URL fails."
   },
   "download": {
     "method": "direct_url",
     "file_type": "zip",
     "headers": {},
-    "url": "https://cursor.com/downloads"
+    "url": "https://api2.cursor.sh/updates/api/update/darwin-universal/cursor/0.0.0/stable",
+    "note": "Version check returns the installable ZIP URL in the same JSON (download_path=url)."
   },
   "changelog": {
     "method": "webpage",
@@ -31,8 +34,8 @@
     "method": "webpage_scrape",
     "field": "Scrape date from https://cursor.com/changelog entries"
   },
-  "notes": "Electron-based app using electron-updater. The update API endpoint at cursor.com/api/download is blocked from external access (requires valid User-Agent/referrer). Version can be inferred by following the download redirect and parsing the versioned filename. Also available on Linux and Windows.",
-  "last_updated": "2026-06-22",
+  "notes": "Cursor update API at api2.cursor.sh returns JSON {name, url}. The old cursor.com/api/download endpoint returns HTTP 500 externally. Universal ZIP is preferred; arm64/x64 endpoints also exist.",
+  "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",
   "license": "free",

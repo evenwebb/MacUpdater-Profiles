@@ -9,14 +9,12 @@
   "auto_updates": true,
   "version_check": {
     "method": "scrape_html",
-    "url": "https://learn.microsoft.com/en-us/officeupdates/update-history-office-for-mac",
+    "url": "https://learn.microsoft.com/en-us/officeupdates/release-notes-office-for-mac",
     "extraction": {
       "type": "regex_on_html",
-      "pattern": "Version (\\d+\\.\\d+)\\s+\\([Bb]uild\\s+(\\d+)\\)",
-      "version": "{1}",
-      "build": "{2}",
-      "note": "Shared version with all Office for Mac apps",
-      "example": "16.110"
+      "pattern": "Version (\\d+\\.\\d+\\.\\d+)",
+      "example": "16.111.1",
+      "note": "First match is the latest Current Channel release. Shared across Office for Mac apps."
     },
     "headers": {}
   },
@@ -38,8 +36,8 @@
     "url": "https://learn.microsoft.com/en-us/officeupdates/update-history-office-for-mac",
     "note": "First column of version history table is release date"
   },
-  "notes": "Shares version check page and version number with Excel and all other Office for Mac apps. Individual updater PKGs follow predictable naming: Microsoft_Word_{VERSION}_Updater.pkg. The fwlink ID 525133 redirects to the full Office suite installer.",
-  "last_updated": "2026-06-21",
+  "notes": "Shares version check page and version number with Excel and all other Office for Mac apps. Individual updater PKGs follow predictable naming: Microsoft_Word_{VERSION}_Updater.pkg. The fwlink ID 525133 redirects to the full Office suite installer. Version scrape updated 2026-07: docs now use 'Version 16.x.y' without '(Build N)' on the release-notes page.",
+  "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "office",
   "license": "free",

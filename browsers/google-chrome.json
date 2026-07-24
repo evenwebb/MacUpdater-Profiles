@@ -9,11 +9,12 @@
   "auto_updates": true,
   "version_check": {
     "method": "json_api",
-    "url": "https://versionhistory.googleapis.com/v1/chrome/platforms/mac/channels/stable/versions?page_size=1",
+    "url": "https://versionhistory.googleapis.com/v1/chrome/platforms/mac/channels/stable/versions/all/releases?filter=endtime=none,fraction=1&order_by=version%20desc",
     "extraction": {
       "type": "json_path",
-      "path": "versions[0].version",
-      "example": "150.0.7871.24"
+      "path": "releases[0].version",
+      "example": "150.0.7871.187",
+      "note": "fraction=1 selects fully rolled-out builds so the reported version matches the public GGRO DMG."
     },
     "headers": {}
   },
@@ -33,8 +34,8 @@
     "url": "https://versionhistory.googleapis.com/v1/chrome/platforms/mac/channels/stable/versions?page_size=1",
     "field": "versions[0].time (ISO 8601 timestamp)"
   },
-  "notes": "Official Google API, no API key required. The omahaproxy endpoint is defunct. DMG URL is static and always gives the latest stable universal build. Version history API also provides fractional rollout info.",
-  "last_updated": "2026-06-21",
+  "notes": "Prefer fully rolled-out versions (fraction=1). The unfiltered versions API can report a newer milestone still in staged rollout that the public GGRO DMG has not shipped yet. DMG URL is static and always gives the current public stable universal build.",
+  "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "browsers",
   "license": "free",

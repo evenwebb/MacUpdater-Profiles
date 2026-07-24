@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "OpenLauncher",
+  "slug": "openlauncher",
+  "bundle_id": "io.openrct2.openlauncher",
+  "category": "gaming",
+  "license": "free",
+  "description": "Launcher for OpenRCT2 (and OpenLoco) game ports",
+  "website": "https://github.com/OpenRCT2/OpenLauncher",
+  "platform": "macOS",
+  "architecture": "universal",
+  "min_os": "11.0",
+  "auto_updates": false,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/OpenRCT2/OpenLauncher/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name",
+      "strip_prefix": "v",
+      "example": "0.5.4"
+    },
+    "headers": {},
+    "rate_limit": "60/hr"
+  },
+  "download": {
+    "method": "direct_url",
+    "file_type": "zip",
+    "headers": {},
+    "url": "https://github.com/OpenRCT2/OpenLauncher/releases/latest/download/OpenLauncher.zip"
+  },
+  "changelog": {
+    "method": "github_releases",
+    "url": "https://github.com/OpenRCT2/OpenLauncher/releases"
+  },
+  "notes": "GitHub Releases ship OpenLauncher.zip for macOS.",
+  "last_updated": "2026-07-24"
+}

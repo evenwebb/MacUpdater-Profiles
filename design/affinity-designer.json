@@ -8,21 +8,24 @@
   "min_os": "macOS 11.0",
   "auto_updates": true,
   "version_check": {
-    "method": "sparkle_appcast",
-    "url": "https://s3.amazonaws.com/affinity-update/mac/retail/designer/appcast.xml",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/affinity-designer.json",
     "extraction": {
-      "type": "xpath",
-      "xpath": "//item/enclosure/@*[local-name()='shortVersionString' or local-name()='sparkle:shortVersionString']",
-      "pattern": null,
-      "notes": "Serif uses Sparkle with custom feeds on s3.amazonaws.com. Same pattern as Affinity Photo, different product path segment (/designer/)."
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+\\.\\d+)",
+      "example": "2.6.5",
+      "note": "Homebrew cask version is 'X.Y.Z,build'. Pattern strips the build; download_path is the full Affinity Store ZIP."
     },
     "headers": {}
   },
   "download": {
-    "method": "sparkle_enclosure",
-    "file_type": "dmg",
+    "method": "direct_url",
+    "file_type": "zip",
     "headers": {},
-    "url": "https://s3.amazonaws.com/affinity-update/mac/retail/designer/appcast.xml"
+    "url": "https://formulae.brew.sh/api/cask/affinity-designer.json",
+    "note": "Install URL comes from version-check download_path (Homebrew cask url)."
   },
   "changelog": {
     "method": "sparkle_appcast",
@@ -33,8 +36,8 @@
     "method": "sparkle_appcast",
     "field": "pubDate"
   },
-  "notes": "Paid app (one-time purchase). Same Serif/Affinity V2 product line as Photo and Publisher. All three share the same appcast URL pattern on s3.amazonaws.com. Mac App Store version uses /mac/mas/<product>/ path. Also available on Mac App Store.",
-  "last_updated": "2026-06-22",
+  "notes": "Paid Affinity V2 apps. Legacy S3 Sparkle appcasts (affinity-update/.../appcast.xml) now 301/403. Homebrew cask API tracks Affinity Store ZIP builds on affinity-update.s3.amazonaws.com/mac2/retail/.",
+  "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "design",
   "license": "paid",

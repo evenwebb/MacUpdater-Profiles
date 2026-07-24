@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "Private Internet Access",
+  "slug": "private-internet-access",
+  "bundle_id": "com.privateinternetaccess.vpn",
+  "category": "vpn-security",
+  "license": "paid",
+  "description": "VPN client from Private Internet Access",
+  "website": "https://www.privateinternetaccess.com",
+  "platform": "macOS",
+  "architecture": "universal",
+  "min_os": "10.15",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/private-internet-access.json",
+    "extraction": {
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "pattern": "^(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "example": "3.7.2"
+    },
+    "headers": {}
+  },
+  "download": {
+    "method": "direct_url",
+    "file_type": "zip",
+    "headers": {
+      "Referer": "https://www.privateinternetaccess.com/"
+    },
+    "url": "https://installers.privateinternetaccess.com/download/pia-macos-3.7.2-08420.zip",
+    "note": "Prefer URL from Homebrew cask / version-check download_path."
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://www.privateinternetaccess.com/download"
+  },
+  "notes": "Version sourced from Homebrew cask (pia-macos-VERSION-BUILD.zip on installers.privateinternetaccess.com).",
+  "last_updated": "2026-07-24"
+}

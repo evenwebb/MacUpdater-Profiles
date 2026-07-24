@@ -9,7 +9,7 @@
   "auto_updates": true,
   "version_check": {
     "method": "sparkle_appcast",
-    "url": "https://sparkle.iina.io/appcast.xml",
+    "url": "https://www.iina.io/appcast.xml",
     "extraction": {
       "type": "xpath",
       "pattern": "sparkle:shortVersionString"
@@ -30,8 +30,8 @@
     "method": "appcast_field",
     "field": "pubDate"
   },
-  "notes": "Open source (GPLv3). Hosted on GitHub at https://github.com/iina/iina. Sparkle appcast is publicly accessible at sparkle.iina.io. Also available via Homebrew (iina). Universal binary supporting Apple Silicon and Intel. mpv-based player with modern macOS-native UI.",
-  "last_updated": "2026-06-21",
+  "notes": "Open source (GPLv3). Hosted on GitHub at https://github.com/iina/iina. Sparkle appcast moved to https://www.iina.io/appcast.xml (sparkle.iina.io DNS is dead). Also available via Homebrew (iina).",
+  "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "media",
   "license": "free",

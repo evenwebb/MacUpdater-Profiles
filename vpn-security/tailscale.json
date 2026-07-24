@@ -38,11 +38,14 @@
     "method": "sparkle_pub_date",
     "field": "pubDate in appcast <item>"
   },
-  "notes": "Most straightforward of the group. Sparkle appcast is single-item per version. Static 'latest' URL always redirects to current version PKG. Also available on Mac App Store and Homebrew (tailscale cask). The pkgs.tailscale.com directory and appcast are both publicly accessible with no authentication.",
-  "last_updated": "2026-06-21",
+  "notes": "Most straightforward of the group. Sparkle appcast is single-item per version. Static 'latest' URL always redirects to current version PKG. Also available on Mac App Store and Homebrew (tailscale cask). The pkgs.tailscale.com directory and appcast are both publicly accessible with no authentication. Direct PKG installs use bundle id io.tailscale.ipn.macsys; Mac App Store / older builds use com.tailscale.ipn.macos.",
+  "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.tailscale.ipn.macos"
+  "bundle_id": "com.tailscale.ipn.macos",
+  "alternate_bundle_ids": [
+    "io.tailscale.ipn.macsys"
+  ]
 }

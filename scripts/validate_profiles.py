@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 REPO = Path(__file__).resolve().parent.parent
-SKIP_DIRS = {".git", ".github", "scripts", "__pycache__"}
+SKIP_DIRS = {".git", ".github", "scripts", "__pycache__", "badges"}
 
 REQUIRED = ["name", "slug", "category", "license", "version_check", "download"]
 VALID_LICENSES = {"free", "paid"}
@@ -28,6 +28,7 @@ VALID_DOWNLOAD_METHODS = {
     "scrape", "git_pull", "sparkle_enclosure", "mac_app_store",
     "macappstore", "dynamic_cdn_url", "construct_per_macos",
     "construct_url_or_suite", "construct_from_github_tag",
+    "github_release", "github_api",
     "scrape_website", "extract_from_sparkle", "custom_api",
     "broadcom_portal_only", "url_checksum_only", "construct", "dynamic_portal_only",
 }

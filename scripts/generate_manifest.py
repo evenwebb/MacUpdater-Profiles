@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-SKIP_DIRS = {".git", ".github", "scripts", "__pycache__"}
+SKIP_DIRS = {".git", ".github", "scripts", "__pycache__", "badges"}
 
 
 def main():

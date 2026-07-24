@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "Bionic",
+  "slug": "bionic",
+  "bundle_id": "ai.elementlabs.bionic",
+  "category": "ai-tools",
+  "license": "free",
+  "description": "Local AI / agent desktop app from Element Labs (LM Studio team)",
+  "website": "https://elementlabs.ai/bionic",
+  "platform": "macOS",
+  "architecture": "separate",
+  "min_os": "12.0",
+  "auto_updates": true,
+  "skip": true,
+  "version_check": {
+    "method": "scrape_html",
+    "url": "https://elementlabs.ai/bionic",
+    "extraction": {
+      "type": "regex_on_html",
+      "pattern": "(\\d+\\.\\d+\\.\\d+\\+\\d+)",
+      "note": "No public version string on the marketing page today. Profile is skip=true until a feed exists."
+    },
+    "headers": {}
+  },
+  "download": {
+    "method": "app_store_only",
+    "note": "Self-updates via private Cloudflare R2 (electron-updater). No public installer for MacUpdater."
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://elementlabs.ai/bionic"
+  },
+  "notes": "app-update.yml points at private R2 bucket bionic-updaters. skip=true until a public feed exists. Do not probe the GUI binary for --version (launches Electron).",
+  "last_updated": "2026-07-24"
+}
