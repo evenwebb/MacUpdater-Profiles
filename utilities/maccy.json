@@ -20,7 +20,7 @@
     "method": "construct_url",
     "file_type": "zip",
     "headers": {},
-    "url": "https://github.com/p0deje/Maccy/releases/download/2.6.1/Maccy.app.zip"
+    "url": "https://github.com/p0deje/Maccy/releases/download/v{VERSION}/Maccy.app.zip"
   },
   "changelog": {
     "method": "github_releases",

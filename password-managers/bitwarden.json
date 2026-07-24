@@ -36,5 +36,8 @@
   "category": "password-managers",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.bitwarden.desktop"
+  "bundle_id": "com.bitwarden.desktop",
+  "alternate_bundle_ids": [
+    "com.8bit.bitwarden"
+  ]
 }

@@ -23,7 +23,7 @@
     "method": "construct_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/MonitorControl/MonitorControl/releases/download/v4.3.3/MonitorControl.4.3.3.dmg"
+    "url": "https://github.com/MonitorControl/MonitorControl/releases/download/v{VERSION}/MonitorControl.{VERSION}.dmg"
   },
   "changelog": {
     "method": "github_releases",

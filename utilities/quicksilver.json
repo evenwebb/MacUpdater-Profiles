@@ -18,9 +18,10 @@
   },
   "download": {
     "method": "construct_url",
-    "url": null,
     "file_type": "dmg",
-    "headers": {}
+    "headers": {},
+    "url": "https://github.com/quicksilver/Quicksilver/releases/download/{TAG}/Quicksilver.{VERSION}.dmg",
+    "note": "Asset name may vary; GitHub API asset picker is preferred at runtime."
   },
   "changelog": {
     "url": "https://github.com/quicksilver/Quicksilver/releases"

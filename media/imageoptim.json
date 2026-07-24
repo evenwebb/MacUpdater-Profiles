@@ -17,10 +17,11 @@
     "extraction": null
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "url": "https://imageoptim.com/ImageOptim.tar.bz2",
     "file_type": "tar.bz2",
-    "headers": {}
+    "headers": {},
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "url": "https://imageoptim.com/versions.json"

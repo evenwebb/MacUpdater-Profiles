@@ -17,10 +17,10 @@
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
-    "file_type": "dmg",
+    "method": "redirect_url",
+    "file_type": "zip",
     "headers": {},
-    "url": "https://osx.telegram.org/updates/Telegram-12.8.282010.app.zip"
+    "url": "https://telegram.org/dl/macos"
   },
   "changelog": {
     "method": "scrape",

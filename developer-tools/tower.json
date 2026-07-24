@@ -18,10 +18,11 @@
     "notes": "URL requires app bundle inspection to determine"
   },
   "download": {
-    "method": "fixed_url",
+    "method": "redirect_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://www.git-tower.com/download/mac"
+    "url": "https://www.git-tower.com/download/mac",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "fixed_url",

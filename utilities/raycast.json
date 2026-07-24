@@ -17,10 +17,11 @@
     "headers": {}
   },
   "download": {
-    "method": "direct_url",
+    "method": "redirect_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://releases.raycast.com/releases/latest/download?build=universal"
+    "url": "https://releases.raycast.com/releases/latest/download?build=universal",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "webpage",

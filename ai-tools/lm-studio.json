@@ -21,7 +21,7 @@
     "note": "LM Studio download page scraping no longer reliable. If JSON API unavailable, fall back to https://api.github.com/repos/lmstudio-ai/lmstudio/releases/latest"
   },
   "download": {
-    "method": "construct_url",
+    "method": "redirect_url",
     "url": "https://installers.lmstudio.ai/darwin/{ARCH}/latest",
     "file_type": "dmg",
     "headers": {},

@@ -36,5 +36,9 @@
   "category": "messaging",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.facebook.WhatsApp"
+  "bundle_id": "net.whatsapp.WhatsApp",
+  "alternate_bundle_ids": [
+    "desktop.WhatsApp",
+    "com.facebook.WhatsApp"
+  ]
 }

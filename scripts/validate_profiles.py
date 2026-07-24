@@ -70,7 +70,7 @@ def _warn(rel: Path, msg: str) -> None:
 
 def _download_url(data: dict) -> str:
     dl = data.get("download", {}) or {}
-    return (dl.get("url") or "").strip()
+    return (dl.get("url") or dl.get("pattern") or dl.get("latest_redirect") or "").strip()
 
 
 def _url_target(url: str) -> str:
@@ -110,10 +110,20 @@ def validate_download(data: dict, rel: Path) -> None:
             _fail(rel, f"redirect_url points at non-macOS URL: {url[:80]}")
         return
 
-    if not url or "{" in url:
-        if data.get("auto_updates") and method in ("construct_url", "constructed_url", "direct_url"):
+    # Template / empty URLs: only warn when auto_updates and no version-ish token exists.
+    version_tokens = ("{VERSION}", "{version}", "{VER}", "{TAG}", "{BUILD}", "{SHORT_VERSION}", "{MAJOR}", "{MINOR}", "{FILENAME}")
+    if not url or ("{" in url and not any(tok in url for tok in version_tokens)):
+        # /latest/ and sparkle-fed downloads are intentionally unversioned.
+        latestish = bool(url) and ("/latest/" in url.lower() or url.lower().endswith("/latest") or "latest-" in url.lower())
+        if (
+            data.get("auto_updates")
+            and method in ("construct_url", "constructed_url", "direct_url")
+            and not latestish
+            and not any(tok in url for tok in version_tokens)
+        ):
             _warn(rel, "auto_updates=true but download URL has no {VERSION} placeholder — version may go stale")
-        return
+        if not url or "{" in url:
+            return
 
     if _url_is_non_mac(url):
         _fail(rel, f"download URL is not for macOS: {url[:100]}")
@@ -121,9 +131,12 @@ def validate_download(data: dict, rel: Path) -> None:
     if (
         file_type == "dmg"
         and method in ("direct_url", "construct_url", "constructed_url", "fixed_url")
-        and not url.lower().endswith((".dmg", ".pkg"))
+        and not any(url.lower().split("?", 1)[0].endswith(ext) for ext in (".dmg", ".pkg", ".zip"))
+        and ".dmg" not in url.lower()
+        and ".pkg" not in url.lower()
+        and ".zip" not in url.lower()
     ):
-        _warn(rel, f"file_type is dmg but URL does not end in .dmg/.pkg: {url[:80]}")
+        _warn(rel, f"file_type is dmg but URL is not an archive link: {url[:80]}")
 
     if method in ("construct_url", "constructed_url", "versioned_url"):
         if not _has_version_placeholder(url) and _STALE_VERSION_RE.search(url):

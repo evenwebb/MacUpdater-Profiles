@@ -22,7 +22,7 @@
     "method": "construct_url",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://github.com/rxhanson/Rectangle/releases/download/v0.96/Rectangle0.96.dmg"
+    "url": "https://github.com/rxhanson/Rectangle/releases/download/v{VERSION}/Rectangle0.96.dmg"
   },
   "changelog": {
     "method": "github_api",

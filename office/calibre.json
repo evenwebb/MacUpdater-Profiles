@@ -25,11 +25,12 @@
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
+    "method": "redirect_url",
     "pattern": "https://github.com/kovidgoyal/calibre/releases/download/v{VERSION}/calibre-{VERSION}.dmg",
     "file_type": "dmg",
     "headers": {},
-    "url": "https://calibre-ebook.com/dist/osx"
+    "url": "https://calibre-ebook.com/dist/osx",
+    "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
     "method": "web_scrape",
