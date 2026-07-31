@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-07-24T13:01:35Z",
+  "updated": "2026-07-31T10:49:35Z",
   "total_profiles": 230,
   "apps": {
     "1password": {
@@ -239,7 +239,9 @@
       "name": "Bambu Studio",
       "bundle_id": "com.bambulab.bambu-studio",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/bambu-studio.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/bambu-studio.json",
@@ -279,7 +281,9 @@
       "name": "BetterZip",
       "bundle_id": "com.macitbetter.betterzip5",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/betterzip.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/betterzip.json",
@@ -361,7 +365,9 @@
       "name": "Canva",
       "bundle_id": "com.canva.CanvaDesktop",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/canva.png"
+      },
       "category": "design",
       "license": "free",
       "path": "design/canva.json",
@@ -393,7 +399,9 @@
       "name": "ChatGPT Classic",
       "bundle_id": "com.openai.chat",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/chatgpt.png"
+      },
       "category": "ai-tools",
       "license": "free",
       "path": "ai-tools/chatgpt.json",
@@ -455,7 +463,9 @@
       "name": "CodeRunner",
       "bundle_id": "com.krill.CodeRunner",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/coderunner.png"
+      },
       "category": "developer-tools",
       "license": "paid",
       "path": "developer-tools/coderunner.json",
@@ -465,7 +475,9 @@
       "name": "ChatGPT",
       "bundle_id": "com.openai.codex",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/codex.png"
+      },
       "category": "ai-tools",
       "license": "free",
       "path": "ai-tools/codex.json",
@@ -475,7 +487,9 @@
       "name": "Control D Utility",
       "bundle_id": "com.controld.utility",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/control-d-utility.png"
+      },
       "category": "vpn-security",
       "license": "free",
       "path": "vpn-security/control-d-utility.json",
@@ -507,7 +521,9 @@
       "name": "Cursor",
       "bundle_id": "com.todesktop.230313mzl4w4u92",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/cursor.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/cursor.json",
@@ -767,7 +783,9 @@
       "name": "Firefox",
       "bundle_id": "org.mozilla.firefox",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/firefox.png"
+      },
       "category": "browsers",
       "license": "free",
       "path": "browsers/firefox.json",
@@ -789,7 +807,9 @@
       "name": "ForkLift",
       "bundle_id": "com.binarynights.ForkLift",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/forklift.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/forklift.json",
@@ -799,7 +819,9 @@
       "name": "Gemini",
       "bundle_id": "com.macpaw.site.Gemini2",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/gemini.png"
+      },
       "category": "other",
       "license": "free",
       "path": "other/gemini.json",
@@ -841,7 +863,9 @@
       "name": "GitHub Desktop",
       "bundle_id": "com.github.GitHubClient",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/github-desktop.png"
+      },
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/github-desktop.json",
@@ -861,7 +885,9 @@
       "name": "Google Chrome",
       "bundle_id": "com.google.Chrome",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/google-chrome.png"
+      },
       "category": "browsers",
       "license": "free",
       "path": "browsers/google-chrome.json",
@@ -997,7 +1023,9 @@
       "name": "IINA",
       "bundle_id": "com.colliderli.iina",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/iina.png"
+      },
       "category": "media",
       "license": "free",
       "path": "media/iina.json",
@@ -1155,7 +1183,7 @@
       "category": "office",
       "license": "free",
       "path": "office/kindle-previewer.json",
-      "skip": false
+      "skip": true
     },
     "kitty": {
       "name": "kitty",
@@ -1379,7 +1407,9 @@
       "name": "Microsoft Excel",
       "bundle_id": "com.microsoft.Excel",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/microsoft-excel.png"
+      },
       "category": "office",
       "license": "free",
       "path": "office/microsoft-excel.json",
@@ -1401,7 +1431,9 @@
       "name": "Microsoft Word",
       "bundle_id": "com.microsoft.Word",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/microsoft-word.png"
+      },
       "category": "office",
       "license": "free",
       "path": "office/microsoft-word.json",
@@ -1631,7 +1663,9 @@
       "name": "OpenLauncher",
       "bundle_id": "io.openrct2.openlauncher",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/openlauncher.png"
+      },
       "category": "gaming",
       "license": "free",
       "path": "gaming/openlauncher.json",
@@ -1651,7 +1685,9 @@
       "name": "Orca Slicer",
       "bundle_id": "com.orcaslicer.OrcaSlicer",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/orca-slicer.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/orca-slicer.json",
@@ -1671,7 +1707,9 @@
       "name": "Paste",
       "bundle_id": "com.wiheads.paste",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/paste.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/paste.json",
@@ -1757,7 +1795,9 @@
       "name": "Private Internet Access",
       "bundle_id": "com.privateinternetaccess.vpn",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/private-internet-access.png"
+      },
       "category": "vpn-security",
       "license": "paid",
       "path": "vpn-security/private-internet-access.json",
@@ -1871,7 +1911,9 @@
       "name": "Resilio Sync",
       "bundle_id": "com.resilio.Sync",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/resilio-sync.png"
+      },
       "category": "cloud-backup",
       "license": "free",
       "path": "cloud-backup/resilio-sync.json",
@@ -1925,7 +1967,9 @@
       "name": "Setapp",
       "bundle_id": "com.setapp.DesktopClient",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/setapp.png"
+      },
       "category": "utilities",
       "license": "free",
       "path": "utilities/setapp.json",
@@ -2109,7 +2153,9 @@
       "alternate_bundle_ids": [
         "io.tailscale.ipn.macsys"
       ],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/tailscale.png"
+      },
       "category": "vpn-security",
       "license": "free",
       "path": "vpn-security/tailscale.json",
@@ -2163,7 +2209,9 @@
       "name": "TextSniper",
       "bundle_id": "com.valerijs.boguckis.TextSniper",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/textsniper.png"
+      },
       "category": "utilities",
       "license": "paid",
       "path": "utilities/textsniper.json",
@@ -2311,7 +2359,9 @@
       "name": "VLC Media Player",
       "bundle_id": "org.videolan.vlc",
       "alternate_bundle_ids": [],
-      "icons": {},
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/vlc.png"
+      },
       "category": "media",
       "license": "free",
       "path": "media/vlc.json",
@@ -2325,7 +2375,7 @@
       "category": "virtualization",
       "license": "paid",
       "path": "virtualization/vmware-fusion.json",
-      "skip": false
+      "skip": true
     },
     "vscode": {
       "name": "Visual Studio Code",
@@ -2468,13 +2518,5 @@
       "path": "messaging/zoom-workplace.json",
       "skip": false
     }
-  },
-  "health": {
-    "checked_at": "2026-07-24T20:30:30Z",
-    "total": 147,
-    "ok": 147,
-    "broken": 0,
-    "skipped": 3,
-    "pct": 100
   }
 }
