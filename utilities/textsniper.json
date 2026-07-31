@@ -38,5 +38,8 @@
   "license": "paid",
   "skip": false,
   "bundle_id": "com.valerijs.boguckis.TextSniper",
-  "file_type": "dmg"
+  "file_type": "dmg",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/textsniper.png"
+  }
 }

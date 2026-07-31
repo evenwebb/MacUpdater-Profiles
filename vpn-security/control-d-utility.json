@@ -47,5 +47,8 @@
     "pattern": "(?i)\\bversion\\s+v?([0-9.]+)",
     "when": "plist_placeholder",
     "timeout_sec": 3
+  },
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/control-d-utility.png"
   }
 }

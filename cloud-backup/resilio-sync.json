@@ -36,5 +36,8 @@
     "url": "https://www.resilio.com/sync/download"
   },
   "notes": "Stable DMG is at download-cdn.resilio.com/stable/mac/osx/0/Resilio-Sync.dmg (legacy /stable/osx/ paths 404).",
-  "last_updated": "2026-07-24"
+  "last_updated": "2026-07-24",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/resilio-sync.png"
+  }
 }

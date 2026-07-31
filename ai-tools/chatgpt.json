@@ -1,7 +1,7 @@
 {
-  "name": "ChatGPT",
+  "name": "ChatGPT Classic",
   "slug": "chatgpt",
-  "description": "OpenAI's ChatGPT desktop application for macOS",
+  "description": "OpenAI ChatGPT Classic desktop app (the previous ChatGPT macOS client)",
   "website": "https://openai.com/chat",
   "platform": "macOS",
   "architecture": "arm64",
@@ -14,16 +14,17 @@
       "type": "sparkle_xml",
       "version_field": "sparkle:shortVersionString",
       "build_field": "sparkle:version",
-      "note": "Items NOT in chronological order \u2014 must compare all sparkle:version values to find highest",
-      "example": "1.2026.153"
+      "note": "Feed title is ChatGPT Classic. Prefers Sparkle enclosure (ChatGPT_Classic.pkg).",
+      "example": "1.2026.184"
     },
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
-    "pattern": "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_{SHORT_VERSION}_{BUILD}.dmg",
-    "file_type": "dmg",
-    "headers": {}
+    "method": "sparkle_enclosure",
+    "url": "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Classic.pkg",
+    "file_type": "pkg",
+    "headers": {},
+    "note": "Classic ships as a .pkg that stages ChatGPT Classic.app.zip; MacUpdater expands the pkg and installs the embedded .app without sudo when possible."
   },
   "changelog": {
     "method": "sparkle_release_notes",
@@ -33,11 +34,20 @@
     "method": "sparkle_pub_date",
     "field": "pubDate in appcast <item>"
   },
-  "notes": "Uses Sparkle framework with criticalUpdate markers. Build number is a Unix timestamp integer. Requires hardware arm64 (Apple Silicon). No Intel build available.",
-  "last_updated": "2026-06-21",
+  "notes": "Renamed to ChatGPT Classic when OpenAI shipped the new ChatGPT.app (bundle com.openai.codex). This profile tracks com.openai.chat only.",
+  "last_updated": "2026-07-31",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "ai-tools",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.openai.chat"
+  "bundle_id": "com.openai.chat",
+  "match": {
+    "name_aliases": [
+      "ChatGPT Classic",
+      "ChatGPT"
+    ]
+  },
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/chatgpt.png"
+  }
 }

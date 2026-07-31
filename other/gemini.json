@@ -50,5 +50,9 @@
   "license": "free",
   "skip": false,
   "last_updated": "2026-06-21",
-  "slug": "gemini"
+  "slug": "gemini",
+  "website": "https://gemini.google.com/app",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/gemini.png"
+  }
 }

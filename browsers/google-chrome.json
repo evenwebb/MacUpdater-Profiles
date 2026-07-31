@@ -43,5 +43,8 @@
   "bundle_id": "com.google.Chrome",
   "install": {
     "allow_rollout_lag": true
+  },
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/google-chrome.png"
   }
 }

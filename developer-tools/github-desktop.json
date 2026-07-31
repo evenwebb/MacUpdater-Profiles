@@ -38,5 +38,8 @@
     "field": "published_at"
   },
   "notes": "Electron app using Squirrel.Mac autoUpdater. Open source (MIT). Download is a ZIP containing the .app bundle.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-06-21",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/github-desktop.png"
+  }
 }

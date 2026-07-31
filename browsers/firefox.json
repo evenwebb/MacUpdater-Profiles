@@ -39,5 +39,8 @@
   "category": "browsers",
   "license": "free",
   "skip": false,
-  "bundle_id": "org.mozilla.firefox"
+  "bundle_id": "org.mozilla.firefox",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/firefox.png"
+  }
 }

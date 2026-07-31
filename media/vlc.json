@@ -39,5 +39,8 @@
   "category": "media",
   "license": "free",
   "skip": false,
-  "bundle_id": "org.videolan.vlc"
+  "bundle_id": "org.videolan.vlc",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/vlc.png"
+  }
 }

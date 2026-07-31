@@ -38,5 +38,8 @@
     "url": "https://www.privateinternetaccess.com/download"
   },
   "notes": "Version sourced from Homebrew cask (pia-macos-VERSION-BUILD.zip on installers.privateinternetaccess.com).",
-  "last_updated": "2026-07-24"
+  "last_updated": "2026-07-24",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/private-internet-access.png"
+  }
 }

@@ -51,5 +51,6 @@
   "skip": false,
   "bundle_id": "com.adguard.mac.adguard",
   "last_updated": "2026-06-21",
-  "slug": "adguard"
+  "slug": "adguard",
+  "website": "https://adguard.com"
 }

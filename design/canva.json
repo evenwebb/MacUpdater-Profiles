@@ -39,5 +39,8 @@
   "category": "design",
   "license": "free",
   "skip": false,
-  "bundle_id": "com.canva.CanvaDesktop"
+  "bundle_id": "com.canva.CanvaDesktop",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/canva.png"
+  }
 }

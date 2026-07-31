@@ -47,5 +47,8 @@
   "bundle_id": "com.tailscale.ipn.macos",
   "alternate_bundle_ids": [
     "io.tailscale.ipn.macsys"
-  ]
+  ],
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/tailscale.png"
+  }
 }

@@ -1,8 +1,8 @@
 {
-  "name": "Codex",
+  "name": "ChatGPT",
   "slug": "codex",
-  "description": "OpenAI Codex desktop app for managing coding agents, built on GPT-5 with terminal access, file editing, and autonomous task execution",
-  "website": "https://openai.com/codex",
+  "description": "OpenAI's current ChatGPT desktop app for macOS (agentic Codex features). Shown as ChatGPT.app; Sparkle channel title remains Codex.",
+  "website": "https://chatgpt.com/download",
   "platform": "macOS",
   "architecture": "separate",
   "bundle_id": "com.openai.codex",
@@ -11,6 +11,12 @@
   "min_os": "macOS 12.0",
   "auto_updates": true,
   "skip": false,
+  "match": {
+    "name_aliases": [
+      "Codex",
+      "ChatGPT"
+    ]
+  },
   "version_check": {
     "method": "sparkle_appcast",
     "url": "https://persistent.oaistatic.com/codex-app-prod/appcast.xml",
@@ -18,16 +24,16 @@
       "type": "sparkle_xml",
       "version_field": "sparkle:shortVersionString",
       "build_field": "sparkle:version",
-      "note": "Separate appcasts for arm64 and x64. Intel uses appcast-x64.xml. Items may not be in chronological order — compare all sparkle:version values."
+      "note": "Channel title is Codex; enclosure files are ChatGPT-darwin-{arch}-{version}.zip. Intel feed: appcast-x64.xml."
     },
     "headers": {}
   },
   "download": {
-    "method": "construct_url",
-    "pattern": "https://persistent.oaistatic.com/codex-app-prod/Codex-darwin-{ARCH}-{VERSION}.zip",
+    "method": "sparkle_enclosure",
     "file_type": "zip",
     "headers": {},
-    "note": "Separate downloads for arm64 and x64 architectures"
+    "pattern": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-{ARCH}-{VERSION}.zip",
+    "note": "Prefer Sparkle enclosure. Fallback pattern uses arm64/x64 via {ARCH}/{ARCH_ALT}."
   },
   "changelog": {
     "method": "sparkle_release_notes",
@@ -37,6 +43,10 @@
     "method": "sparkle_pub_date",
     "field": "pubDate in appcast <item>"
   },
-  "notes": "OpenAI Codex is a separate desktop app from ChatGPT. Uses Sparkle for auto-updates with separate appcast feeds for Apple Silicon (appcast.xml) and Intel (appcast-x64.xml). Stores user data in ~/.codex and ~/Library/Application Support/Codex.",
-  "last_updated": "2026-06-22"
+  "notes": "As of mid-2026 OpenAI's new desktop ChatGPT app uses bundle id com.openai.codex and installs as ChatGPT.app (CFBundleAlternateNames includes Codex). Distinct from ChatGPT Classic (com.openai.chat). User data under ~/.codex and ~/Library/Application Support/Codex.",
+  "last_updated": "2026-07-31",
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/codex.png"
+  }
 }

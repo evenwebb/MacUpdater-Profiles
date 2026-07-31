@@ -390,7 +390,7 @@
       "skip": false
     },
     "chatgpt": {
-      "name": "ChatGPT",
+      "name": "ChatGPT Classic",
       "bundle_id": "com.openai.chat",
       "alternate_bundle_ids": [],
       "icons": {},
@@ -462,7 +462,7 @@
       "skip": false
     },
     "codex": {
-      "name": "Codex",
+      "name": "ChatGPT",
       "bundle_id": "com.openai.codex",
       "alternate_bundle_ids": [],
       "icons": {},

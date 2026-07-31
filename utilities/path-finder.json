@@ -41,5 +41,6 @@
   "skip": false,
   "bundle_id": "com.cocoatech.PathFinder",
   "last_updated": "2026-06-21",
-  "slug": "path-finder"
+  "slug": "path-finder",
+  "website": "https://cocoatech.com/pathfinder/"
 }

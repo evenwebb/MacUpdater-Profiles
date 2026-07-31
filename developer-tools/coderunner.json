@@ -45,5 +45,9 @@
   "skip": false,
   "bundle_id": "com.krill.CodeRunner",
   "last_updated": "2026-06-21",
-  "slug": "coderunner"
+  "slug": "coderunner",
+  "website": "https://coderunnerapp.com",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/coderunner.png"
+  }
 }

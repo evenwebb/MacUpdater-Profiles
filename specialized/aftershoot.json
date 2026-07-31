@@ -42,5 +42,6 @@
   "skip": false,
   "last_updated": "2026-06-22",
   "slug": "aftershoot",
-  "bundle_id": "com.aftershoot.AfterShoot"
+  "bundle_id": "com.aftershoot.AfterShoot",
+  "website": "https://aftershoot.com"
 }
