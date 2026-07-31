@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "RightFont",
+  "slug": "rightfont",
+  "bundle_id": "com.rightfontapp.RightFont5",
+  "category": "design",
+  "license": "paid",
+  "description": "Font manager for previewing, installing, syncing, and organizing fonts on Mac",
+  "website": "https://rightfontapp.com/",
+  "platform": "macOS",
+  "architecture": "universal",
+  "min_os": "11.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "sparkle_appcast",
+    "url": "https://rightfontapp.com/update/appcast.xml",
+    "extraction": {
+      "type": "sparkle_xml",
+      "version_field": "sparkle:shortVersionString"
+    },
+    "headers": {}
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://rightfontapp.com/update/rightfont.zip",
+    "file_type": "zip",
+    "headers": {},
+    "note": "Sparkle enclosure; same ZIP tracked by Homebrew cask rightfont."
+  },
+  "changelog": {
+    "method": "web_scrape",
+    "url": "https://rightfontapp.com/updates/app"
+  },
+  "release_date": {
+    "method": "sparkle_pub_date",
+    "field": "pubDate in appcast"
+  },
+  "notes": "Paid app with Sparkle auto-updates. Bundle ID is RightFont5 series.",
+  "last_updated": "2026-07-31",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/rightfont.png"
+  }
+}

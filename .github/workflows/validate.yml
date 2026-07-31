@@ -24,6 +24,11 @@ jobs:
         run: |
           python3 scripts/generate_manifest.py
           if ! git diff --exit-code manifest.json; then
-            echo "manifest.json is out of date. Run scripts/generate_manifest.py"
+            echo "::error::manifest.json is out of date. Run: python3 scripts/generate_manifest.py"
             exit 1
+          fi
+      - name: Verify health badge JSON (if present)
+        run: |
+          if [ -f badges/health.json ]; then
+            python3 -c 'import json; json.load(open("badges/health.json"))'
           fi

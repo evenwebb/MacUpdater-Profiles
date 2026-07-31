@@ -18,7 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      # PAT (optional) for higher api.github.com limits; fall back so `gh` always auths.
+      GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
+      GITHUB_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
     steps:
       - uses: actions/checkout@v5
 
@@ -32,28 +34,29 @@ jobs:
       - name: Check remote profile health (rotating batch)
         id: health
         run: |
-          # Rotating batch: checks 40 profiles per day, complete cycle every 5 days.
-          # 177 profiles ÷ 5 days ≈ 36/day. We use 40 to include new ones.
-          # Runtime: ~40 × 3s ÷ 8 workers ≈ 15 seconds. Free on public repos.
-          DAY=$(( ($(date +%j) - 1) % 5 ))   # 0-4 rotating daily
+          # Rotating batch: ~40 profiles/day, full cycle ~every 5–6 days.
+          DAY=$(( ($(date +%j) - 1) % 5 ))
           OFFSET=$(( DAY * 40 ))
           echo "Batch $DAY: offset=$OFFSET limit=40"
-          # If the Python script crashes, ensure we still create a file
-          python3 scripts/validate_remote.py --offset "$OFFSET" --sample 40 --report > health-report.md || {
-            echo "Health check script failed with exit code $?"
-            echo "# Health Check Failed" > health-report.md
-            echo "" >> health-report.md
-            echo "The health check script encountered an error and could not complete." >> health-report.md
-            echo "Check the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details." >> health-report.md
-          }
+          python3 scripts/validate_remote.py --offset "$OFFSET" --sample 40 --report > health-report.md
           echo "--- health-report.md ---"
           cat health-report.md
-        continue-on-error: true
+          if ! grep -q "Profile Health Report" health-report.md; then
+            echo "Report missing expected header" >&2
+            exit 1
+          fi
+          if grep -q "## Broken profiles" health-report.md; then
+            echo "has_broken=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_broken=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Generate health badge
         run: |
           mkdir -p badges
-          python3 scripts/validate_remote.py --sample 30 --badge > badges/health.json
+          # Script writes badges/health.json itself (no shell redirect — avoids corruption).
+          python3 scripts/validate_remote.py --sample 30 --badge
+          python3 -c 'import json; json.load(open("badges/health.json")); print("badge ok:", open("badges/health.json").read())'
 
       - name: Commit health badge
         run: |
@@ -67,36 +70,29 @@ jobs:
           git commit -m "Update profile health badge [skip ci]"
           git push
 
-      - name: Open issue for broken profiles
-        if: failure()
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Open or update issue for broken profiles
+        if: steps.health.outputs.has_broken == 'true'
+        continue-on-error: true
         run: |
-          if [ ! -f health-report.md ]; then
-            echo "No health-report.md found — script likely crashed before output" >> $GITHUB_STEP_SUMMARY
-            exit 0
-          fi
           REPORT=$(cat health-report.md)
-          BROKEN=$(echo "$REPORT" | grep -c "BROKEN" || true)
-          if [ "$BROKEN" -eq 0 ]; then
-            echo "No broken profiles found" >> $GITHUB_STEP_SUMMARY
-            exit 0
-          fi
+          BROKEN=$(grep -c '^\- \*\*' health-report.md || true)
           TITLE="Profile health: ${BROKEN} broken profile(s)"
-          # Find existing issue
-          EXISTING=$(gh issue list --label "health-check" --state open --limit 5 --json number,title --jq '.[] | select(.title | startswith("Profile health:")) | .number' | head -1)
+          EXISTING=$(gh issue list --label "health-check" --state open --limit 10 --json number,title \
+            --jq '.[] | select(.title | startswith("Profile health:")) | .number' | head -1 || true)
           if [ -n "$EXISTING" ]; then
-            echo "$REPORT" | gh issue comment "$EXISTING" --body-file -
+            gh issue comment "$EXISTING" --body "$REPORT"
           else
-            echo "$REPORT" | gh issue create --title "$TITLE" --label "health-check" --body-file -
+            # Label may not exist yet — create issue then add label best-effort.
+            NUM=$(gh issue create --title "$TITLE" --body "$REPORT" | grep -oE '[0-9]+$')
+            gh issue edit "$NUM" --add-label "health-check" || true
           fi
 
       - name: Auto-close health issue if all clear
-        if: success()
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        if: steps.health.outputs.has_broken == 'false'
+        continue-on-error: true
         run: |
-          ISSUES=$(gh issue list --label "health-check" --state open --limit 5 --json number,title --jq '.[] | select(.title | startswith("Profile health:")) | .number')
+          ISSUES=$(gh issue list --label "health-check" --state open --limit 10 --json number,title \
+            --jq '.[] | select(.title | startswith("Profile health:")) | .number' || true)
           for num in $ISSUES; do
             gh issue comment "$num" --body "✅ All profiles healthy again. Auto-closing."
             gh issue close "$num"

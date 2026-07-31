@@ -370,10 +370,12 @@ def main():
             "message": f"{pct}%",
             "color": color,
         }
-        print(json.dumps(badge))
+        # Write file only — do NOT also print to stdout. CI used to redirect
+        # stdout into the same path, which races write_text and corrupts JSON.
         badge_path = REPO / "badges" / "health.json"
         badge_path.parent.mkdir(parents=True, exist_ok=True)
         badge_path.write_text(json.dumps(badge, indent=2) + "\n")
+        print(f"Wrote {badge_path} ({pct}% {color})", file=sys.stderr)
         return 0
 
     if args.report:
@@ -390,7 +392,9 @@ def main():
             for r in results:
                 if r["status"] == "ok":
                     print(f"- {r['slug']} → `{r.get('version','?')}` ({r.get('method','?')})")
-        return broken  # exit code = broken count
+        # Exit 0 so CI can publish the report even when profiles are broken.
+        # Use default (non --report) mode locally if you want exit code = broken count.
+        return 0
 
     # Default: print summary
     for r in results:

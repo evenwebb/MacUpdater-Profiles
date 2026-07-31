@@ -1,8 +1,8 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-07-31T10:49:35Z",
-  "total_profiles": 230,
+  "updated": "2026-07-31T10:52:08Z",
+  "total_profiles": 231,
   "apps": {
     "1password": {
       "name": "1Password",
@@ -1917,6 +1917,18 @@
       "category": "cloud-backup",
       "license": "free",
       "path": "cloud-backup/resilio-sync.json",
+      "skip": false
+    },
+    "rightfont": {
+      "name": "RightFont",
+      "bundle_id": "com.rightfontapp.RightFont5",
+      "alternate_bundle_ids": [],
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/rightfont.png"
+      },
+      "category": "design",
+      "license": "paid",
+      "path": "design/rightfont.json",
       "skip": false
     },
     "roblox": {
