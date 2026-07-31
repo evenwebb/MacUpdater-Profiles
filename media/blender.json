@@ -1,34 +1,40 @@
 {
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "name": "Blender",
   "slug": "blender",
   "bundle_id": "org.blenderfoundation.blender",
   "category": "media",
   "license": "free",
-  "description": "Blender is the free and open-source 3D creation suite. It supports the entirety of the 3D pipeline , modeling, rigging, animation, simulation, rendering, compositing, and motion tracking.",
+  "description": "Free and open-source 3D creation suite for modeling, animation, simulation, rendering, and more.",
   "website": "https://www.blender.org",
   "platform": "macOS",
-  "architecture": "universal",
-  "min_os": "10.15",
+  "architecture": "separate",
+  "min_os": "11.0",
   "auto_updates": false,
   "skip": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://www.blender.org/download/",
-    "extraction": "regex:Blender (\\d+\\.\\d+\\.\\d+)"
-  },
-  "download": {
-    "method": "direct_url",
-    "url": "https://mirrors.ocf.berkeley.edu/blender/release/Blender{MAJOR}.{MINOR}/blender-{VERSION}-macos.dmg",
-    "file_type": "dmg",
+    "method": "json_api",
+    "url": "https://formulae.brew.sh/api/cask/blender.json",
+    "extraction": {
+      "type": "json_path",
+      "path": "version",
+      "download_path": "url",
+      "example": "5.2.0",
+      "note": "Homebrew cask tracks official Blender macOS builds (arch-specific URL)."
+    },
     "headers": {}
   },
+  "download": {
+    "method": "redirect_url",
+    "file_type": "dmg",
+    "headers": {},
+    "url": "https://formulae.brew.sh/api/cask/blender.json",
+    "note": "Install URL comes from version-check download_path (Homebrew cask url)."
+  },
   "changelog": {
-    "url": "https://www.blender.org/download/releases/{VERSION}/"
+    "method": "web_scrape",
+    "url": "https://www.blender.org/download/releases/"
   },
-  "release_date": {
-    "method": "none",
-    "field": null
-  },
-  "notes": "Major version bumps require manual download. Download page uses JavaScript redirect to mirrors. No built-in auto-updater.",
-  "last_updated": "2026-06-21"
+  "notes": "No built-in auto-updater. Homebrew cask URL is arch-specific (arm64/x86_64).",
+  "last_updated": "2026-07-31"
 }
