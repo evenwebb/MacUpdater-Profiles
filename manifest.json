@@ -1,8 +1,8 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-07-31T10:52:08Z",
-  "total_profiles": 231,
+  "updated": "2026-08-05T16:28:01Z",
+  "total_profiles": 232,
   "apps": {
     "1password": {
       "name": "1Password",
@@ -2421,6 +2421,18 @@
       "category": "developer-tools",
       "license": "free",
       "path": "developer-tools/wezterm.json",
+      "skip": false
+    },
+    "whatcable": {
+      "name": "WhatCable",
+      "bundle_id": "uk.whatcable.whatcable",
+      "alternate_bundle_ids": [],
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/whatcable.png"
+      },
+      "category": "utilities",
+      "license": "free",
+      "path": "utilities/whatcable.json",
       "skip": false
     },
     "whatsapp": {

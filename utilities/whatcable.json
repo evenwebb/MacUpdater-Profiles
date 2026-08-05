@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "WhatCable",
+  "slug": "whatcable",
+  "bundle_id": "uk.whatcable.whatcable",
+  "category": "utilities",
+  "license": "free",
+  "description": "Menu bar app that identifies real USB-C cable capabilities (power, data, Thunderbolt) on Apple Silicon Macs",
+  "website": "https://www.whatcable.uk/",
+  "platform": "macOS",
+  "architecture": "arm64",
+  "min_os": "14.0",
+  "auto_updates": false,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/darrylmorley/whatcable/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name",
+      "strip_prefix": "v",
+      "example": "1.3.0"
+    },
+    "headers": {},
+    "rate_limit": "60/hr"
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://github.com/darrylmorley/whatcable/releases/latest/download/WhatCable.zip",
+    "file_type": "zip",
+    "headers": {},
+    "note": "Menu bar app zip from GitHub Releases. Ignore whatcable-cli-*.zip assets."
+  },
+  "changelog": {
+    "method": "github_releases",
+    "url": "https://github.com/darrylmorley/whatcable/releases",
+    "field": "body in GitHub release JSON"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "notes": "Free/open-source. No Sparkle; app only notifies via GitHub version check. Apple Silicon + macOS 14+. Also available via Homebrew cask darrylmorley/whatcable/whatcable.",
+  "last_updated": "2026-08-05",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/whatcable.png"
+  }
+}
