@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
+  "name": "Ollama",
+  "slug": "ollama",
+  "bundle_id": "com.electron.ollama",
+  "category": "ai-tools",
+  "license": "free",
+  "description": "Run large language models locally with a simple macOS app and CLI",
+  "website": "https://ollama.com/",
+  "platform": "macOS",
+  "architecture": "universal",
+  "min_os": "14.0",
+  "auto_updates": true,
+  "skip": false,
+  "version_check": {
+    "method": "github_api",
+    "url": "https://api.github.com/repos/ollama/ollama/releases/latest",
+    "extraction": {
+      "type": "json_path",
+      "path": "tag_name",
+      "strip_prefix": "v",
+      "example": "0.34.0"
+    },
+    "headers": {},
+    "rate_limit": "60/hr"
+  },
+  "download": {
+    "method": "direct_url",
+    "url": "https://github.com/ollama/ollama/releases/latest/download/Ollama.dmg",
+    "file_type": "dmg",
+    "headers": {},
+    "note": "Official macOS DMG from GitHub Releases. Prefer Ollama.dmg over Ollama-darwin.zip."
+  },
+  "changelog": {
+    "method": "github_releases",
+    "url": "https://github.com/ollama/ollama/releases",
+    "field": "body in GitHub release JSON"
+  },
+  "release_date": {
+    "method": "github_api",
+    "field": "published_at"
+  },
+  "notes": "Free/open-source. Built-in auto-updates; MacUpdater can still install from GitHub Releases. Also available via Homebrew cask ollama-app.",
+  "last_updated": "2026-09-14",
+  "icons": {
+    "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/ollama.png"
+  }
+}

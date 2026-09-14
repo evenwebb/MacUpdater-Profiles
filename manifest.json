@@ -1,8 +1,8 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-09-14T11:58:00Z",
-  "total_profiles": 232,
+  "updated": "2026-09-14T13:11:40Z",
+  "total_profiles": 233,
   "apps": {
     "1password": {
       "name": "1Password",
@@ -1605,6 +1605,18 @@
       "category": "notes-writing",
       "license": "free",
       "path": "notes-writing/obsidian.json",
+      "skip": false
+    },
+    "ollama": {
+      "name": "Ollama",
+      "bundle_id": "com.electron.ollama",
+      "alternate_bundle_ids": [],
+      "icons": {
+        "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/ollama.png"
+      },
+      "category": "ai-tools",
+      "license": "free",
+      "path": "ai-tools/ollama.json",
       "skip": false
     },
     "omnidisksweeper": {
