@@ -152,6 +152,24 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
         return None, str(e)[:100]
 
 
+
+def _strip_xml_trailing_junk(text: str) -> str:
+    """Remove BOM and trailing markup after </rss>/</feed> (e.g. Cloudflare beacon)."""
+    t = text.lstrip("\ufeff \t\r\n")
+    while t.startswith("<!--"):
+        end = t.find("-->")
+        if end < 0:
+            break
+        t = t[end + 3:].lstrip()
+    for closer in ("</rss>", "</RSS>", "</feed>", "</FEED>"):
+        idx = t.lower().rfind(closer.lower())
+        if idx >= 0:
+            end = idx + len(closer)
+            if end < len(t) and t[end:].strip():
+                return t[:end]
+            break
+    return t
+
 def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
     ns_uris = (
         "http://www.andymatuschak.org/xml-namespaces/sparkle",
@@ -166,7 +184,7 @@ def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
     if not (text.startswith("<?xml") or text.startswith("<rss") or text.startswith("<feed")):
         return None, "Response is not XML"
     try:
-        root = ET.fromstring(text)
+        root = ET.fromstring(_strip_xml_trailing_junk(text))
     except ET.ParseError as e:
         return None, f"XML parse error: {str(e)[:80]}"
 

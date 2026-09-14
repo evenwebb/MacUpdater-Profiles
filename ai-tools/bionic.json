@@ -30,6 +30,6 @@
     "method": "web_scrape",
     "url": "https://elementlabs.ai/bionic"
   },
-  "notes": "app-update.yml points at private R2 bucket bionic-updaters. skip=true until a public feed exists. Do not probe the GUI binary for --version (launches Electron).",
-  "last_updated": "2026-07-24"
+  "notes": "Bionic's website is currently down, so version checks and downloads are disabled until it returns.",
+  "last_updated": "2026-09-14"
 }

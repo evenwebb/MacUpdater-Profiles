@@ -10,7 +10,7 @@
   "architecture": "universal",
   "min_os": "10.13",
   "auto_updates": false,
-  "skip": false,
+  "skip": true,
   "version_check": {
     "method": "scrape_html",
     "url": "https://www.lagentesoft.com/batchmod/",
@@ -29,6 +29,6 @@
     "method": "none",
     "field": null
   },
-  "notes": "Niche utility. No public version API. Version and download URL must be scraped. May have infrequent updates.",
-  "last_updated": "2026-06-22"
+  "notes": "BatChmod's website is currently down, so version checks and downloads are disabled until it returns.",
+  "last_updated": "2026-09-14"
 }

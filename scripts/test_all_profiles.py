@@ -143,6 +143,24 @@ _SPARKLE_NS = [
     "https://sparkle-project.org/xml-namespaces/sparkle",
 ]
 
+
+def _strip_xml_trailing_junk(text: str) -> str:
+    """Remove BOM and trailing markup after </rss>/</feed> (e.g. Cloudflare beacon)."""
+    t = text.lstrip("\ufeff \t\r\n")
+    while t.startswith("<!--"):
+        end = t.find("-->")
+        if end < 0:
+            break
+        t = t[end + 3:].lstrip()
+    for closer in ("</rss>", "</RSS>", "</feed>", "</FEED>"):
+        idx = t.lower().rfind(closer.lower())
+        if idx >= 0:
+            end = idx + len(closer)
+            if end < len(t) and t[end:].strip():
+                return t[:end]
+            break
+    return t
+
 def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
     # Try each sparkle namespace
     for ns_url in _SPARKLE_NS:
@@ -152,7 +170,7 @@ def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
             return result
 
     # Fallback: try to extract version from filename in enclosure URLs
-    root = ET.fromstring(body)
+    root = ET.fromstring(_strip_xml_trailing_junk(body))
     items = root.findall("channel/item")
     for item in items:
         encl = item.find("enclosure")
@@ -166,7 +184,7 @@ def _extract_sparkle(body: str) -> tuple[str | None, str | None]:
 
 
 def _try_sparkle_ns(body: str, ns: dict) -> tuple[str | None, str | None]:
-    root = ET.fromstring(body)
+    root = ET.fromstring(_strip_xml_trailing_junk(body))
     items = root.findall("channel/item")
     if not items:
         return (None, "No items in feed")

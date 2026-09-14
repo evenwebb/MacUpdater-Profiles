@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-08-05T16:28:01Z",
+  "updated": "2026-09-14T11:58:00Z",
   "total_profiles": 232,
   "apps": {
     "1password": {
@@ -265,7 +265,7 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/batchmod.json",
-      "skip": false
+      "skip": true
     },
     "beekeeper-studio": {
       "name": "Beekeeper Studio",
