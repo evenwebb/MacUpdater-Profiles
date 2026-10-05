@@ -35,7 +35,7 @@
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "utilities",
-  "license": "paid",
+  "license": "freemium",
   "skip": false,
   "bundle_id": "com.raycast.macos"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-10-05T21:48:03Z",
+  "updated": "2026-10-05T22:42:54Z",
   "total_profiles": 233,
   "apps": {
     "1password": {
@@ -13,7 +13,7 @@
       ],
       "icons": {},
       "category": "password-managers",
-      "license": "paid",
+      "license": "free",
       "path": "password-managers/1password.json",
       "skip": false
     },
@@ -59,7 +59,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "vpn-security",
-      "license": "paid",
+      "license": "freemium",
       "path": "vpn-security/adguard.json",
       "skip": false
     },
@@ -99,7 +99,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "specialized",
-      "license": "free",
+      "license": "freemium",
       "path": "specialized/aftershoot.json",
       "skip": false
     },
@@ -109,7 +109,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "office",
-      "license": "free",
+      "license": "freemium",
       "path": "office/airtable.json",
       "skip": false
     },
@@ -153,7 +153,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/anydesk.png"
       },
       "category": "remote-desktop",
-      "license": "free",
+      "license": "freemium",
       "path": "remote-desktop/anydesk.json",
       "skip": false
     },
@@ -307,7 +307,7 @@
       ],
       "icons": {},
       "category": "password-managers",
-      "license": "free",
+      "license": "freemium",
       "path": "password-managers/bitwarden.json",
       "skip": false
     },
@@ -455,7 +455,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/coconutbattery.png"
       },
       "category": "utilities",
-      "license": "free",
+      "license": "freemium",
       "path": "utilities/coconutbattery.json",
       "skip": false
     },
@@ -503,7 +503,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/craft.png"
       },
       "category": "notes-writing",
-      "license": "free",
+      "license": "freemium",
       "path": "notes-writing/craft.json",
       "skip": false
     },
@@ -623,7 +623,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "developer-tools",
-      "license": "free",
+      "license": "freemium",
       "path": "developer-tools/docker-desktop.json",
       "skip": false
     },
@@ -633,7 +633,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "specialized",
-      "license": "free",
+      "license": "freemium",
       "path": "specialized/dolphin-anty.json",
       "skip": false
     },
@@ -723,7 +723,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/evernote.png"
       },
       "category": "notes-writing",
-      "license": "free",
+      "license": "freemium",
       "path": "notes-writing/evernote.json",
       "skip": false
     },
@@ -733,7 +733,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "vpn-security",
-      "license": "paid",
+      "license": "free",
       "path": "vpn-security/expressvpn.json",
       "skip": false
     },
@@ -811,7 +811,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/forklift.png"
       },
       "category": "developer-tools",
-      "license": "free",
+      "license": "paid",
       "path": "developer-tools/forklift.json",
       "skip": false
     },
@@ -919,7 +919,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "notes-writing",
-      "license": "free",
+      "license": "freemium",
       "path": "notes-writing/grammarly-desktop.json",
       "skip": false
     },
@@ -1315,7 +1315,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/mac-mouse-fix.png"
       },
       "category": "utilities",
-      "license": "free",
+      "license": "paid",
       "path": "utilities/mac-mouse-fix.json",
       "skip": false
     },
@@ -1367,7 +1367,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "vpn-security",
-      "license": "free",
+      "license": "freemium",
       "path": "vpn-security/malwarebytes.json",
       "skip": false
     },
@@ -1377,7 +1377,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "developer-tools",
-      "license": "free",
+      "license": "freemium",
       "path": "developer-tools/mamp.json",
       "skip": false
     },
@@ -1413,7 +1413,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/microsoft-excel.png"
       },
       "category": "office",
-      "license": "freemium",
+      "license": "free",
       "path": "office/microsoft-excel.json",
       "skip": false
     },
@@ -1559,7 +1559,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "vpn-security",
-      "license": "paid",
+      "license": "free",
       "path": "vpn-security/nordvpn.json",
       "skip": false
     },
@@ -1569,7 +1569,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "notes-writing",
-      "license": "free",
+      "license": "freemium",
       "path": "notes-writing/notion.json",
       "skip": false
     },
@@ -1713,7 +1713,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "remote-desktop",
-      "license": "free",
+      "license": "freemium",
       "path": "remote-desktop/parsec.json",
       "skip": false
     },
@@ -1757,7 +1757,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "utilities",
-      "license": "paid",
+      "license": "free",
       "path": "utilities/perception.json",
       "skip": false
     },
@@ -1789,7 +1789,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "media",
-      "license": "free",
+      "license": "freemium",
       "path": "media/plex.json",
       "skip": false
     },
@@ -1813,7 +1813,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/private-internet-access.png"
       },
       "category": "vpn-security",
-      "license": "paid",
+      "license": "free",
       "path": "vpn-security/private-internet-access.json",
       "skip": false
     },
@@ -1863,7 +1863,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "utilities",
-      "license": "free",
+      "license": "freemium",
       "path": "utilities/raindrop-io.json",
       "skip": false
     },
@@ -1885,7 +1885,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "utilities",
-      "license": "paid",
+      "license": "freemium",
       "path": "utilities/raycast.json",
       "skip": false
     },
@@ -1917,7 +1917,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "cloud-backup",
-      "license": "free",
+      "license": "freemium",
       "path": "cloud-backup/rescuetime.json",
       "skip": false
     },
@@ -1929,7 +1929,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/resilio-sync.png"
       },
       "category": "cloud-backup",
-      "license": "free",
+      "license": "freemium",
       "path": "cloud-backup/resilio-sync.json",
       "skip": false
     },
@@ -2073,7 +2073,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "email",
-      "license": "paid",
+      "license": "freemium",
       "path": "email/spark-mail.json",
       "skip": false
     },
@@ -2083,7 +2083,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "vpn-security",
-      "license": "paid",
+      "license": "free",
       "path": "vpn-security/spyderxpro.json",
       "skip": true
     },
@@ -2095,7 +2095,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/standard-notes.png"
       },
       "category": "notes-writing",
-      "license": "free",
+      "license": "freemium",
       "path": "notes-writing/standard-notes.json",
       "skip": false
     },
@@ -2281,7 +2281,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "notes-writing",
-      "license": "free",
+      "license": "freemium",
       "path": "notes-writing/todoist.json",
       "skip": false
     },
@@ -2303,7 +2303,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/tower.png"
       },
       "category": "developer-tools",
-      "license": "paid",
+      "license": "freemium",
       "path": "developer-tools/tower.json",
       "skip": false
     },
@@ -2399,7 +2399,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "virtualization",
-      "license": "paid",
+      "license": "freemium",
       "path": "virtualization/vmware-fusion.json",
       "skip": true
     },

@@ -42,7 +42,7 @@
   "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
-  "license": "free",
+  "license": "freemium",
   "skip": false,
   "bundle_id": "com.ru.dolphin.anty",
   "cf_bundle_version": "2026.163.233",

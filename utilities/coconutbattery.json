@@ -3,7 +3,7 @@
   "slug": "coconutbattery",
   "bundle_id": "com.coconut-flavour.coconutBattery-Menu",
   "category": "utilities",
-  "license": "free",
+  "license": "freemium",
   "description": "coconutBattery shows live information about your Mac's battery, including current charge, maximum capacity, cycle count, and battery health for your Mac, iPhone, and iPad.",
   "website": "https://www.coconut-flavour.com",
   "platform": "macOS",

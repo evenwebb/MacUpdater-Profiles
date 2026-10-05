@@ -37,7 +37,7 @@
   "last_updated": "2026-06-22",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "email",
-  "license": "paid",
+  "license": "freemium",
   "skip": false,
   "bundle_id": "com.readdle.SparkDesktop"
 }

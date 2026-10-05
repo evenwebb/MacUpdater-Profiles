@@ -7,7 +7,7 @@
   "architecture": "universal",
   "bundle_id": "com.FormaGrid.Airtable",
   "category": "office",
-  "license": "free",
+  "license": "freemium",
   "min_os": "macOS 10.13",
   "auto_updates": true,
   "skip": false,

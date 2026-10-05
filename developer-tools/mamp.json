@@ -3,7 +3,7 @@
   "slug": "mamp",
   "bundle_id": "de.appsolute.MAMP",
   "category": "developer-tools",
-  "license": "free",
+  "license": "freemium",
   "description": "MAMP installs a local server environment on your macOS computer, allowing you to develop and test websites locally with Apache, MySQL, and PHP.",
   "website": "https://www.mamp.info",
   "platform": "macOS",

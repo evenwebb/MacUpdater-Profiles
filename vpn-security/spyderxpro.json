@@ -38,7 +38,7 @@
   "last_updated": "2026-10-05",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
-  "license": "paid",
+  "license": "free",
   "skip": true,
   "bundle_id": "com.datacolor.SpyderXPro"
 }

@@ -38,7 +38,7 @@
   "notes": "AI-powered photo culling and editing tool for photographers. Features AI Culling 3.0. Company blocks automated web fetching of downloads page (403). Integrates with Lightroom. Free tier with limits.",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "specialized",
-  "license": "free",
+  "license": "freemium",
   "skip": false,
   "last_updated": "2026-06-22",
   "slug": "aftershoot",

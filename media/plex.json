@@ -33,7 +33,7 @@
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "media",
-  "license": "free",
+  "license": "freemium",
   "skip": false,
   "bundle_id": "tv.plex.desktop"
 }

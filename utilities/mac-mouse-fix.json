@@ -7,7 +7,7 @@
   "architecture": "universal",
   "bundle_id": "com.nuebling.mac-mouse-fix",
   "category": "utilities",
-  "license": "free",
+  "license": "paid",
   "min_os": "macOS 10.15.0",
   "auto_updates": true,
   "skip": false,

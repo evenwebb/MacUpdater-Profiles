@@ -7,7 +7,7 @@
   "architecture": "universal",
   "bundle_id": "org.standardnotes.standardnotes",
   "category": "notes-writing",
-  "license": "free",
+  "license": "freemium",
   "min_os": "macOS 11.0",
   "auto_updates": true,
   "skip": false,

@@ -4,7 +4,7 @@
   "slug": "resilio-sync",
   "bundle_id": "com.resilio.Sync",
   "category": "cloud-backup",
-  "license": "free",
+  "license": "freemium",
   "description": "P2P file sync (formerly BitTorrent Sync)",
   "website": "https://www.resilio.com/sync",
   "platform": "macOS",

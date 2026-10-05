@@ -4,7 +4,7 @@
   "slug": "private-internet-access",
   "bundle_id": "com.privateinternetaccess.vpn",
   "category": "vpn-security",
-  "license": "paid",
+  "license": "free",
   "description": "VPN client from Private Internet Access",
   "website": "https://www.privateinternetaccess.com",
   "platform": "macOS",

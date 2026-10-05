@@ -36,7 +36,7 @@
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "developer-tools",
-  "license": "paid",
+  "license": "freemium",
   "skip": false,
   "bundle_id": "com.fournova.Tower3",
   "icons": {

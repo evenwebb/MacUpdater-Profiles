@@ -4,7 +4,7 @@
   "slug": "perception",
   "bundle_id": "com.peslostudios.perception",
   "category": "utilities",
-  "license": "paid",
+  "license": "free",
   "description": "Dashcam manager (iOS app running on Apple silicon Mac)",
   "website": "https://apps.apple.com/app/perception-dashcam-manager/id6448377884",
   "platform": "macOS",

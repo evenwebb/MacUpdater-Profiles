@@ -30,7 +30,7 @@
   "last_updated": "2026-06-21",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "virtualization",
-  "license": "paid",
+  "license": "freemium",
   "skip": true,
   "bundle_id": "com.vmware.fusion"
 }
