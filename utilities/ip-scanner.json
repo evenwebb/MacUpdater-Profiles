@@ -1,7 +1,8 @@
 {
   "name": "IP Scanner",
   "slug": "ip-scanner",
-  "bundle_id": "com.10baseT.IPScannerMacNMAS",
+  "bundle_id": "com.10baseT.IPScanner",
+  "alternate_bundle_ids": ["com.10baseT.IPScannerMacNMAS"],
   "category": "utilities",
   "license": "free",
   "description": "IP Scanner is a network scanning tool for macOS that scans your local network to identify all connected devices and computers, displaying IP addresses, MAC addresses, and device names.",
@@ -12,14 +13,19 @@
   "auto_updates": false,
   "skip": false,
   "version_check": {
-    "method": "scrape_html",
-    "url": "https://10base-t.com/macintosh-software/ip-scanner/",
-    "extraction": null
+    "method": "itunes_api",
+    "url": "https://itunes.apple.com/lookup?id=6443819966&country=us",
+    "extraction": {
+      "type": "json_path",
+      "path": "results[0].version",
+      "example": "6.41"
+    },
+    "headers": {}
   },
   "download": {
-    "method": "scrape",
-    "url": "https://10base-t.com/macintosh-software/ip-scanner/",
-    "file_type": "dmg",
+    "method": "app_store_only",
+    "url": "https://apps.apple.com/us/app/ip-scanner/id6443819966",
+    "note": "Vendor now ships via the Mac App Store; the old direct download is a beta-only build (IPScanner_6.0b3).",
     "headers": {}
   },
   "changelog": {
@@ -29,8 +35,8 @@
     "method": "none",
     "field": null
   },
-  "notes": "No public version API or Sparkle feed. Version and download URL must be scraped from product page. May also be available on Mac App Store.",
-  "last_updated": "2026-06-22",
+  "notes": "Version via Mac App Store lookup (the product page carries no stable version string, only a macOS 26 beta link). Legacy non-MAS builds use bundle ID com.10baseT.IPScannerMacNMAS.",
+  "last_updated": "2026-10-05",
   "cf_bundle_version": "1443",
   "icons": {
     "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/ip-scanner.png"

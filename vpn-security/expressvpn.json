@@ -13,8 +13,8 @@
     "extraction": {
       "type": "json_path",
       "json_path": "installers.mac_qt.locations.default",
-      "pattern": "expressvpn[._-]macos[._-]universal[._-]v?(\\d+\\.\\d+\\.\\d+)[._-]release\\.zip",
-      "notes": "Navigate JSON: installers \u2192 mac_qt \u2192 locations \u2192 default, then regex extract version from filename."
+      "pattern": "expressvpn[._-]macos[._-]universal[._-]v?(\\d+(?:\\.\\d+)+)[._-]release\\.zip",
+      "notes": "Navigate JSON: installers \u2192 mac_qt \u2192 locations \u2192 default, then regex extract version from filename. The filename carries a 4-part version (14.3.1.15429) and that is what {version} must expand to for the download URL to resolve."
     },
     "headers": {}
   },
@@ -31,7 +31,7 @@
     "method": null
   },
   "notes": "JSON API for version detection. Multiple legacy branches (mac11, mac7, etc.) , current branch is mac_qt. Download is a zip containing 'ExpressVPN Installer.app'. Requires sudo for installation. macOS 11 or later.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-10-05",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
   "license": "paid",

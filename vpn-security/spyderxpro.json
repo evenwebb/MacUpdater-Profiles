@@ -11,7 +11,8 @@
     "method": "scrape_html",
     "url": "https://consumersupport.datacolor.com/",
     "extraction": {
-      "type": "javascript_spa_scrape",
+      "type": "regex_on_html",
+      "pattern": "(?i)version\\s*[:=]?\\s*(\\d+\\.\\d+(?:\\.\\d+)?)",
       "note": "Zendesk-based SPA behind Cloudflare bot detection. Requires headless browser or manual lookup.",
       "fallback_third_party": "Check MacUpdater, Homebrew, or other tracker databases for SpyderX version",
       "example": "5.9 (SpyderX), 6.6 (Spyder X2)"
@@ -33,11 +34,11 @@
     "method": "third_party_tracker_only",
     "note": "No programmatic release date available. Check MacUpdater database or other trackers."
   },
-  "notes": "HARDEST app to track. Datacolor uses aggressive bot protection: Cloudflare on the support portal, CDN blocks direct access, no API, no Sparkle, no Homebrew cask, no Mac App Store. Software is free but requires SpyderX hardware to function. Best approach: monitor third-party databases (MacUpdater, MacInformant) for version changes. Version schemes are inconsistent (SpyderX: ~5.9, Spyder X2: ~6.6).",
-  "last_updated": "2026-06-22",
+  "notes": "HARDEST app to track. Datacolor uses aggressive bot protection: Cloudflare on the support portal, CDN blocks direct access, no API, no Sparkle, no Homebrew cask, no Mac App Store. Software is free but requires SpyderX hardware to function. Best approach: monitor third-party databases (MacUpdater, MacInformant) for version changes. Version schemes are inconsistent (SpyderX: ~5.9, Spyder X2: ~6.6). Disabled 2026-10-05: there is no machine-readable version anywhere (no API, no Sparkle, no App Store, no cask), so the profile can only ever fail its check.",
+  "last_updated": "2026-10-05",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
   "license": "paid",
-  "skip": false,
+  "skip": true,
   "bundle_id": "com.datacolor.SpyderXPro"
 }

@@ -27,12 +27,12 @@
   "release_date": {
     "method": null
   },
-  "notes": "Uses Google Keystone updater (same framework as Chrome). Auto-updates silently in the background. No public version API exists. Version only available by inspecting the installed DMG's Info.plist. macOS 13 or later.",
-  "last_updated": "2026-06-21",
+  "notes": "Uses Google Keystone updater (same framework as Chrome). Auto-updates silently in the background. No public version API exists. Version only available by inspecting the installed DMG's Info.plist. macOS 13 or later. Disabled 2026-10-05: the download URL carries no version and Google publishes none (the release-notes page is JS-rendered), so the check can only fail. Re-enable if a versioned endpoint appears.",
+  "last_updated": "2026-10-05",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "cloud-backup",
   "license": "free",
-  "skip": false,
+  "skip": true,
   "bundle_id": "com.google.drivefs",
   "file_type": "dmg"
 }

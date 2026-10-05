@@ -13,8 +13,11 @@
   "skip": false,
   "version_check": {
     "method": "scrape_html",
-    "url": "https://mkvtoolnix.download/macos/",
-    "extraction": null
+    "url": "https://mkvtoolnix.download/latest-release.xml",
+    "extraction": {
+      "type": "regex_on_html",
+      "pattern": "<version>([\\d.]+)</version>"
+    }
   },
   "download": {
     "method": "direct_url",
@@ -30,5 +33,5 @@
     "field": null
   },
   "notes": "Version extracted from the macOS download page. No Sparkle or auto-updater.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-10-05"
 }

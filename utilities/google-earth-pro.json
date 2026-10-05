@@ -10,7 +10,7 @@
   "architecture": "universal",
   "min_os": "10.15",
   "auto_updates": true,
-  "skip": false,
+  "skip": true,
   "version_check": {
     "method": "redirect_trace",
     "url": "https://www.google.com/earth/versions/",
@@ -29,6 +29,6 @@
     "method": "none",
     "field": null
   },
-  "notes": "Uses Google's internal auto-updater (Keystone). No public version API. Version page redirects to download.",
-  "last_updated": "2026-06-21"
+  "notes": "Uses Google's internal auto-updater (Keystone). No public version API. Disabled 2026-10-05: the version page now 301s to a JS-rendered /earth/about/versions/ page with no version in the HTML or the redirect. Re-enable if Google exposes a versioned endpoint.",
+  "last_updated": "2026-10-05"
 }

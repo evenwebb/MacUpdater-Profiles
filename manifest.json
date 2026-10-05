@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-09-14T13:11:40Z",
+  "updated": "2026-10-05T20:45:10Z",
   "total_profiles": 233,
   "apps": {
     "1password": {
@@ -415,7 +415,7 @@
       "category": "browsers",
       "license": "free",
       "path": "browsers/chromium.json",
-      "skip": false
+      "skip": true
     },
     "citrix-workspace": {
       "name": "Citrix Workspace",
@@ -901,7 +901,7 @@
       "category": "cloud-backup",
       "license": "free",
       "path": "cloud-backup/google-drive.json",
-      "skip": false
+      "skip": true
     },
     "google-earth-pro": {
       "name": "Google Earth Pro",
@@ -911,7 +911,7 @@
       "category": "utilities",
       "license": "free",
       "path": "utilities/google-earth-pro.json",
-      "skip": false
+      "skip": true
     },
     "grammarly-desktop": {
       "name": "Grammarly Desktop",
@@ -1053,8 +1053,10 @@
     },
     "ip-scanner": {
       "name": "IP Scanner",
-      "bundle_id": "com.10baseT.IPScannerMacNMAS",
-      "alternate_bundle_ids": [],
+      "bundle_id": "com.10baseT.IPScanner",
+      "alternate_bundle_ids": [
+        "com.10baseT.IPScannerMacNMAS"
+      ],
       "icons": {
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/ip-scanner.png"
       },
@@ -1425,7 +1427,7 @@
       "category": "messaging",
       "license": "free",
       "path": "messaging/microsoft-teams.json",
-      "skip": false
+      "skip": true
     },
     "microsoft-word": {
       "name": "Microsoft Word",
@@ -2083,7 +2085,7 @@
       "category": "vpn-security",
       "license": "paid",
       "path": "vpn-security/spyderxpro.json",
-      "skip": false
+      "skip": true
     },
     "standard-notes": {
       "name": "Standard Notes",

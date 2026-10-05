@@ -14,7 +14,10 @@
   "version_check": {
     "method": "scrape_html",
     "url": "https://www.citrix.com/downloads/workspace-app/mac/workspace-app-for-mac-latest.html",
-    "extraction": null
+    "extraction": {
+      "type": "regex_on_html",
+      "pattern": "Version\\s+(\\d+\\.\\d+\\.\\d+\\.\\d+)"
+    }
   },
   "download": {
     "method": "scrape",
@@ -30,5 +33,5 @@
     "field": null
   },
   "notes": "Uses internal auto-updater. No public version API. Download page requires user interaction; actual download URL may use CDN redirects. Download page URL is uncertain , verify before use.",
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-10-05"
 }

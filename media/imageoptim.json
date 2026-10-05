@@ -14,7 +14,10 @@
   "version_check": {
     "method": "scrape_html",
     "url": "https://imageoptim.com/mac",
-    "extraction": null
+    "extraction": {
+      "type": "regex_on_html",
+      "pattern": "download-info>\\s*Version\\s+(\\d+\\.\\d+(?:\\.\\d+)?)"
+    }
   },
   "download": {
     "method": "redirect_url",
@@ -24,12 +27,12 @@
     "note": "Landing/download page URL; MacUpdater follows redirects to the archive."
   },
   "changelog": {
-    "url": "https://imageoptim.com/versions.json"
+    "url": "https://imageoptim.com/changelog.html"
   },
   "release_date": {
     "method": "none",
     "field": null
   },
   "notes": "No Sparkle or auto-updater. Download URL is static (always latest). Version must be scraped from the mac page. Distributed as tar.bz2.",
-  "last_updated": "2026-06-21"
+  "last_updated": "2026-10-05"
 }

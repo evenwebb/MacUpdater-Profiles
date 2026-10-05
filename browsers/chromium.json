@@ -10,7 +10,7 @@
   "architecture": "universal",
   "min_os": "10.15",
   "auto_updates": false,
-  "skip": false,
+  "skip": true,
   "version_check": {
     "method": "redirect_trace",
     "url": "https://download-chromium.appspot.com/?platform=Mac&type=snapshots",
@@ -29,6 +29,6 @@
     "method": "none",
     "field": null
   },
-  "notes": "Snapshot builds from Chromium build server. No built-in auto-updater; version check uses redirect following to determine latest build.",
-  "last_updated": "2026-06-22"
+  "notes": "Snapshot builds from Chromium build server. No built-in auto-updater. Disabled 2026-10-05: the snapshot URL no longer redirects to a versioned path, so there is nothing to read the version from. Re-enable once a version source exists (chromiumdash reports Chrome, not Chromium, so it is not a drop-in).",
+  "last_updated": "2026-10-05"
 }

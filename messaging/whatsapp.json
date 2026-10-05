@@ -11,8 +11,9 @@
     "method": "redirect_trace",
     "url": "https://web.whatsapp.com/desktop/mac_native/release/?configuration=Release",
     "extraction": {
-      "type": "http_redirect",
-      "pattern": "Extract version from Location header filename pattern WhatsApp-2.{version}.dmg"
+      "type": "regex_on_redirect_location",
+      "pattern": "WhatsApp-(\\d+(?:\\.\\d+)+)\\.dmg",
+      "example": "2.26.40.16"
     },
     "headers": {}
   },
@@ -31,7 +32,7 @@
     "field": "not exposed"
   },
   "notes": "Universal Catalyst app. No Sparkle, no Electron updater. CDN download tokens expire quickly , redirect URL must be used immediately. No public changelog or release date endpoint.",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-10-05",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "messaging",
   "license": "free",

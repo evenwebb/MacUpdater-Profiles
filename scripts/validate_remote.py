@@ -25,6 +25,7 @@ import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import lru_cache
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -77,6 +78,27 @@ def fetch(url: str, timeout: int = TIMEOUT) -> tuple[int, str]:
         return -1, str(e)
 
 
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+_REDIRECT_OPENER = urllib.request.build_opener(_NoRedirect)
+
+
+def fetch_location(url: str, timeout: int = TIMEOUT) -> tuple[int, str]:
+    """HEAD without following redirects; the version lives in the Location header."""
+    if not url.startswith(("http://", "https://")):
+        return -1, f"Invalid URL: {url[:80]}"
+    req = urllib.request.Request(url, headers={"User-Agent": UA}, method="HEAD")
+    try:
+        resp = _REDIRECT_OPENER.open(req, timeout=timeout)
+        return resp.status, resp.headers.get("Location") or resp.url
+    except urllib.error.HTTPError as e:
+        return e.code, e.headers.get("Location") or ""
+    except Exception as e:
+        return -1, str(e)[:120]
+
 
 def _normalize_extraction(raw) -> dict:
     """Convert extraction string/None shorthand to a dict the extractors can use."""
@@ -91,6 +113,8 @@ def _normalize_extraction(raw) -> dict:
         if s.startswith("sparkle:"):
             return {}  # Sparkle extractor handles version fields natively
         if s in ("tag_name", "product", "version"):
+            return {"json_path": s}
+        if s.startswith("$") or s.startswith("["):
             return {"json_path": s}
         # Custom shorthand — pass as pattern for scrape/plain text
         return {"pattern": s}
@@ -138,8 +162,14 @@ def extract_version(profile: dict) -> tuple[str | None, str | None]:
         elif method == "sourceforge_json":
             return _extract_json(body, extraction)
         elif method == "redirect_trace":
-            code2, body2 = fetch(url)
-            return (f"HTTP {code2}" if code2 else None, None)
+            code2, location = fetch_location(url)
+            if code2 < 0:
+                return None, f"Redirect trace failed: {location}"
+            pattern = extraction.get("pattern", r"(\d+\.\d+(?:\.\d+)?)")
+            m = re.search(pattern, location)
+            if not m:
+                return None, f"No version in redirect '{location[:80]}' (HTTP {code2})"
+            return (m.group(1) if m.lastindex else m.group(0), None)
         elif method == "plain_text_api":
             pattern = extraction.get("pattern")
             if pattern:
@@ -274,7 +304,17 @@ def _extract_json(body: str, extraction: dict) -> tuple[str | None, str | None]:
                 data = data[0] if data else None
         else:
             return None, f"Path {path} not found (got {type(data).__name__})"
-    return (str(data) if data is not None else None, None)
+    if data is None:
+        return None, f"Path {path} not found"
+    value = str(data)
+    # Mirror the app: a pattern normalizes composite values (URLs, brew-style strings).
+    pattern = extraction.get("pattern")
+    if pattern:
+        m = re.search(pattern, value)
+        if not m:
+            return None, f"Value did not match pattern '{pattern[:40]}'"
+        value = m.group(1) if m.lastindex else m.group(0)
+    return value, None
 
 
 def _extract_yaml(body: str, extraction: dict) -> tuple[str | None, str | None]:
@@ -289,18 +329,35 @@ def _extract_yaml(body: str, extraction: dict) -> tuple[str | None, str | None]:
 def _extract_html(body: str, extraction: dict) -> tuple[str | None, str | None]:
     pattern = extraction.get("pattern", r"(\d+\.\d+(?:\.\d+)?)")
     m = re.search(pattern, body)
-    return (m.group(1) if m else None, None)
+    if not m:
+        return None, f"No match for pattern '{pattern[:50]}'"
+    return (m.group(1) if m.lastindex else m.group(0), None)
 
 
-def check_profile(slug: str) -> dict:
-    """Check a single profile. Returns health result dict."""
-    path = None
+def profile_path(slug: str) -> Path | None:
+    """Resolve a profile file. The manifest's declared path wins; filenames are
+    not always the slug (e.g. opencore-legacy-patcher -> opencore-patcher.json)."""
+    declared = ((_manifest().get("apps") or {}).get(slug) or {}).get("path")
+    if declared:
+        p = REPO / declared
+        if p.exists():
+            return p
     for d in REPO.iterdir():
         if d.is_dir() and d.name not in (".git", ".github", "scripts", "__pycache__"):
             pf = d / f"{slug}.json"
             if pf.exists():
-                path = pf
-                break
+                return pf
+    return None
+
+
+@lru_cache(maxsize=1)
+def _manifest() -> dict:
+    return json.loads(MANIFEST_PATH.read_text())
+
+
+def check_profile(slug: str) -> dict:
+    """Check a single profile. Returns health result dict."""
+    path = profile_path(slug)
     if not path:
         return {"slug": slug, "status": "missing", "error": "Profile file not found"}
 
@@ -323,12 +380,15 @@ def check_profile(slug: str) -> dict:
         return {"slug": slug, "status": "ok", "version": version, "method": method}
 
     err = error or "Unknown error"
+    # A 429 is the host throttling this checker, never a broken profile.
+    if err.startswith("HTTP 429"):
+        return {"slug": slug, "status": "rate_limited", "error": err, "method": method}
     # Unauthenticated GitHub API runs hit secondary rate limits; don't count as profile breakage.
     url = (profile.get("version_check") or {}).get("url", "")
     if (
         method == "github_api"
         and "api.github.com" in url
-        and (err.startswith("HTTP 403") or err.startswith("HTTP 429"))
+        and err.startswith("HTTP 403")
         and not GITHUB_TOKEN
     ):
         return {
@@ -351,7 +411,7 @@ def main():
     p.add_argument("--badge", action="store_true", help="Output JSON for shields.io badge")
     args = p.parse_args()
 
-    manifest = json.loads(MANIFEST_PATH.read_text())
+    manifest = _manifest()
     all_slugs = sorted(manifest["apps"].keys())
 
     if args.slug:

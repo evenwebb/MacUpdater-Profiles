@@ -14,7 +14,10 @@
   "version_check": {
     "method": "scrape_html",
     "url": "https://pages.uoregon.edu/koch/texshop/obtaining.html",
-    "extraction": null
+    "extraction": {
+      "type": "regex_on_html",
+      "pattern": "Latest TeXShop, Version\\s+(\\d+\\.\\d+(?:\\.\\d+)?)"
+    }
   },
   "download": {
     "method": "scrape",
@@ -30,5 +33,5 @@
     "field": null
   },
   "notes": "Hosted on university pages. No auto-updater. Version and download URL must be scraped. Requires MacTeX or similar TeX distribution. Download may be dmg or zip.",
-  "last_updated": "2026-06-22"
+  "last_updated": "2026-10-05"
 }

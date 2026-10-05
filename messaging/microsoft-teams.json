@@ -30,12 +30,12 @@
     "method": "scrape",
     "field": "changelog/support page"
   },
-  "notes": "Uses Microsoft AutoUpdate (MAU 2.0). TEAMS10 refers to classic Teams, TEAMS21 refers to new Teams. Version extracted from fwlink redirect path.",
-  "last_updated": "2026-06-21",
+  "notes": "Uses Microsoft AutoUpdate (MAU 2.0). TEAMS10 refers to classic Teams, TEAMS21 refers to new Teams. Disabled 2026-10-05: the fwlink now lands on .../webview2/lkg/MicrosoftTeams.pkg with the version removed from the path, so the redirect no longer carries one. Re-enable once a versioned Teams endpoint exists.",
+  "last_updated": "2026-10-05",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "messaging",
   "license": "free",
-  "skip": false,
+  "skip": true,
   "bundle_id": "com.microsoft.teams2",
   "alternate_bundle_ids": [
     "com.microsoft.teams"
