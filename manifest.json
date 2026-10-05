@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-10-05T20:45:10Z",
+  "updated": "2026-10-05T21:48:03Z",
   "total_profiles": 233,
   "apps": {
     "1password": {
@@ -491,7 +491,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/control-d-utility.png"
       },
       "category": "vpn-security",
-      "license": "free",
+      "license": "freemium",
       "path": "vpn-security/control-d-utility.json",
       "skip": false
     },
@@ -743,7 +743,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "utilities",
-      "license": "paid",
+      "license": "freemium",
       "path": "utilities/fantastical.json",
       "skip": false
     },
@@ -765,7 +765,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/figma.png"
       },
       "category": "design",
-      "license": "free",
+      "license": "freemium",
       "path": "design/figma.json",
       "skip": false
     },
@@ -823,7 +823,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/gemini.png"
       },
       "category": "other",
-      "license": "free",
+      "license": "paid",
       "path": "other/gemini.json",
       "skip": false
     },
@@ -1347,7 +1347,7 @@
       "alternate_bundle_ids": [],
       "icons": {},
       "category": "utilities",
-      "license": "paid",
+      "license": "free",
       "path": "utilities/mactracker.json",
       "skip": false
     },
@@ -1413,7 +1413,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/microsoft-excel.png"
       },
       "category": "office",
-      "license": "free",
+      "license": "freemium",
       "path": "office/microsoft-excel.json",
       "skip": false
     },
@@ -2195,7 +2195,7 @@
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/teamviewer.png"
       },
       "category": "remote-desktop",
-      "license": "free",
+      "license": "freemium",
       "path": "remote-desktop/teamviewer.json",
       "skip": false
     },

@@ -12,7 +12,7 @@ REPO = Path(__file__).resolve().parent.parent
 SKIP_DIRS = {".git", ".github", "scripts", "__pycache__", "badges"}
 
 REQUIRED = ["name", "slug", "category", "license", "version_check", "download"]
-VALID_LICENSES = {"free", "paid"}
+VALID_LICENSES = {"free", "freemium", "paid"}
 VALID_VERSION_METHODS = {
     "sparkle_appcast", "github_api", "json_api", "yaml_api",
     "scrape_html", "itunes_api", "redirect_trace",

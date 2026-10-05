@@ -35,7 +35,7 @@
   "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "vpn-security",
-  "license": "free",
+  "license": "freemium",
   "skip": false,
   "bundle_id": "com.controld.utility",
   "installed_version": {

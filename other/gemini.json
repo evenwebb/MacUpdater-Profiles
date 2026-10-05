@@ -44,14 +44,14 @@
     "direct": true
   },
   "bundle_id": "com.macpaw.site.Gemini2",
-  "notes": "Uses DevMate (MacPaw's own distribution platform) which provides Sparkle-compatible appcasts with delta patches. Appcast shows version history from v2.4.7 (2018) through v2.10.1.",
+  "notes": "MacPaw Gemini 2, the paid duplicate-file finder sold standalone and via Setapp. Not to be confused with Google Gemini (gemini.google.com), a separate AI app that shares the name. Uses DevMate (MacPaw's own distribution platform) which provides Sparkle-compatible appcasts with delta patches. Appcast shows version history from v2.4.7 (2018) through v2.10.1.",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "other",
-  "license": "free",
+  "license": "paid",
   "skip": false,
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-10-05",
   "slug": "gemini",
-  "website": "https://gemini.google.com/app",
+  "website": "https://macpaw.com/gemini",
   "icons": {
     "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/gemini.png"
   }

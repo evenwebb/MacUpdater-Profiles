@@ -75,8 +75,10 @@
     },
     "license": {
       "type": "string",
+      "description": "free = no purchase needed. freemium = usable free tier with paid upgrades or a subscription. paid = purchase required.",
       "enum": [
         "free",
+        "freemium",
         "paid"
       ]
     },

@@ -40,7 +40,7 @@
   "last_updated": "2026-07-24",
   "$schema": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/schema.json",
   "category": "office",
-  "license": "free",
+  "license": "freemium",
   "skip": false,
   "bundle_id": "com.microsoft.Excel",
   "icons": {
