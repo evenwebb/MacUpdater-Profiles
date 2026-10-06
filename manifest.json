@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "version": 3,
-  "updated": "2026-10-05T22:42:54Z",
+  "updated": "2026-10-06T10:55:54Z",
   "total_profiles": 233,
   "apps": {
     "1password": {
@@ -2234,7 +2234,9 @@
     "textsniper": {
       "name": "TextSniper",
       "bundle_id": "com.valerijs.boguckis.TextSniper",
-      "alternate_bundle_ids": [],
+      "alternate_bundle_ids": [
+        "com.valerijs.boguckis.gumroad.TextSniper"
+      ],
       "icons": {
         "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/textsniper.png"
       },

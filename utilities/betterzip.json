@@ -22,8 +22,8 @@
     "url_template": "https://macitbetter.com/dl/BetterZip-{VERSION}.zip",
     "kind": "zip",
     "headers": {},
-    "url": "https://macitbetter.com/dl/BetterZip-latest.zip",
-    "file_type": "dmg"
+    "url": "https://macitbetter.com/dl/BetterZip-{VERSION}.zip",
+    "file_type": "zip"
   },
   "changelog": "https://macitbetter.com/versionhistory.php",
   "release_date": {
