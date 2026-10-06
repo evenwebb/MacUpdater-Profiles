@@ -38,6 +38,9 @@
   "license": "paid",
   "skip": false,
   "bundle_id": "com.macitbetter.betterzip5",
+  "alternate_bundle_ids": [
+    "com.macitbetter.betterzip"
+  ],
   "file_type": "zip",
   "icons": {
     "direct_url": "https://raw.githubusercontent.com/evenwebb/macupdater-profiles/main/icons/betterzip.png"
